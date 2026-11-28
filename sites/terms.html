@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><script id="dp-config">window.DP_DATA="https://meir136284.github.io/data/";window.DP_APP_URL="https://meir136284.github.io/app/";</script><script id="dpa-loader">/* Drive Play – account loader. Runs first on every page: shows the entrance,
+   lets the account frame recognise the visitor, restores the profile's saved
+   data and only then starts the page itself. */
+(function () {
+  'use strict';
+  var BR = 'https://meir136284.github.io/drive-play-account/', BO = BR.replace(/^(https?:\/\/[^/]+).*$/, '$1');
+  var PAGE = 'terms', LABEL = 'תנאי שימוש ופרטיות', LOGO = 'data:image/webp;base64,UklGRmwVAABXRUJQVlA4WAoAAAAQAAAAlQAAUAAAQUxQSL4EAAABCQWNJDVZjg7+DX8BCRH9nwBcAdTQUUCswFZnieycgJSjVs6X9UJxn2p9kUqtlU/XOgBDQds2TMKf9v4IRMQEEPqVasLERaTtZ7Vt20jK/jsnVe4/1RETMAG+aNs6btu2rZTLV7utYdu2bdu27TmfbNu2rWHbNrvZ0FG/Uib/Vutf61efI2ICiHtl4TB+3U02XHWVieMbsXjerNdef/blVxwSmULLMqy5x37brjaM6oteuPXPjy5EqUiyzISDT95jNOAhEBCEJOCtP/7gnggrj2WmXnjGWpCRRPUIT4LbDsRVGMGIU69clYyJ1oab9jxnI0JFyexw0qpkGe3MwX774CqHSLtvQTbR5uSM3X4SKoWYsnMjJGpomQ0nUsyxy5FFPeVMGFuM8SBqa4xRCYL+QeodDMwjul3YQB+qF2JBn3W50KJnCeoevDBP3t14jM58DHU1/jlo0QGhfA8yCQiCiO4S9vw95nRipNdeYxkVTeHdQqjh36ZTQ28+uqRvwcLB+XPmzJ07awlYROdJFpml/PJF8w4hxP9v9s986v7fvIQ6zZQBTdp453tF53oQ/2USQP+Xb1rWWaaMbb7jzhuu9Jcz6KSqQQSJP52gTlJm7VMP38wAIuie0Rz25wF1jJy1rjplPGQkjK66bNizWdEZCg4/fjxZEl24ySN06tRdptBMojt7mnGrvAPExPVoJuHZPnZCn9VP9DdAdHGx6QuofosW0uUVI9J8i5rZkqfo+tLaDwX1thhDAXzsy4sb9eLdHZJ3PVz+NF4nGxw5PihgGvV7U43Ec5uqBGLc7cvcVBdvzPi4HD8MvfiZn5KtHor48PNWhv9+49zRhGpgTVb+pcQnPdLqp+yFq10Klrv6AkrqmU2OGIPaI+eAo6fgJcHkbLAcbRUrHrwaTaOw5qw6rR1ixa3JJsorxql1wXKTCaPQA9OJFtE3HFHuN2ZbtCKY00fJgwf6FUOTvT6dsmnZD2ihDf6OKBqebnvU8lBS/vmgCof4BBpKcGtyCp/td3+3XC3l3RGlj7ToMqIanGnN4uG8741GVFGeuJ/RA8YhOKOWd10xVD7TTqu7jcD+ZMovH70jGnHtQE/obFlJsdyavYFYkxhhtYm9AawqH1rZXL2AWG5UhA7GEfSGKTEoRtEryqqA9wxElWBpz7BgoAr0IQXB202L/xe86VYcvIhR5bU5KDQeoGpo7rORBIQtvItcgcRfBYEe975tUcWa67w/rHjJD7jQGwzxwyNdpbP4wHJNVUu+w1FuhZNPfj9iiMHZFiqb+alrhA3FYrkDCycff2KIISu2XtlVNI4a2QpgE6JkrL6mi9ZOQgUbMRXRUoFIUS5aH7yzFC9RsKSJ2iCefpOUS5ON6bMJ2vvEP5DlKIhjPPQ27Z/347+h5NlUgnAZD/50PtE2T9z50R/PI0EOhIailqhDIoIEj3zhVixofyBuveGG32y/It0wKoWiigSw9NZv/K6JglpmM9782oQN1l175ZUnDm+gYY0kU4SEkjUa1hDCQAJD0v8JCJAqtDP6pz9x+99fgOTUNtMw53+aoZRMUoAgCcwASQL9bywRnkEeKCUp3EwmyVICs2QWSjQspPBl8+ZMn94HMg9aC1ZQOCCIEAAAMEAAnQEqlgBRAD49GIlDIiGhGVqGtCADxLYAaArq/yD8Se60kFyv8u/Ydp39T/qn56/sv/q/1Pxm7NYoPrj8afsfuY99/qe/QHsGfqX/qP7z1r/M1+zH7Ve7t/lv9v7Nv7r/qvYH/rP+X///YOfuX7B/7Yerh/0/3C+Dj+t/6f9zfgV/aD/3+wB6AHAZ/hB7YPDr9B4S+Rr2b4xcuLq3xYfhn9/53eDfxt1C/Yn+c7gDygrM99P/b+Fr4ze9fiAfq5xaNAX+d/23/keo39QfkB7gPoT/z+4T/Mf6f/wv8D2rf3A9lP9j3Yj/QHlqpyfyP9EfsQVA4wgLO297lfefsxV2Zh0H0V42CoLxWrd2YBHfxMWR2svDc/SAVRpD/h769kQvKdNbuqC8rAqe60TZ3RBI4C2mRIkvvCY7HvRP8j30NUAgHs+2V0faS9LQmfLN506/Mbyyu9PeTbEsjlZHB35prx73AYKt5LGe708In2FuNsWkmi6goF3b9nkm+wv7HyRfZdH492XeaUK1/MLrxXw5DeSCanpPTHIuQcxeg08f1S0nHp0qgtYhCAJHO/ASXxXWAVnI0WCbCHGH8DQQ27vBXswXkZsf8J2RSN02/JQ9vOA/66JX2/aLO3/5vZjDaLpOOLvtNR6imj3hqQhmUR2fSB/S/B+a6TZvhhdjNZezAEKBi7G10ksAAP7/YBgkf/Q7xV9wg50TShFCj9JsHAZ3AlMV+Ve56ZRcFGr1QIBF6Bo9x/mbFf7N3xLRQtXG86dGQlz7zUxX8IUKo+SAt8fqRV0J1pPalQv6LSiz1o+9j0wYXtQJB0q1ETdJgc0blAQrwWz/v/oWDtNPHeewVuYPuAVHUQpXq6I9RBEykZjzpsK80LJOEP1ke2pzVffHN54eomJstzREhfVmsYrLbaQobB7/3JpNRHQjJfPhr70wcBRwV6TZK1n7g3cjs/f2mqH+ksbsMTwhOmn3ny86UB3ILUNR22jy9om7rr6cq6XpZcOHQU9HoTvm3J8LKI3vgKl2gIJ8JLLfpW5gBVXGsgPv+NPRMgyZlfQtti8NSN73Rp7er+todRJ7HCi6g4nVzGHsOdmQ6wVvuIasvo4AhmWnLy/Z7q87109OkczzpRRGYDAU90KQr35Im25eJIkWcopFw1eVk1KdfB9vqLOSI5YgL1uj7VXz4qWjA7YeATeLIDhF/B4GrSvSmh11UAYQ5S3RgE78p8K3pDcU0BMerIR7dku74sveZRcxEyCtoS3QzImczM+Aj9Ce1sYJ6u7PYMIFuEW0TSNBykP+N8c+qU4Zz1dV5zY//63l9bWEMwOUGVX+p95bu+VGeVcJDQ8rZ/XZ0MIAVHygWePz7ifKsoyZBINwr1OS6nLCPlzZ633qXGvMu/aSzgOEDOIQ8Guacs5ZqZfR0BQMhmYX6OeWxipSIOMLbcaBnq8k6e7ABO6/JH8qo2deUrSLL4oiU+pvXjcNYNuYy/8DEa8xZRd2JQM791h3EqDeL2MOb5pv33rQrJ+w/dewb+LQFO6HdB6gIYJYDH5MYw2BjgK4CSrSUriT7Ngj0KVR+UYCPt/2vQSm53VBVC+wnEQ7VvPvfUV+ee/5KLyeHDxGTnSWqPsRUrbRkl/bZV1vFbQm3gs5OP0CN++jy1Qfx8AYJjjRaNpyT5ZegdjfylmcrQSwVjCRq5gdbLvTeE3kkxq96gacjcB/mThXb5fRjtg1aTEE254BUI2/+9/JAp4SIP35k9Co4idtRAPG2VlM5E/HHJ4vf+pzGYkOPebrExGss2pY1SveYVPBrVGljN8ux4FRNeao30TdL+rJGyGIOKSFEjmMj8Rk/mBGSTgiP5SBWeXlf0+kH1va9OYbeNntROzHZLed8YgSZ3vYdGifgLHIHaYgcbFwmkK+laFMLA+i9w/Xtq9895T7PBO8P6Ip65Elag8VtneFdz6U98+mguOqOgWOkZPFVc2F34651/F8bQcVaMLdq+iS0+hvJGC+++OblARrAReqjoLTryDwQqu8HwHh93t9R/a/H00YeCO9dHNAs5DEmM/ZZN7wTAP5V8Uh+yrD6/EEl6OrwyRlBWJEXL0ClTUbJBUPlPL11Rdaf5Qq1Txnz0+pCh7d/kPnXdzNTjj+UWSy/vBYtz6OHxKtv+w2tKDkN2OO15FVOHxf6U+FamEYCWPivtzWXg/MNwE/K0h6lHM04vxaL9aSNDawIvHWQ9bNsEldABa3KSoo94IBy8flyhzIbpoZMmas9uZqN4ZtIqXR2vVXgkTvp0Hkn0Ucgdx94OM+7OrpBRIG95mdeHx7ipyexShb2B4ELEr73WdRLs4CqwOc5uPYUXOdedukh9r/0ZsY6BeD1QS54ERJq3cgKxAtDoZr1KgJzJxBA33rq+g6bIhBWC6HHbGUvG2DNOU3ZC3UDEY7mFItTUJI0Y8lDK56AWq9fDXaNamAPE1ODsQOAaQdyhJP7VvGOSsE1NT6ao2hfovzWqjKgQT/d4WUQF4f2OtyvtEQ2PPDxUujeNmIZlgED02etj0eQYsI9o/2WFzjTvX4xgIikdbIjRnN+zscWfw6YQi3Y8pnnLReJJne5V+VkpOFy+ERLnhOLr5AtiG+w016O9eu/aYA7XnOZoWZBXtmkfNNBZHkTYxz2BtRzGjyOlOyKoUG0l2pTvxL3JuGRKhh7xXcQJpWnPJHPkKLoQJl5962jbs1TeKIAqxgop6+/JzcZC40JNsMjPGtkawKW4CE04obudcEtsYbDgk2h1wpQJG96/9gTsEtJkjrGwaR9d46kLdCDF98dV5ldTRlyjcRtQShkESn9FVL3My0m464jjC/IbjW3VBZnF17qA8qzvLKB7BoKeLi07RFqHZZHKVVPLT7iJYUat58HSYAbVbmpUmoPESgyxxVE6fQ/ES8FJvS/SCEXBM5sOzzVgbdT2r4Fmbna6RPnhnQ/CuyqNn3mnLDIcei9T1l+Q0rMvOPr3I21rVzZ2VgYXQmSFxL/5tokdQP1nt+/0PK+CyqKkafuSdXfxiv+36zqZUANNeUO8SThRmpt7SeCtK+O947aWARt2S5UdLPlcL6dIQw9yY1X23c45sUMfuO5hnDcry/7J6geBgQLv+QapefFHkqSBV1mePOpSD/tAuYYhWZXcqiJax1Q/6wlPYM2jiiOln1lcQacAhFts10RTgnGB9MMrCQbIqmDIxN7qyyuZc6yVSwbjUXpVudVmFXnAoTySlkshqyhEprCXvw7V9YfsfbjjE+6bPpZzY8MpoypKwSPo3QeZPuEzRu3NNE/rjGfz50Z0d7Tl5Tq4d3iTju/tLhjsfPvIayulh8VHANQd1xb5KfjvoMjb/Qyf56ACYXb0XP0powkk06t+UJ7bxSqwPKCQj3SxeWfmvqfixuwooxCmtH1vs7/cTFSgk/dPN5EZnuMRFSnh/bXJdcze3jZKzLrKz+J2yVItHpLC+GlaeZIxxlFlinRKA7jYAjmfJElq0/QnfwsfyfxMt1cWCHwTNSUPP06/lMWdetBcH5br6VUEXBH3MLpV6wkU/8RvWGFAlD2K0NWp2zssTh/wzU33JX4CGMzgvNy293/W+d5QHxRUN0S5AM6qVGtTX47VpaT1GFlqyLLrZqZ5Q2dH8rtXRgAaduxA0qQV8AxktmKnh1EB2jZyEB3t2ku0kLuSZEGxVhhP5dc5Fmb3P+w3Zr+gNLyMKn0qY6FNQTr5/Gyp2doFv63SzEv1s+EaxeLjYTmJq4YT2zUdEUHI65H6k/efZZkqOzfL3Tda36Una0mWIfDhj54+zDoRqCmQ0ktYVOpfsAjZi0GxtqfJeFIIWMHWQzHytZ/50KYLyTk3TpXI9zAkYiO1RHnqNLFTdyLw7FDDR2aQQOeSTclURHTDTjfX6rmkNeay3VSXbssRSs51DdcJ6r7j6/D2/D0BnVCmWNDSkHCG91+ynkOsepvx82qDD91hSFX6JDOywc3J1acLMNp8QqYGRwX//Tc3/lLKnzJ9LWUfbXqevtMlAAGY01BKYJ0G/mzCNkCy0FqcK3mADxOFi1hgM+6wRh6Z/ZbpK0O+vjHM76OPu4AuOepbGVpc+K1awEr3LVDkaocmcm+YEt9iRPiDjfGkRe7+gTXhr6KQj48ZQeJ6eSiO6KmYXkvTYXbSjRDa1V67nSuknXAz9GS9ISD7uo3VsESLpZ4ABiwPWrdkg2ST4/MnxTAXFA7FMcze/n13e+EezcFtl0oRhPinwI5m8yM3pOeY7aKKz6obvxG7O2RzZgccK77OVuz//jsSemrK4F5ky5AIVf4T/NF+sdWaF8Dd7bRvCgA+ekfQ5ZFhvySWObMNCR9JC45Jui7e2f+DNsWml1XRoZXdXHU2WUgI7iTXvAggMLxSH/kcSZH+FGTOGg2wYH2uSkhX8Kx2XQXAVFze1XEE396IjQWmviIpnsYNFXe4XmVf7pH8U1dPKExR1b+itLKpzXyEIXJ+LirfzaGPbEUgVIfbol4ire8x3mK7a/twyPxyi0Yw4ZXrw5dM5rg436sN8XHAxCaHhhNX81qCK83yZwwYuOyd2oqRib/tdmJaY9efGvGq4CTNk2q6LobfuAr4N2NW1hsr7eGUhqx6qOGTXQyxQSDoaOwVcdW4J6J80IQiyTvPah7pXpXNzV8GJdADoXDwq5CfHB3OfBB48D4RA5i/QU7802OOVR3yquq0TWy0B+SXUotdG1pzIARUnQWTnq2DFhRNN58JGLqkuvANY4hfK1o7plHvv+EcIniP5Q4r15wQ1hnMuzYpYSpqC/Ea3i7I5b1o0NKGY6mVtdYL+5ZUDfL3ucaz7e/EZ5XyBuV1jQKTMI6RmvAca8WVoCh4P/g/dKiymcnHUva5Be+pjLGPUNUxnUqBudADm4TgGS3bdT/zPmke0xRMkYL/kQwBvhXdYQUsQbAp8OFNa2OESQooa1K4ECRFC35qY6E9zxF1ZZbOaRsbPIB8e4g0uzSqHwwFJLk73O5oJiYfL1WGA7IWW9R+dZeOUGeLsgic17Wb+pzshL2//zrXMQoHS06wDXzHeH4/JXtYHtMLd6x2sKlgT04c6CEm7z+l+V8EEj/LwW+MThAQ5j73kf9Uyfl+NHrIzt6jZt7Escuzx9RrpaGdvsyWNUE9ZhNLEmWz5NVSEBvYOYvec8C1GAMzN1f0bG0Yvvud02G8DjwqI5Fg28F7ttTtP08itS2cmwWC/Ds+3jGqK+H9sxPO6sTYeSX8Vpe0HbwkJ2UKrMDs6LNKHP4z4awQXw955r4RKjdxPk2mxlOu4+5XfP1QlljXKAQTryfTJxEiriEwQl2ADYuf7Pkn9kuT8yojyYIw+YcxbLa3zrN65kEYXQF8P7JsCBIuwwy30EJQhSpLAzxa/2EdZiRoAeUJlKauCqQPvHfqHkKJ32tyyuIlv/giXQfY+yDCTUGgFd7fWmEU3eJeILBpIFxAB49f5K3egTXdazWF2rfUusHzLIIQSeqI/B6jF4Dn/wYJuksEeh5D9u+Cv3rHHyQddw8g9AI15MrJapv00wfq2Z7u3uS/uz9gPyGL/FmAjei0aLRosfYh5ZBr9XXYFqCq9C8j+RX/r7dmX5NwAAfC0nGbgyP9LgAUM1Nvgm9cxwp1tPdDaFdOUgfUrYfoBHQBq6wAAAAAA=';
+  var de = document.documentElement, W = window;
+  var SYNC = /^(dp_|cineai_)|^theme$/, SKIP = /^(dp_i18n_|dp_yt_idx|dp_yt_mv|dp_news$|dp_my$|dp_intro$|dp_profiles$)/;
+  var syncable = function (k) { return typeof k === 'string' && SYNC.test(k) && !SKIP.test(k); };
+  var still = false; try { still = matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  try { sessionStorage.setItem('dp_intro', '1'); } catch (e) {}
+  de.classList.add('dpa-wait');
+
+  var css = '#dpa-cover{position:fixed;inset:0;z-index:2147483600;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#080a10;background-image:radial-gradient(ellipse at 50% 38%,rgba(22,34,58,.75) 0%,rgba(8,10,16,.98) 70%);color:#b9c6dc;font:500 15px/1.4 Heebo,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;transition:opacity .35s ease}'
+    + '#dpa-cover img{width:clamp(150px,30vw,220px);height:auto;filter:drop-shadow(0 10px 30px rgba(33,150,243,.25))}'
+    + '#dpa-cover .l{width:200px;height:3px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}#dpa-cover .l i{display:block;width:40%;height:100%;border-radius:3px;background:linear-gradient(135deg,#1976d2,#2196f3 45%,#8bc34a)}'
+    + '@media (prefers-reduced-motion:no-preference){#dpa-cover .l i{animation:dpaL 1.4s cubic-bezier(.45,0,.25,1) infinite}@keyframes dpaL{0%{transform:translateX(-120%)}100%{transform:translateX(280%)}}}'
+    + '#dpa-cover.out{opacity:0;pointer-events:none}'
+    + '#dpa-frame{position:fixed;inset:0;width:100%;height:100%;border:0;z-index:2147483601;background:transparent;color-scheme:normal}'
+    + '#dpa-frame.mini{inset:auto;left:0;bottom:0;width:1px;height:1px;opacity:0;pointer-events:none}'
+    + 'html.dpa-ui,html.dpa-ui body,html.dpa-wait,html.dpa-wait body{overflow:hidden!important}'
+    + '.dpa-btn{position:relative;display:inline-grid;place-items:center;width:40px;height:40px;padding:0;border:0;border-radius:50%;background:none;cursor:pointer;flex:none}'
+    + '.dpa-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}'
+    + '.dpa-av{position:relative;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;overflow:hidden;background:var(--pc,#2F7BFF);background-image:linear-gradient(145deg,rgba(255,255,255,.22),rgba(0,0,0,.25));color:#fff;font:800 15px/1 Heebo,system-ui,sans-serif;box-shadow:0 0 0 2px rgba(255,255,255,.18);transition:box-shadow .2s}'
+    + '.dpa-btn:hover .dpa-av{box-shadow:0 0 0 2px #2196f3,0 0 0 4px rgba(139,195,74,.35)}'
+    + '.dpa-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}'
+    + '.dpa-btn .dpa-k{position:absolute;bottom:-2px;inset-inline-end:-4px;font:800 9px/1 Heebo,system-ui,sans-serif;background:#FFC93C;color:#111;padding:2px 4px;border-radius:5px}';
+  var st = document.createElement('style'); st.id = 'dpa-css'; st.textContent = css; (document.head || de).appendChild(st);
+  var cover = document.createElement('div'); cover.id = 'dpa-cover'; cover.setAttribute('role', 'status');
+  cover.innerHTML = '<img alt="Drive Play" src="' + LOGO + '"><div class="l" aria-hidden="true"><i></i></div><span>טוען…</span>';
+  de.appendChild(cover);
+  var fr = document.createElement('iframe'); fr.id = 'dpa-frame'; fr.title = 'Drive Play – חשבון';
+  fr.setAttribute('allow', 'clipboard-write'); fr.src = BR + '?v=1#' + encodeURIComponent(PAGE);
+  de.appendChild(fr);
+
+  var DPA = W.DPA = { on: false, ready: false, acct: null, prof: null, persist: true, page: PAGE, _cbs: [] };
+  var send = function (m) { try { m.dp = 1; fr.contentWindow.postMessage(m, BO); } catch (e) {} };
+  DPA.open = function (view) { if (DPA.on) send({ t: 'open', view: view || 'profiles' }); };
+  DPA.onChange = function (cb) { DPA._cbs.push(cb); };
+  /* a fresh start of the page (language, catalog refresh, profile): on Google Sites location.reload() would leave
+     an empty frame, so the page is rebuilt from its clean copy instead (after the last changes reach the account) */
+  DPA.reload = function () { bye(); setTimeout(restart, 150); };
+  /* shared features (watch together, shared lists, ratings, quiz table): one request to the account frame, one answer */
+  var socN = 0, socCb = {};
+  DPA.soc = function (op, a) {
+    return new Promise(function (res, rej) {
+      if (!DPA.on) { rej(new Error('OFF')); return; }
+      var id = ++socN, tm = setTimeout(function () { delete socCb[id]; rej(new Error('TIMEOUT')); }, 20000);
+      socCb[id] = function (m) { clearTimeout(tm); delete socCb[id]; if (m.ok) res(m.r || {}); else rej(new Error(m.e || 'ERR')); };
+      send({ t: 'soc', id: id, op: String(op), a: a || {} });
+    });
+  };
+  function changed() { paintButtons(); for (var i = 0; i < DPA._cbs.length; i++) try { DPA._cbs[i](DPA); } catch (e) {} }
+
+  /* forward the page's saved data to the account frame */
+  var LSO = null; try { LSO = W.localStorage; } catch (e) {}
+  var SP = W.Storage && Storage.prototype, oSet = SP && SP.setItem, oDel = SP && SP.removeItem, oClr = SP && SP.clear;
+  var pend = {}, pendT = 0, booted = false;
+  function queue(k, v) { if (!booted || !DPA.on || !syncable(k)) return; pend[k] = v; clearTimeout(pendT); pendT = setTimeout(flush, 400); }
+  function flush() { clearTimeout(pendT); var ch = pend; pend = {}; for (var k in ch) { send({ t: 'set', ch: ch }); break; } }
+  if (SP && LSO) {
+    SP.setItem = function (k, v) { oSet.call(this, k, v); if (this === LSO) queue(String(k), String(v)); };
+    SP.removeItem = function (k) { oDel.call(this, k); if (this === LSO) queue(String(k), null); };
+    SP.clear = function () { var ks = []; if (this === LSO) for (var i = 0; i < this.length; i++) ks.push(this.key(i)); oClr.call(this); for (var j = 0; j < ks.length; j++) queue(ks[j], null); };
+  }
+  /* tools inside inner frames of the same page write to the same storage */
+  W.addEventListener('storage', function (e) { if (e.storageArea === LSO && e.key) queue(e.key, e.newValue); });
+
+  /* time on the page and time spent watching */
+  var stat = { s: 0, w: 0, v: {} }, yt = new Map();
+  setInterval(function () { if (booted && document.visibilityState === 'visible') stat.s += 5; }, 5000);
+  W.addEventListener('message', function (e) {
+    if (e.source === fr.contentWindow && e.origin === BO) { onFrame(e.data); return; }
+    if (!/^https:\/\/www\.youtube(-nocookie)?\.com$/.test(e.origin)) return;
+    var d = e.data; if (typeof d === 'string') { if (d.charAt(0) !== '{') return; try { d = JSON.parse(d); } catch (x) { return; } }
+    if (!d || d.event !== 'infoDelivery' || !d.info) return;
+    var p = yt.get(e.source) || { st: -1, at: 0, id: '', t: '' }, i = d.info, t = Date.now();
+    if (i.videoData && i.videoData.video_id) { p.id = i.videoData.video_id; p.t = i.videoData.title || p.t; }
+    if (typeof i.playerState === 'number') p.st = i.playerState;
+    if (p.st === 1 && p.at) { var dt = Math.min(2, (t - p.at) / 1000); if (dt > 0) { stat.w += dt; if (p.id) { var v = stat.v[p.id] || (stat.v[p.id] = { id: p.id, t: p.t, sec: 0 }); v.sec += dt; if (p.t) v.t = p.t; } } }
+    p.at = p.st === 1 ? t : 0; yt.set(e.source, p);
+  });
+  function flushStat() {
+    if (!DPA.on || (!stat.s && stat.w < 1)) return;
+    var vs = []; for (var k in stat.v) if (stat.v[k].sec >= 3) vs.push({ id: k, t: stat.v[k].t, sec: Math.round(stat.v[k].sec) });
+    send({ t: 'stat', s: Math.round(stat.s), w: Math.round(stat.w), pg: PAGE, v: vs.slice(0, 10) });
+    stat = { s: 0, w: 0, v: {} };
+  }
+  setInterval(flushStat, 30000);
+  function bye() { flush(); flushStat(); send({ t: 'flush' }); }
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') bye(); });
+  W.addEventListener('pagehide', bye);
+
+  /* messages from the account frame */
+  function showUI(on) { fr.classList.toggle('mini', !on); de.classList.toggle('dpa-ui', !!on); if (on) { try { fr.focus(); } catch (e) {} } }
+  function onFrame(m) {
+    if (!m || m.dp !== 1) return;
+    switch (m.t) {
+      case 'hello': send({ t: 'init', page: PAGE, label: LABEL, still: still, lang: (navigator.language || '') }); break;
+      case 'ui': if (m.on) hello = true; if (booted || m.on) showUI(m.on); break;
+      case 'enter': enter(m); break;
+      case 'kv': writeKV(m.kv, true); break;
+      case 'acct': if (m.acct) DPA.acct = m.acct; if (m.prof) DPA.prof = m.prof; changed(); break;
+      case 'prof': if (m.prof) { DPA.prof = m.prof; writeProfiles(); } changed(); break;
+      case 'reload': bye(); setTimeout(restart, 60); break;
+      case 'socr': if (socCb[m.id]) socCb[m.id](m); break;
+    }
+  }
+  function writeKV(kv, merge) {
+    if (!LSO || !kv) return;
+    try {
+      if (!merge) { for (var i = LSO.length - 1; i >= 0; i--) { var k = LSO.key(i); if (syncable(k)) oDel.call(LSO, k); } }
+      for (var key in kv) if (syncable(key) && typeof kv[key] === 'string') oSet.call(LSO, key, kv[key]);
+    } catch (e) {}
+  }
+  function writeProfiles() {
+    var p = DPA.prof; if (!LSO || !p) return;
+    try { oSet.call(LSO, 'dp_profiles', JSON.stringify({ cur: 'p1', list: [{ id: 'p1', n: p.n || 'ראשי', col: p.col || '#2F7BFF', kids: !!p.kids, img: p.img || '' }] })); } catch (e) {}
+  }
+  var entered = false, hello = false;
+  function enter(m) {
+    /* the page already started as a guest (the account frame answered late): restart it with the account */
+    if (entered) { if (!DPA.on && m && m.acct && m.acct.type === 'acct') { bye(); setTimeout(restart, 60); } return; }
+    entered = true;
+    DPA.on = true; DPA.acct = m.acct || null; DPA.prof = m.prof || null; DPA.persist = m.persist !== false;
+    DPA.socOn = m.soc === 1;
+    writeKV(m.kv || {}, false); writeProfiles();
+    de.classList.toggle('dpa-kids', !!(DPA.prof && DPA.prof.kids));
+    boot();
+  }
+  /* start the page as a guest only if the account frame never showed itself (blocked, offline or refused);
+     once the entrance is on screen we wait for the visitor's choice */
+  setTimeout(function () { if (!entered && !hello) { entered = true; DPA.on = false; boot(); } }, 9000);
+
+  /* Google Sites writes the page into an empty (about:blank) frame and sends the code only once,
+     so location.reload() would leave a blank screen. Before the page's scripts start we keep a clean
+     copy of it, and "restart" builds a fresh frame from that copy (sign-out, switching profile or account). */
+  var SNAP = null;
+  function snapshot() {
+    try {
+      var c = de.cloneNode(true);
+      ['dpa-css', 'dpa-cover', 'dpa-frame'].forEach(function (id) { var n = c.querySelector('#' + id); if (n && n.parentNode) n.parentNode.removeChild(n); });
+      c.classList.remove('dpa-wait', 'dpa-ui', 'dpa-kids'); if (!c.getAttribute('class')) c.removeAttribute('class');
+      SNAP = (document.compatMode === 'CSS1Compat' ? '<!DOCTYPE html>' : '') + c.outerHTML;
+    } catch (e) { SNAP = null; }
+  }
+  function restart() {
+    var fe = null; try { fe = W.frameElement; } catch (e) {}
+    var src = fe && fe.getAttribute('src');
+    if (!SNAP || !fe || !fe.parentNode || (src && src !== 'about:blank') || fe.hasAttribute('srcdoc')) { location.reload(); return; }
+    try {
+      var nf = fe.cloneNode(false), host = fe.parentNode;
+      nf.removeAttribute('src'); nf.removeAttribute('srcdoc');
+      host.insertBefore(nf, fe);
+      var d = nf.contentWindow.document; d.open(); d.write(SNAP); d.close();
+      host.removeChild(fe);
+    } catch (e) { location.reload(); }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { if (!booted && !SNAP) snapshot(); });
+
+  /* start the page's own scripts once the data is in place */
+  function boot() {
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', boot); return; }
+    if (booted) return; booted = true;
+    if (!SNAP) snapshot();
+    var list = [].slice.call(document.querySelectorAll('script[type="text/dp-boot"]'));
+    var dAdd = document.addEventListener, wAdd = W.addEventListener, later = [];
+    var fake = function (tgt, add) {
+      return function (t, f, o) {
+        if (t === 'DOMContentLoaded' || (t === 'load' && tgt === W && document.readyState === 'complete')) { later.push([f, tgt, t]); return; }
+        return add.call(this, t, f, o);
+      };
+    };
+    document.addEventListener = fake(document, dAdd); W.addEventListener = fake(W, wAdd);
+    for (var i = 0; i < list.length; i++) {
+      var o = list[i], s = document.createElement('script');
+      for (var a = 0; a < o.attributes.length; a++) { var at = o.attributes[a]; if (at.name !== 'type') s.setAttribute(at.name, at.value); }
+      s.textContent = o.textContent; o.parentNode.replaceChild(s, o);
+    }
+    document.addEventListener = dAdd; W.addEventListener = wAdd;
+    later.forEach(function (x) { try { var ev = new Event(x[2]); x[0].call(x[1], ev); } catch (e) { setTimeout(function () { throw e; }); } });
+    de.classList.remove('dpa-wait');
+    DPA.ready = true; paintButtons(); changed();
+    if (DPA.on) showUI(false); else fr.classList.add('mini');
+    cover.classList.add('out'); setTimeout(function () { cover.remove(); }, 450);
+    try { W.dispatchEvent(new CustomEvent('dpa-ready', { detail: DPA })); } catch (e) {}
+  }
+
+  /* the avatar button pages put in their header: <button data-dpa-btn></button> */
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function paintButtons() {
+    var bs = document.querySelectorAll('[data-dpa-btn]');
+    for (var i = 0; i < bs.length; i++) {
+      var b = bs[i], p = DPA.prof || {}, a = DPA.acct || {};
+      if (!DPA.on) { b.hidden = true; continue; }
+      b.hidden = false; b.classList.add('dpa-btn'); b.type = 'button';
+      var guest = a.type === 'guest', n = guest ? '?' : (p.n || a.n || '?');
+      var img = !guest && p.img && /^data:image\/(webp|jpeg|png);base64,/.test(p.img) ? '<img alt="" src="' + p.img + '">' : '';
+      b.innerHTML = '<span class="dpa-av" style="--pc:' + esc(guest ? '#475569' : (p.col || '#2F7BFF')) + '">' + esc(n.trim().charAt(0).toUpperCase()) + img + '</span>' + (p.kids ? '<span class="dpa-k">KIDS</span>' : '');
+      var label = guest ? 'התחברות או יצירת חשבון' : ('החשבון שלי – ' + (p.n || ''));
+      b.setAttribute('aria-label', label); b.title = label;
+      if (!b._dpa) { b._dpa = 1; b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); DPA.open(this.getAttribute('data-dpa-btn') || 'profiles'); }); }
+    }
+  }
+})();
+</script><style id="dp-a11y-css">/* Drive Play – accessibility settings (shared) */
+:focus-visible{outline:3px solid #FFB020!important;outline-offset:2px!important}
+.a11y-skip{position:fixed;top:8px;inset-inline-start:8px;z-index:2147483646;padding:10px 16px;background:#FFB020;color:#111;font-weight:800;text-decoration:none;transform:translateY(-200%);transition:transform .15s}
+.a11y-skip:focus{transform:none}
+.a11y-btn{position:fixed;inset-inline-end:0;top:64%;z-index:2147483600;width:38px;height:42px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);border-inline-end:0;background:#1d4ed8;color:#fff;cursor:pointer;opacity:.82;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.a11y-btn:hover,.a11y-btn:focus-visible,.a11y-btn.on{opacity:1}
+.a11y-btn.on{background:#0f766e}
+@media print{.a11y-btn,.a11y-skip{display:none}}
+.a11y-p{position:fixed;inset:0;z-index:2147483647;background:rgba(2,6,12,.6);display:flex;align-items:flex-start;justify-content:center;padding:16px;overflow-y:auto;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.a11y-p[hidden]{display:none}
+.a11y-box{width:100%;max-width:400px;margin:auto;background:#101827;color:#f1f5f9;border:1px solid #334155;padding:16px;direction:rtl;text-align:right;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.a11y-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.a11y-h h2{margin:0;font-size:1.15rem}
+.a11y-x{width:36px;height:36px;border:1px solid #475569;background:transparent;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
+.a11y-g{margin:0 0 10px}
+.a11y-g>span{display:block;font-weight:700;margin-bottom:6px;font-size:.92rem}
+.a11y-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.a11y-seg button,.a11y-o,.a11y-l{min-height:40px;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font:inherit;font-size:.9rem;cursor:pointer}
+.a11y-seg button.on{background:#1d4ed8;border-color:#93c5fd;font-weight:700}
+.a11y-o{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 12px;margin:0 0 6px;text-align:right}
+.a11y-o i{width:34px;height:18px;border:1px solid #64748b;background:#0f172a;position:relative;flex:none}
+.a11y-o i::after{content:'';position:absolute;top:2px;right:2px;width:12px;height:12px;background:#94a3b8;transition:right .15s}
+.a11y-o.on{border-color:#93c5fd}
+.a11y-o.on i{background:#1d4ed8;border-color:#93c5fd}
+.a11y-o.on i::after{right:18px;background:#fff}
+.a11y-f{display:flex;gap:6px;margin-top:10px}
+.a11y-l{flex:1;padding:0 10px}
+.a11y-n{color:#94a3b8;font-size:.8rem;margin:10px 0 0;line-height:1.5}
+.a11y-st{max-width:620px}
+.a11y-stb{max-height:62vh;overflow-y:auto;line-height:1.65;font-size:.94rem;padding-inline-end:4px}
+.a11y-stb h3{font-size:1rem;margin:14px 0 4px}
+.a11y-stb ul{margin:0;padding-inline-start:20px}
+.a11y-stb li{margin:0 0 4px}
+/* the settings themselves */
+html.a11y-t1 body{zoom:1.12}
+html.a11y-t2 body{zoom:1.25}
+html.a11y-hc{filter:contrast(1.35)}
+html.a11y-mono{filter:grayscale(1)}
+html.a11y-hc.a11y-mono{filter:contrast(1.35) grayscale(1)}
+html.a11y-links a,html.a11y-links button{text-decoration:underline!important;text-underline-offset:3px}
+html.a11y-links a,html.a11y-links button,html.a11y-links [role=button]{outline:1px dashed rgba(255,214,10,.75)!important;outline-offset:1px}
+html.a11y-font body,html.a11y-font body *:not(svg):not(svg *){font-family:Arial,'Segoe UI',system-ui,sans-serif!important}
+html.a11y-sp body *{letter-spacing:.04em!important;word-spacing:.12em!important;line-height:1.75!important}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.a11y-cur,html.a11y-cur *{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M4 2l28 16-12 3 7 14-6 3-7-14-10 9z' fill='%23000' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 2,auto!important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* cookie and storage consent */
+.dp-cons{position:fixed;inset-inline:12px;bottom:12px;z-index:2147483640;display:flex;justify-content:center;pointer-events:none;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.dp-cons[hidden]{display:none}
+.dp-cons-in{pointer-events:auto;max-width:760px;width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;box-shadow:0 12px 40px rgba(0,0,0,.5);padding:14px 16px;text-align:right}
+.dp-cons-t{margin:0 0 10px;font-size:.88rem;line-height:1.6}
+.dp-cons-t a{color:#93c5fd}
+.dp-cons-c{display:grid;gap:6px;margin:0 0 10px;font-size:.86rem}
+.dp-cons-c label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.dp-cons-c input{margin-top:4px;width:18px;height:18px;flex:none}
+.dp-cons-b{display:flex;gap:8px;flex-wrap:wrap}
+.dp-cons-b button{min-height:40px;padding:0 16px;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+.dp-cons-b button.y{background:#1d4ed8;border-color:#93c5fd}
+@media (max-width:600px){.dp-cons{inset-inline:6px;bottom:6px}.dp-cons-b button{flex:1 1 auto}}
+
+/* Drive Play v5 design line: straight corners everywhere (spinners and round progress indicators keep their shape) */
+*:not([class*="spin"]):not([class*="loader"]):not(.ring):not(.ring *),*::before,*::after{border-radius:0!important}
+</style><script id="dp-a11y">/* Drive Play – accessibility (IS 5568 / WCAG 2.1 AA): settings window, skip link, keyboard focus in windows, statement.
+   Shared by every page; runs before the page itself so the settings apply from the first paint. */
+(function () {
+  'use strict';
+  if (window.__dpA11y) return; window.__dpA11y = 1;
+  var KEY = 'dp_a11y', de = document.documentElement;
+  var st = {}; try { st = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+  var OPTS = [
+    ['t', 'גודל טקסט', [['', 'רגיל'], ['1', 'גדול'], ['2', 'גדול מאוד']]],
+    ['hc', 'ניגודיות גבוהה'], ['mono', 'גווני אפור'], ['links', 'הדגשת קישורים וכפתורים'], ['font', 'גופן קריא'],
+    ['still', 'עצירת אנימציות ותנועה'], ['cur', 'סמן עכבר גדול'], ['sp', 'ריווח טקסט מוגדל']
+  ];
+  function apply() {
+    var cls = de.className.replace(/\ba11y-[a-z0-9]+\b/g, '').trim();
+    var add = [];
+    if (st.t) add.push('a11y-t' + st.t);
+    ['hc', 'mono', 'links', 'font', 'still', 'cur', 'sp'].forEach(function (k) { if (st[k]) add.push('a11y-' + k); });
+    if (st.still) add.push('still');
+    de.className = (cls + ' ' + add.join(' ')).trim();
+    var b = document.getElementById('a11yBtn'); if (b) b.classList.toggle('on', add.length > 0);
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} apply(); }
+  apply();
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+
+  /* ---------- the window ---------- */
+  function panel() {
+    var p = document.getElementById('a11yP');
+    if (!p) {
+      p = document.createElement('div'); p.id = 'a11yP'; p.className = 'a11y-p'; p.setAttribute('role', 'dialog'); p.setAttribute('aria-modal', 'true'); p.setAttribute('aria-labelledby', 'a11yT'); p.hidden = true;
+      document.body.appendChild(p);
+      p.addEventListener('click', function (e) {
+        var t = e.target;
+        if (t === p || t.closest('[data-a11y-x]')) { close(); return; }
+        var o = t.closest('[data-a11y]'); if (o) { var k = o.getAttribute('data-a11y'), v = o.getAttribute('data-v'); st[k] = v != null ? v : !st[k]; if (!st[k]) delete st[k]; save(); draw(); var f = p.querySelector('[data-a11y="' + k + '"]' + (v != null ? '[data-v="' + v + '"]' : '')); if (f) f.focus(); return; }
+        if (t.closest('[data-a11y-reset]')) { st = {}; save(); draw(); return; }
+        if (t.closest('[data-a11y-stmt]')) { statement(); return; }
+      });
+      p.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.stopPropagation(); close(); } });
+    }
+    return p;
+  }
+  function draw() {
+    var p = panel();
+    p.innerHTML = '<div class="a11y-box"><div class="a11y-h"><h2 id="a11yT">התאמות נגישות</h2><button type="button" class="a11y-x" data-a11y-x aria-label="סגירה">\u00D7</button></div>' +
+      OPTS.map(function (o) {
+        if (o[2]) return '<div class="a11y-g" role="group" aria-label="' + esc(o[1]) + '"><span>' + esc(o[1]) + '</span><div class="a11y-seg">' + o[2].map(function (x) { var on = String(st[o[0]] || '') === x[0]; return '<button type="button" data-a11y="' + o[0] + '" data-v="' + x[0] + '" aria-pressed="' + on + '"' + (on ? ' class="on"' : '') + '>' + esc(x[1]) + '</button>'; }).join('') + '</div></div>';
+        var on = !!st[o[0]];
+        return '<button type="button" class="a11y-o' + (on ? ' on' : '') + '" data-a11y="' + o[0] + '" aria-pressed="' + on + '"><span>' + esc(o[1]) + '</span><i aria-hidden="true"></i></button>';
+      }).join('') +
+      '<div class="a11y-f"><button type="button" class="a11y-l" data-a11y-reset>איפוס ההגדרות</button><button type="button" class="a11y-l" data-a11y-stmt>הצהרת נגישות</button></div>' +
+      '<p class="a11y-n">ההגדרות נשמרות בדפדפן הזה. אפשר לפתוח את החלון בכל דף עם הכפתור בצד המסך או בקיצור Alt+A.</p></div>';
+  }
+  var last = null;
+  function open() { last = document.activeElement; draw(); var p = panel(); p.hidden = false; setTimeout(function () { var f = p.querySelector('button'); f && f.focus(); }, 30); }
+  function close() { var p = panel(); p.hidden = true; try { (last || document.getElementById('a11yBtn')).focus(); } catch (e) {} }
+  window.dpA11yOpen = open;
+
+  /* ---------- accessibility statement ---------- */
+  function statement() {
+    var p = panel();
+    p.innerHTML = '<div class="a11y-box a11y-st"><div class="a11y-h"><h2 id="a11yT">הצהרת נגישות</h2><button type="button" class="a11y-x" data-a11y-x aria-label="סגירה">\u00D7</button></div>' +
+      '<div class="a11y-stb" tabindex="0">' +
+      '<p>Drive Play רואה חשיבות רבה בכך שכל אחד ואחת יוכלו לגלוש באתר, לחפש ולצפות בתוכן בנוחות, כולל אנשים עם מוגבלות. האתר הותאם לפי התקן הישראלי ת"י 5568 (המבוסס על הנחיות WCAG 2.1) ברמה AA, ככל שהדבר אפשרי.</p>' +
+      '<h3>מה הותאם</h3><ul>' +
+      '<li>ניווט מלא במקלדת: Tab ו-Shift+Tab בין רכיבים, Enter להפעלה, Esc לסגירת חלונות. המיקוד נשאר בתוך חלון פתוח וחוזר למקום הקודם בסגירה.</li>' +
+      '<li>קישור "דילוג לתוכן" בתחילת כל דף, ומסגרת מיקוד בולטת לכל רכיב.</li>' +
+      '<li>חלון התאמות נגישות: הגדלת טקסט, ניגודיות גבוהה, גווני אפור, הדגשת קישורים, גופן קריא, ריווח טקסט, עצירת אנימציות וסמן גדול.</li>' +
+      '<li>טקסט חלופי לפוסטרים ולתמונות, תוויות לכפתורים ולשדות, והודעות מערכת שמוקראות בקוראי מסך.</li>' +
+      '<li>קיצורי מקלדת בנגן (רווח, J, L, F, M ועוד) ותמיכה בכתוביות של הערוצים הרשמיים.</li>' +
+      '<li>האתר מכבד את הגדרת "הפחתת תנועה" של מערכת ההפעלה.</li></ul>' +
+      '<h3>מגבלות ידועות</h3><ul>' +
+      '<li>הסרטונים מוצגים בנגנים של YouTube ושל ארכיונים פתוחים. הנגישות שלהם, כולל כתוביות, תלויה בבעלי הזכויות.</li>' +
+      '<li>חלק מהתקצירים והשמות מגיעים ממאגרים חיצוניים ואינם נבדקים ידנית.</li></ul>' +
+      '<h3>נתקלתם בבעיה?</h3><p>אפשר לפנות אלינו דרך טופס הפנייה באתר: בהגדרות, בקטע "אודות ועזרה", או בכפתור "דיווח על תקלה" בחלון של כל כותר. ציינו באיזה דף ובאיזה רכיב נתקלתם בקושי, ואנחנו נחזור ונתקן בהקדם.</p>' +
+      '<p class="a11y-n">ההצהרה עודכנה בנובמבר 2026.</p></div>' +
+      '<div class="a11y-f"><button type="button" class="a11y-l" data-a11y-back>חזרה להתאמות</button></div></div>';
+    var b = p.querySelector('[data-a11y-back]'); b.onclick = function () { draw(); var f = p.querySelector('button'); f && f.focus(); };
+    p.hidden = false; setTimeout(function () { p.querySelector('.a11y-stb').focus(); }, 30);
+  }
+  window.dpA11yStatement = function () { last = document.activeElement; statement(); };
+  document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-a11y-open]'); if (!b) return; e.preventDefault(); if (b.getAttribute('data-a11y-open') === 'stmt') window.dpA11yStatement(); else open(); });
+
+  /* ---------- keyboard focus inside open windows ---------- */
+  var FOC = 'a[href],button:not([disabled]),input:not([disabled]):not([type=hidden]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"]),iframe';
+  function visible(el) { if (!el || el.hidden) return false; var s = getComputedStyle(el); if (s.display === 'none' || s.visibility === 'hidden' || +s.opacity === 0) return false; var r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; }
+  function topModal() { var m = [].slice.call(document.querySelectorAll('[aria-modal="true"]')).filter(visible); return m[m.length - 1] || null; }
+  document.addEventListener('keydown', function (e) {
+    if (e.altKey && (e.code === 'KeyA')) { e.preventDefault(); var p = document.getElementById('a11yP'); if (p && !p.hidden) close(); else open(); return; }
+    if (e.key !== 'Tab') return;
+    var m = topModal(); if (!m) return;
+    var f = [].slice.call(m.querySelectorAll(FOC)).filter(function (x) { return visible(x) && !x.closest('[hidden]'); });
+    if (!f.length) return;
+    var first = f[0], lastEl = f[f.length - 1], a = document.activeElement;
+    if (!m.contains(a)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && a === first) { e.preventDefault(); lastEl.focus(); }
+    else if (!e.shiftKey && a === lastEl) { e.preventDefault(); first.focus(); }
+  }, true);
+
+  /* ---------- skip link, the button, posters without text ---------- */
+  function mainTarget() { return document.querySelector('main,[role=main],#main,#rows,#app,.wrap,section') || document.body; }
+  function setup() {
+    if (!document.body || document.getElementById('a11yBtn')) return;
+    var sk = document.createElement('a'); sk.className = 'a11y-skip'; sk.href = '#'; sk.textContent = 'דילוג לתוכן';
+    sk.addEventListener('click', function (e) { e.preventDefault(); var t = mainTarget(); if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1'); t.focus(); t.scrollIntoView({ block: 'start' }); });
+    document.body.insertBefore(sk, document.body.firstChild);
+    var b = document.createElement('button'); b.id = 'a11yBtn'; b.type = 'button'; b.className = 'a11y-btn'; b.setAttribute('aria-label', 'התאמות נגישות (Alt+A)'); b.title = 'התאמות נגישות';
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M4 8.5c2.6.9 5.3 1.3 8 1.3s5.4-.4 8-1.3M12 9.8V15m0 0-3.2 6M12 15l3.2 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    b.addEventListener('click', open);
+    document.body.appendChild(b); apply();
+    fixImgs(document.body);
+    try { new MutationObserver(function (ms) { ms.forEach(function (m) { [].forEach.call(m.addedNodes, function (n) { if (n.nodeType === 1) fixImgs(n); }); }); }).observe(document.body, { childList: true, subtree: true }); } catch (e) {}
+  }
+  /* images with no alt at all get an empty one (decorative) unless a title is nearby */
+  function fixImgs(root) {
+    var imgs = root.tagName === 'IMG' ? [root] : root.querySelectorAll ? root.querySelectorAll('img:not([alt])') : [];
+    [].forEach.call(imgs, function (im) { if (im.hasAttribute('alt')) return; var c = im.closest('[data-id],[aria-label],figure'); var t = c && (c.getAttribute('aria-label') || (c.querySelector('figcaption,.tt,b,h3') || {}).textContent); im.setAttribute('alt', t ? String(t).trim().slice(0, 120) : ''); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup); else setup();
+})();
+
+/* Drive Play – cookie and storage consent (shared by every page).
+   window.dpConsent.ok('func' | 'stats' | 'media') tells the page what the visitor allowed; essential storage is always on. */
+(function () {
+  'use strict';
+  if (window.dpConsent) return;
+  var KEY = 'dp_consent', VER = 1;
+  var LEGAL = window.DP_LEGAL_URL || 'https://sites.google.com/view/drive-play-tv/%D7%AA%D7%A0%D7%90%D7%99-%D7%A9%D7%99%D7%9E%D7%95%D7%A9-%D7%95%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA-drive-play';
+  /* on Google Sites the account loader puts the profile's saved data (this choice too) into storage only after
+     this script ran, so the choice is read again whenever it is needed instead of once at the start */
+  function read() { var x = null; try { x = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {} return x && x.v === VER ? x : null; }
+  var c = read();
+  function cur() { if (!c) c = read(); return c; }
+  var subs = [];
+  function save(o) { c = { v: VER, func: !!o.func, stats: !!o.stats, media: !!o.media, t: Date.now() }; try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {} subs.forEach(function (f) { try { f(c); } catch (e) {} }); }
+  /* until the visitor chooses, the site works as before (functional storage and media on, statistics off) */
+  function ok(k) { cur(); if (!c) return k !== 'stats'; return !!c[k]; }
+  var CATS = [['func', 'תפקודי', 'רשימות, היסטוריה, "המשך צפייה" והעדפות נגן.'], ['stats', 'נתונים סטטיסטיים', 'שליחה אנונימית של חיפושים בלי תוצאות ושל תקלות, כדי לשפר את האתר.'], ['media', 'מדיה חיצונית', 'נגן YouTube במצב פרטיות מוגברת, ארכיונים פתוחים ותמונות מ-TMDB.']];
+  function bar(full) {
+    var b = document.getElementById('dpCons');
+    if (!b) { b = document.createElement('div'); b.id = 'dpCons'; b.className = 'dp-cons'; b.setAttribute('role', 'dialog'); b.setAttribute('aria-label', 'הגדרות עוגיות ואחסון'); b.setAttribute('aria-live', 'polite'); document.body.appendChild(b); }
+    var now = cur() || { func: true, stats: false, media: true };
+    b.innerHTML = '<div class="dp-cons-in" dir="rtl"><p class="dp-cons-t"><b>עוגיות ואחסון בדפדפן.</b> האתר שומר מידע בדפדפן כדי לזכור את ההעדפות וההיסטוריה שלכם, ומשתמש בנגנים ובתמונות של שירותים חיצוניים. אין עוגיות פרסום או מעקב. <a href="' + LEGAL + '#cookies" target="_blank" rel="noopener">מדיניות העוגיות</a></p>' +
+      (full ? '<div class="dp-cons-c"><label><input type="checkbox" checked disabled> <span><b>הכרחי</b> · הבחירה הזו, שפה, נגישות, פרופיל והתחברות. תמיד פעיל.</span></label>' + CATS.map(function (x) { return '<label><input type="checkbox" data-c="' + x[0] + '"' + (now[x[0]] ? ' checked' : '') + '> <span><b>' + x[1] + '</b> · ' + x[2] + '</span></label>'; }).join('') + '</div>' : '') +
+      '<div class="dp-cons-b">' + (full ? '<button type="button" class="y" data-a="save">שמירת הבחירה</button>' : '<button type="button" class="y" data-a="all">אישור הכל</button><button type="button" data-a="min">רק הכרחיים</button><button type="button" data-a="more">התאמה אישית</button>') + '</div></div>';
+    b.hidden = false;
+    b.onclick = function (e) {
+      var a = e.target.closest('[data-a]'); if (!a) return; a = a.getAttribute('data-a');
+      if (a === 'all') save({ func: 1, stats: 1, media: 1 });
+      else if (a === 'min') save({});
+      else if (a === 'more') { bar(true); var f = b.querySelector('input[data-c]'); f && f.focus(); return; }
+      else if (a === 'save') { var o = {}; [].forEach.call(b.querySelectorAll('input[data-c]'), function (i) { o[i.getAttribute('data-c')] = i.checked; }); save(o); }
+      b.hidden = true;
+    };
+  }
+  window.dpConsent = { ok: ok, allow: function (k) { cur(); var o = c ? { func: c.func, stats: c.stats, media: c.media } : { func: 1, stats: 0, media: 1 }; o[k] = 1; save(o); }, open: function () { bar(true); }, on: function (f) { subs.push(f); }, get: function () { return cur(); } };
+  document.addEventListener('click', function (e) { var t = e.target.closest && e.target.closest('[data-consent-open]'); if (t) { e.preventDefault(); bar(true); } });
+  /* shown after the loading and entrance screens, so it never hides their buttons */
+  var waited = 0;
+  /* nothing to ask when the choice cannot be kept: the account frame did not start (blocked or offline),
+     so the page runs with the defaults (no statistics) and the choice stays open in the cookie settings link */
+  function cannotKeep() { var A = window.DPA; return !!(A && A.ready && !A.on && window.top !== window); }
+  function start() {
+    if (window.DP_EMBED || cur() || /[?&]noconsent/.test(location.search)) return;   /* inside the merged page the outer page asks once */
+    var A = window.DPA, busy = document.getElementById('dpa-cover') || document.documentElement.classList.contains('ent-on') || (A && !A.ready);
+    if (busy && waited < 40000) { waited += 700; setTimeout(start, 700); return; }
+    setTimeout(function () { if (!cur() && !cannotKeep()) bar(false); }, 900);
+  }
+  /* the saved data arrives (first start, or after switching profile): hide the bar if the choice is already there */
+  window.addEventListener('dpa-ready', function () { c = read() || c; var b = document.getElementById('dpCons'); if (c && b && !b.querySelector('input[data-c]')) b.hidden = true; });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base target="_blank">
+<title>מסמכים משפטיים ומדיניות – Drive Play</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060A13;--surface:#0F1726;--surface2:#16213A;--text:#EAF0FA;--muted:#9AA8BF;--line:rgba(148,163,184,.16);--blue:#2F7BFF;--green:#22B14C;--red:#EE2B23;
+  --brand:linear-gradient(90deg,#1E6BFF 0%,#1E6BFF 30%,#E5231B 50%,#22B14C 70%,#22B14C 100%)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:'Heebo',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7}
+body{background:radial-gradient(1000px 420px at 85% -10%,rgba(30,107,255,.14),transparent 60%),var(--bg)}
+a{color:#7FB0FF}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:10px 18px;background:rgba(6,10,19,.9);backdrop-filter:blur(10px)}
+.top::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--brand);opacity:.85}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit}
+.brand img{width:40px;height:auto}
+.wm{font-weight:800;font-size:1.15rem;direction:ltr;white-space:nowrap}.wm .d{color:#1E6BFF}.wm .p{color:var(--green)}
+.sp{flex:1}
+.lang{display:flex;gap:4px;padding:3px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.lang button{padding:5px 12px;border-radius:999px;font-size:.84rem;font-weight:700;color:var(--muted)}
+.lang button.on{background:var(--blue);color:#fff}
+.wrap{max-width:860px;margin:0 auto;padding:26px 18px 70px}
+h1{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.25;margin:0 0 6px}
+.upd{color:var(--muted);font-size:.86rem;margin:0 0 18px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px}
+.toc a{padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:.84rem;font-weight:600;text-decoration:none}
+.toc a:hover{color:var(--text)}
+section{padding:18px 20px;margin:0 0 14px;border-radius:16px;background:var(--surface);border:1px solid var(--line);scroll-margin-top:70px}
+section.new{border-color:rgba(34,177,76,.35);background:linear-gradient(180deg,rgba(34,177,76,.06),transparent 120px),var(--surface)}
+h2{font-size:1.12rem;margin:0 0 8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+h2 .tag{font-size:.7rem;font-weight:800;padding:2px 8px;border-radius:999px;background:rgba(34,177,76,.16);color:var(--green)}
+h3{font-size:.98rem;margin:14px 0 4px}
+p{margin:0 0 10px;color:#D5DEEC}
+ul{margin:0 0 10px;padding-inline-start:20px;color:#D5DEEC}
+li{margin:0 0 4px}
+.muted{color:var(--muted);font-size:.9rem}
+.foot{text-align:center;color:var(--muted);font-size:.84rem;margin-top:24px}
+[data-l]{display:none}
+html[lang=he] [data-l=he],html[lang=en] [data-l=en]{display:block}
+@media (max-width:600px){.wm{display:none}.wrap{padding:18px 12px 50px}section{padding:16px}}
+.docs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px;position:sticky;top:58px;z-index:4;background:var(--bg);padding:8px 0}
+.docs a{padding:8px 14px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:.88rem;font-weight:700;text-decoration:none}
+.docs a[aria-selected=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+main.docs-on article[data-docb]{display:none}
+main.docs-on article[data-docb].on{display:block}
+.dh{font-size:1.35rem;margin:6px 0 12px}
+section h3{font-size:1.02rem;margin:0 0 6px}
+.ctab{width:100%;border-collapse:collapse;font-size:.9rem;margin:6px 0}
+.ctab th,.ctab td{border:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}
+.ctab th{background:var(--surface2)}
+.cbtn{padding:9px 16px;background:var(--blue);color:#fff;font-weight:700}
+@media (max-width:600px){.docs{top:50px}.docs a{padding:7px 10px;font-size:.82rem}.ctab{font-size:.82rem}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://sites.google.com/view/drive-play-tv" rel="noopener" aria-label="Drive Play"><img src="data:image/webp;base64,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" width="40" height="22" alt=""><span class="wm"><span class="d">Drive</span> <span class="p">Play</span></span></a>
+  <span class="sp"></span>
+  <div class="lang" role="group" aria-label="שפה / Language"><button type="button" data-set="he" class="on">עברית</button><button type="button" data-set="en">English</button></div>
+</header>
+<main class="wrap" id="main">
+<div data-l="he">
+<h1>מסמכים משפטיים ומדיניות</h1>
+<p class="upd">עודכן לאחרונה: 20 בנובמבר 2026</p>
+<nav class="docs" role="tablist" aria-label="המסמכים">
+  <a role="tab" href="#terms" target="_self" data-doc="terms">תנאי שימוש</a><a role="tab" href="#privacy" target="_self" data-doc="privacy">מדיניות פרטיות</a><a role="tab" href="#cookies" target="_self" data-doc="cookies">עוגיות ואחסון בדפדפן</a><a role="tab" href="#refunds" target="_self" data-doc="refunds">ביטול עסקה והחזרים</a><a role="tab" href="#a11y" target="_self" data-doc="a11y">הצהרת נגישות</a>
+</nav>
+
+<article data-docb="terms" role="tabpanel" aria-label="תנאי שימוש">
+<h2 class="dh">תנאי שימוש</h2>
+<section><h3>1. על האתר</h3>
+<p>ברוכים הבאים ל-Drive Play, אינדקס חכם ומאורגן לסרטים, לסדרות ולמידע קולנועי. השימוש באתר מהווה הסכמה לתנאים שבמסמך זה ולמדיניות הפרטיות.</p>
+<p>מידע כמו תקצירים, שמות שחקנים ופוסטרים מגיע מממשקים רשמיים למפתחים, ובראשם TMDB. דף "צפייה חופשית" מציג סרטונים מערוצי YouTube הרשמיים של בעלי הזכויות דרך הנגן הרשמי של YouTube, סרטים קצרים מהחשבונות של היוצרים עצמם ב־Vimeo דרך הנגן הרשמי של Vimeo (רק סרטים שהיוצר התיר להציג באתרים אחרים), וסרטים שנמצאים ברשות הציבור או ברישיון פתוח ישירות מהארכיונים של Internet Archive, Wikimedia Commons וספריית הקונגרס האמריקאית. מצב הזכויות של כל סרט נבדק מול Wikidata ומול תקופת ההגנה החלה בישראל. נתוני "איפה לצפות בישראל" מגיעים מ-JustWatch דרך TMDB.</p>
+<p>האתר פותח ומנוהל על ידי מאיר אברהם.</p></section>
+<section><h3>2. תוכן חיצוני והגבלת אחריות</h3>
+<p>האתר פועל כאינדקס מידע וכפלטפורמת ניתוב. הוא אינו גוף הפקה ואינו מאחסן קבצי וידאו בשרתים שלו. סרטונים מוטמעים מגיעים ממקורות חיצוניים שאינם בבעלות האתר ובשליטתו, והאחריות לחוקיות ולזמינות שלהם חלה על הגורם שמארח אותם.</p></section>
+<section><h3>3. נוהל הודעה והסרה (זכויות יוצרים)</h3>
+<p>Drive Play מכבד את הקניין הרוחני של יוצרים ובעלי זכויות. אם לדעתכם קישור או הטמעה באתר מפרים את זכויותיכם, כתבו אלינו לכתובת <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a> וצרפו:</p>
+<ul><li>את שם היצירה ואת הקישור המדויק באתר.</li><li>הוכחה לבעלות על הזכויות.</li></ul>
+<p>כל פנייה נבדקת, ופנייה מוצדקת מטופלת בהסרה מהירה.</p></section>
+<section><h3>4. שימוש מותר</h3>
+<ul><li>השימוש באתר מיועד לצפייה ולגלישה אישית.</li>
+<li>אסור לנסות לעקוף את בקרת ההורים, את קודי הנעילה או את מנגנוני האבטחה, לשבש את פעולת האתר, או להפעיל עליו כלים אוטומטיים בהיקף שמכביד על השירות.</li>
+<li>אסור לשלוח בדיווחים ובמשוב תוכן פוגעני, מאיים או מפר זכויות.</li></ul></section>
+<section><h3>5. בקרת הורים ופרופילי ילדים</h3>
+<p>בקרת ההורים (סיווג צפייה לפי גיל, חסימת כותרים, הגבלת הורדות וקוד הורים) היא כלי עזר. סיווג הגיל של כל כותר מבוסס על הסיווג הרשמי שפורסם ב-TMDB, ואם אין כזה, על הז'אנר. הסיווגים עשויים להיות לא מדויקים, ולכן האחריות לפיקוח על צפיית ילדים נשארת של ההורים.</p></section>
+<section><h3>6. הורדות לצפייה בלי אינטרנט</h3>
+<p>אפשר להוריד רק סרטים שנמצאים ברשות הציבור או ברישיון פתוח, ישירות מהארכיון שבו הם נמצאים. סרטונים מ-YouTube אינם ניתנים להורדה. ההורדות מיועדות לשימוש אישי, ובפרופילים עם הגבלה חל מספר ההורדות החודשי שנקבע.</p></section>
+<section><h3>7. דיווחים ומשוב</h3>
+<p>אפשר לדווח על תקלה בכל כותר. הדיווח נשלח בלי שם ובלי פרטים אישיים ומשמש רק לתיקון הקטלוג ולשיפור האתר.</p></section>
+<section><h3>8. Drive Play Pro</h3>
+<p>מסלול Pro בתשלום עדיין לא פעיל. כשיופעל, התשלום יתבצע דרך ספק סליקה מורשה, פרטי כרטיס האשראי לא יישמרו אצלנו, וזכויות הביטול יהיו לפי <a href="#refunds" target="_self">מדיניות ביטול עסקה והחזרים</a>.</p></section>
+<section><h3>9. אחריות המשתמש והגבלת חבות</h3>
+<p>הגלישה, הפעלת הנגנים והצפייה נעשות באחריות הגולש. האתר, מפתחיו ומנהליו לא יישאו באחריות לנזק ישיר, עקיף, מקרי או תוצאתי שייגרם מהשימוש באתר, כולל תקלות שמקורן בשרתים חיצוניים. האתר עשוי להשתנות או להפסיק לפעול בלי הודעה מוקדמת.</p></section>
+<section><h3>10. שינויים, דין ושיפוט</h3>
+<p>נעדכן את המסמכים מעת לעת, ותאריך העדכון יופיע בראש הדף. על השימוש באתר חלים דיני מדינת ישראל, וסמכות השיפוט נתונה לבתי המשפט המוסמכים בישראל.</p></section>
+<section><h3>11. יצירת קשר</h3>
+<p>בכל שאלה: <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a>, או בכפתור "דיווח על תקלה" באתר.</p></section>
+</article>
+
+<article data-docb="privacy" role="tabpanel" aria-label="מדיניות פרטיות">
+<h2 class="dh">מדיניות פרטיות</h2>
+<section><h3>מי אחראי על המידע</h3>
+<p>Drive Play מנוהל על ידי מאיר אברהם, והוא האחראי על המידע שנאסף באתר. לכל שאלה או בקשה בנושא פרטיות: <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a>.</p></section>
+<section><h3>גלישה בלי חשבון</h3>
+<p>אפשר להשתמש באתר בלי להירשם. במצב אורח ההגדרות, הרשימות וההיסטוריה נשמרות רק בדפדפן שלכם ולא נשלחות אלינו.</p></section>
+<section><h3>מה נשמר כשפותחים חשבון</h3>
+<p>חשבון הוא אופציונלי, ונשמרים בו:</p>
+<ul><li>השם, כתובת האימייל והתמונה שבחרתם.</li>
+<li>הפרופילים: שם, צבע, תמונה, סימון פרופיל ילדים וקוד נעילה. הקוד נשמר מוצפן (SHA-256) ולא כטקסט גלוי.</li>
+<li>בקרת הורים לכל פרופיל: סיווג הצפייה, רשימת הכותרים החסומים, מגבלת ההורדות החודשית, וקוד הורים מוצפן.</li>
+<li>נתוני כל פרופיל: רשימות שמורות, הגדרות, שפה, היסטוריית צפייה ושיחות CineAI.</li>
+<li>סטטיסטיקה: זמן צפייה וזמן באתר לפי יום, והסרטונים האחרונים שצפיתם בהם.</li>
+<li>מכשירים מחוברים והיסטוריית כניסות: תאריך, סוג מכשיר ודפדפן. כתובת IP לא נשמרת אצלנו.</li></ul></section>
+<section><h3>דיווחים ויומן מערכת</h3>
+<p>כשאתם שולחים "דיווח על תקלה" נשלחים: סוג התקלה, מה שכתבתם, מזהה הכותר והפרק, הדף, שפת הממשק, רוחב המסך, גרסת האתר והשעה. אם אישרתם "נתונים סטטיסטיים" בהגדרות העוגיות, נשלחים באותה דרך גם חיפושים שלא מצאו אף תוצאה (רק מילות החיפוש) ותקלות טכניות בדף. שום רשומה לא כוללת שם, אימייל או מזהה חשבון. הרשומות נשמרות בטופס Google של מנהל האתר, ו-Google מעבדת את השליחה לפי מדיניות הפרטיות שלה.</p></section>
+<section><h3>למה משתמשים במידע</h3>
+<ul><li>כדי להפעיל את השירות: פרופילים, רשימות, המשך צפייה וסנכרון בין מכשירים.</li><li>כדי להפעיל בקרת הורים לפי מה שהגדרתם.</li><li>כדי לתקן תקלות ולשפר את הקטלוג.</li><li>כדי לשמור על אבטחת החשבונות.</li></ul>
+<p>המידע לא נמכר, לא משמש לפרסום ולא מועבר לאף גורם אחר.</p></section>
+<section><h3>איפה המידע נשמר ומי רואה אותו</h3>
+<ul><li>נתוני החשבונות נשמרים ב-Google Firebase (Cloud Firestore), במרכז הנתונים של Google בתל אביב.</li>
+<li>הסיסמה מנוהלת על ידי Google (Firebase Authentication), ואף אחד, כולל מנהל האתר, לא יכול לראות אותה.</li>
+<li>כללי האבטחה של מסד הנתונים מאפשרים לכל משתמש לקרוא ולשנות רק את הנתונים שלו.</li>
+<li>מנהל האתר יכול טכנית לגשת למסד הנתונים לצורכי תחזוקה ואבטחה בלבד.</li></ul></section>
+<section><h3>שירותים חיצוניים</h3>
+<p>TMDB (מידע על סרטים ותמונות), JustWatch דרך TMDB (זמינות בשירותי צפייה), YouTube במצב פרטיות מוגברת (youtube-nocookie.com) לנגן, Vimeo (הנגן הרשמי, במצב בלי מעקב) לסרטים הקצרים, Internet Archive, Wikimedia Commons וספריית הקונגרס (קבצי סרטים ברשות הציבור), Google Sites ו-Google Sheets (אירוח הדפים והקטלוג), Google Fonts (גופנים), Google Forms (דיווחים), GitHub Pages (אירוח מסגרת החשבונות) ו-jsDelivr (קבצי עזר כמו דגלי השפות). כשצופים בסרטון חלה גם מדיניות הפרטיות של Google ו-YouTube, ובסרטים מ־Vimeo גם מדיניות הפרטיות של Vimeo.</p></section>
+<section><h3>כמה זמן המידע נשמר</h3>
+<ul><li>נתוני החשבון נשמרים עד שמוחקים את החשבון.</li><li>דיווחים ויומן מערכת נשמרים עד 12 חודשים.</li><li>מידע בדפדפן נשמר עד שמוחקים אותו בהגדרות האתר או הדפדפן.</li></ul></section>
+<section><h3>ילדים</h3>
+<p>חשבון נפתח על ידי מבוגר. פרופיל ילדים מציג רק תוכן שמתאים לסיווג שנקבע לו, ואין ממנו גישה להגדרות החשבון. ההגדרות מוגנות בקוד הורים, והפרופיל מיועד לשימוש בפיקוח הורים.</p></section>
+<section><h3>אבטחה</h3>
+<ul><li>כל התקשורת מוצפנת (HTTPS).</li><li>מסגרת החשבונות מקבלת הודעות רק מדפי האתר עצמו, ומדיניות אבטחת תוכן מגבילה אותה לשירותי Google.</li><li>אחרי כמה ניסיונות התחברות כושלים ההתחברות ננעלת זמנית.</li><li>תמונות שמעלים נדחסות, ונתונים נסתרים בהן (כמו מיקום) נמחקים.</li><li>אפשר לנתק מכשיר מרחוק או לנתק את כל המכשירים בבת אחת.</li></ul></section>
+<section><h3>הזכויות שלכם</h3>
+<ul><li>לעיין במידע שנשמר עליכם ולהוריד אותו כקובץ, במרכז החשבון.</li>
+<li>לתקן פרטים ולמחוק פרופילים בכל רגע.</li>
+<li>למחוק את החשבון: המחיקה מוחקת מיד את כל הנתונים, הפרופילים והסטטיסטיקה, ואי אפשר לשחזר אותם.</li>
+<li>לשנות או לבטל בכל רגע את ההסכמה לעוגיות ולנתונים סטטיסטיים, בכפתור "הגדרות עוגיות" שבדף הזה.</li>
+<li>לפנות אלינו בכל בקשה לפי חוק הגנת הפרטיות, ואם לא קיבלתם מענה, להגיש תלונה לרשות להגנת הפרטיות.</li></ul></section>
+</article>
+
+<article data-docb="cookies" role="tabpanel" aria-label="עוגיות ואחסון בדפדפן">
+<h2 class="dh">מדיניות עוגיות ואחסון בדפדפן</h2>
+<section><h3>בקצרה</h3>
+<p>Drive Play לא משתמש בעוגיות פרסום או מעקב. האתר שומר מידע בדפדפן שלכם (localStorage) כדי לזכור את ההעדפות, הפרופילים וההיסטוריה, ושירותים חיצוניים כמו YouTube עשויים לשמור עוגיות משלהם כשמפעילים אותם.</p>
+<p><button type="button" class="cbtn" data-consent-open>הגדרות עוגיות</button></p></section>
+<section><h3>מה נשמר ולמה</h3>
+<table class="ctab"><thead><tr><th>סוג</th><th>מה זה</th><th>אפשר לכבות?</th></tr></thead><tbody>
+<tr><td>הכרחי</td><td>הבחירה שלכם לגבי עוגיות, שפה, הגדרות נגישות, הפרופיל הפעיל וההתחברות לחשבון.</td><td>לא, בלעדיהם האתר לא עובד</td></tr>
+<tr><td>תפקודי</td><td>רשימות שמורות, היסטוריה, "המשך צפייה", העדפות נגן והורדות.</td><td>כן</td></tr>
+<tr><td>נתונים סטטיסטיים</td><td>שליחה אנונימית של חיפושים שלא מצאו תוצאה ושל תקלות טכניות, כדי לשפר את האתר.</td><td>כן</td></tr>
+<tr><td>מדיה חיצונית</td><td>נגן YouTube (במצב פרטיות מוגברת), קבצי וידאו מארכיונים פתוחים ותמונות מ-TMDB.</td><td>כן, ואז האתר ישאל לפני כל הפעלה של נגן</td></tr>
+</tbody></table></section>
+<section><h3>עוגיות של צדדים שלישיים</h3>
+<ul><li>YouTube: הנגן נטען מ-youtube-nocookie.com, ולפי YouTube לא נשמר מידע על הגולש עד שמפעילים את הסרטון.</li><li>Google: אירוח הדפים (Google Sites), גופנים, Firebase להתחברות לחשבון, וטופס הדיווחים.</li><li>ארכיונים פתוחים ו-TMDB: מספקים קבצים ותמונות, בלי עוגיות מצד Drive Play.</li></ul></section>
+<section><h3>איך שולטים בזה</h3>
+<p>בכפתור "הגדרות עוגיות" אפשר לשנות את הבחירה בכל רגע. אפשר גם למחוק את כל המידע של האתר בהגדרות הדפדפן, או בהגדרות של Drive Play בקטע "הנתונים שלי".</p></section>
+</article>
+
+<article data-docb="refunds" role="tabpanel" aria-label="ביטול עסקה והחזרים">
+<h2 class="dh">מדיניות ביטול עסקה והחזרים</h2>
+<section><h3>המצב היום</h3>
+<p>כל התוכן ב-Drive Play חינמי, ואין כרגע אפשרות לרכוש דבר באתר. המדיניות הזו תחול על מסלול Drive Play Pro כשיופעל, לפי חוק הגנת הצרכן, התשמ"א-1981, ותקנות הגנת הצרכן (ביטול עסקה), התשע"א-2010.</p></section>
+<section><h3>ביטול מינוי</h3>
+<ul><li>מינוי Pro הוא עסקה מתמשכת. אפשר לבטל אותו בכל עת: במרכז החשבון, או במייל לכתובת <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a> עם השם וכתובת האימייל של החשבון.</li>
+<li>החיובים ייפסקו לא יאוחר משלושה ימי עסקים מקבלת הודעת הביטול.</li>
+<li>אין דמי ביטול על הפסקת מינוי מתמשך.</li></ul></section>
+<section><h3>ביטול בתוך 14 יום</h3>
+<p>אפשר לבטל רכישה בתוך 14 יום מיום העסקה. במקרה כזה יוחזר התשלום, בניכוי דמי ביטול בשיעור 5% מהמחיר או 100 ש"ח, הנמוך מביניהם, ובהתאם לשימוש שנעשה בשירות עד הביטול. לאזרחים ותיקים, לאנשים עם מוגבלות ולעולים חדשים עומדות זכויות ביטול מורחבות לפי החוק.</p></section>
+<section><h3>החזר כספי</h3>
+<ul><li>ההחזר יבוצע בתוך 14 יום מקבלת הודעת הביטול, לאותו אמצעי תשלום שבו בוצעה הרכישה.</li>
+<li>התשלומים מעובדים על ידי ספק סליקה מורשה. Drive Play לא שומר את פרטי כרטיס האשראי.</li>
+<li>יחד עם כל רכישה תישלח קבלה במייל.</li></ul></section>
+</article>
+
+<article data-docb="a11y" role="tabpanel" aria-label="הצהרת נגישות">
+<h2 class="dh">הצהרת נגישות</h2>
+<section><p>Drive Play רואה חשיבות רבה בכך שכל אחד ואחת יוכלו לגלוש באתר ולצפות בתוכן בנוחות, כולל אנשים עם מוגבלות. האתר הותאם לפי התקן הישראלי ת"י 5568 (המבוסס על הנחיות WCAG 2.1) ברמה AA, ככל שהדבר אפשרי, ולפי תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013.</p></section>
+<section><h3>מה הותאם</h3>
+<ul><li>ניווט מלא במקלדת: Tab ו-Shift+Tab בין רכיבים, Enter להפעלה ו-Esc לסגירה. המיקוד נשאר בתוך חלון פתוח וחוזר למקום הקודם בסגירה.</li>
+<li>קישור "דילוג לתוכן" בתחילת כל דף ומסגרת מיקוד בולטת לכל רכיב.</li>
+<li>חלון "התאמות נגישות" בכל דף (הכפתור בצד המסך או Alt+A): הגדלת טקסט, ניגודיות גבוהה, גווני אפור, הדגשת קישורים, גופן קריא, ריווח טקסט, עצירת אנימציות וסמן גדול.</li>
+<li>טקסט חלופי לפוסטרים ולתמונות, תוויות לכפתורים ולשדות, והודעות מערכת שמוקראות בקוראי מסך.</li>
+<li>קיצורי מקלדת בנגן ותמיכה בכתוביות של הערוצים הרשמיים.</li>
+<li>האתר מכבד את הגדרת "הפחתת תנועה" של מערכת ההפעלה.</li></ul></section>
+<section><h3>מגבלות ידועות</h3>
+<ul><li>הסרטונים מוצגים בנגנים של YouTube ושל ארכיונים פתוחים, והנגישות שלהם, כולל כתוביות, תלויה בבעלי הזכויות.</li><li>חלק מהתקצירים והשמות מגיעים ממאגרים חיצוניים.</li></ul></section>
+<section><h3>רכז הנגישות</h3>
+<p>מאיר אברהם · <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a>. נתקלתם בקושי? כתבו לנו באיזה דף ובאיזה רכיב, ונחזור אליכם ונתקן בהקדם.</p>
+<p class="muted">ההצהרה עודכנה בנובמבר 2026.</p></section>
+</article>
+<p class="foot">© Drive Play</p>
+</div>
+
+<div data-l="en">
+<h1>Legal documents and policies</h1>
+<p class="upd">Last updated: November 20, 2026</p>
+<nav class="docs" role="tablist" aria-label="Documents">
+  <a role="tab" href="#terms" target="_self" data-doc="terms">Terms of use</a><a role="tab" href="#privacy" target="_self" data-doc="privacy">Privacy policy</a><a role="tab" href="#cookies" target="_self" data-doc="cookies">Cookies and storage</a><a role="tab" href="#refunds" target="_self" data-doc="refunds">Cancellations and refunds</a><a role="tab" href="#a11y" target="_self" data-doc="a11y">Accessibility statement</a>
+</nav>
+<article data-docb="terms" role="tabpanel" aria-label="Terms of use">
+<h2 class="dh">Terms of use</h2>
+<section><p>Drive Play is a smart index of movie and TV information, developed and run by Meir Avraham. Using the site means you accept these terms and the privacy policy. Information comes from official developer APIs (mainly TMDB). The Free Watch page plays videos from rights holders' official YouTube channels through YouTube's player, short films from their creators' own Vimeo accounts through Vimeo's player (only films the creator allows on other sites), and public-domain or openly licensed films directly from Internet Archive, Wikimedia Commons and the Library of Congress.</p>
+<p>The site does not host video files. Embedded videos belong to and are controlled by their hosts. To report an infringing link, write to <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a> with the title, the exact page and proof of ownership; justified requests are removed promptly.</p>
+<ul><li>Use is personal. Do not try to bypass parental controls, lock codes or security, disrupt the service, or send abusive content in reports.</li>
+<li>Parental controls are an aid. Age ratings come from TMDB or, when missing, from the genre, and may be inaccurate; supervising children remains the parents' responsibility.</li>
+<li>Only public-domain or openly licensed films can be downloaded, for personal use. YouTube videos cannot be downloaded.</li>
+<li>Drive Play Pro is not active yet. When it launches, payments will go through a licensed provider and the cancellation policy below applies.</li>
+<li>Use is at your own risk; the site and its operators are not liable for damage resulting from its use. Israeli law applies and the competent courts in Israel have jurisdiction.</li></ul></section>
+</article>
+<article data-docb="privacy" role="tabpanel" aria-label="Privacy policy">
+<h2 class="dh">Privacy policy</h2>
+<section><ul><li>Responsible for the data: Meir Avraham, <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a>.</li>
+<li>Guests: settings, lists and history stay in your browser only.</li>
+<li>Accounts (optional) store your name, email and photo; profiles (name, color, photo, kids flag, hashed lock code); parental controls per profile (rating, blocked titles, download limit, hashed parents' code); each profile's lists, settings, history and CineAI chats; daily watch statistics; signed-in devices. We do not store IP addresses. Data is kept in Google Firebase in Tel Aviv and each user can access only their own data.</li>
+<li>Problem reports contain the issue, your text, the title, page, interface language, screen width, site version and time. With your consent for statistics, searches with no results (the words only) and technical errors are sent the same way. Nothing includes a name, email or account id. Records are kept in the site owner's Google Form for up to 12 months.</li>
+<li>Data is used only to run the service, apply parental controls, fix problems and keep accounts secure. It is never sold or used for advertising.</li>
+<li>Third parties: TMDB, JustWatch via TMDB, YouTube (privacy-enhanced mode), Vimeo (official player, do-not-track mode), Internet Archive, Wikimedia Commons, Library of Congress, Google (Sites, Sheets, Fonts, Forms, Firebase), GitHub Pages and jsDelivr.</li>
+<li>Your rights: view and download your data, correct it, delete your account at any time (deletion is immediate and final), change cookie consent, and contact us or the Israeli Privacy Protection Authority.</li></ul></section>
+</article>
+<article data-docb="cookies" role="tabpanel" aria-label="Cookies and storage">
+<h2 class="dh">Cookies and browser storage</h2>
+<section><p>Drive Play uses no advertising or tracking cookies. It keeps data in your browser (localStorage): essential (consent choice, language, accessibility, active profile, sign-in), functional (lists, history, continue watching, player preferences, downloads) and statistics (anonymous searches with no results and errors). External media (YouTube in privacy-enhanced mode, open archives, TMDB images) may set their own cookies when used.</p>
+<p><button type="button" class="cbtn" data-consent-open>Cookie settings</button></p></section>
+</article>
+<article data-docb="refunds" role="tabpanel" aria-label="Cancellations and refunds">
+<h2 class="dh">Cancellations and refunds</h2>
+<section><p>Everything on Drive Play is free today and nothing can be purchased. When Drive Play Pro launches, under the Israeli Consumer Protection Law:</p>
+<ul><li>The subscription can be cancelled at any time from the account center or by email; charges stop within three business days, with no cancellation fee.</li>
+<li>A purchase can be cancelled within 14 days, with a refund minus a cancellation fee of 5% or ILS 100, whichever is lower. Senior citizens, people with disabilities and new immigrants have extended rights by law.</li>
+<li>Refunds are made within 14 days to the original payment method. Card details are handled by a licensed payment provider and are not stored by us.</li></ul></section>
+</article>
+<article data-docb="a11y" role="tabpanel" aria-label="Accessibility statement">
+<h2 class="dh">Accessibility statement</h2>
+<section><p>The site was adapted to Israeli Standard 5568 (based on WCAG 2.1) at level AA as far as possible: full keyboard navigation with focus kept inside open windows, a skip link, visible focus, an accessibility settings window on every page (side button or Alt+A) with larger text, high contrast, grayscale, highlighted links, readable font, text spacing, stopped animations and a large cursor, alternative text for posters, labelled controls, player keyboard shortcuts, and respect for the system's reduced-motion setting. Known limits: videos play in YouTube's and the archives' players, whose accessibility depends on the rights holders.</p>
+<p>Accessibility coordinator: Meir Avraham, <a href="mailto:mamimonanat@gmail.com">mamimonanat@gmail.com</a>. Updated November 2026.</p></section>
+</article>
+<p class="foot">© Drive Play</p>
+</div>
+
+</main>
+<script type="text/dp-boot">
+(function () {
+  var html = document.documentElement;
+  function set(l) {
+    html.lang = l; html.dir = l === 'he' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-set') === l); });
+    try { localStorage.setItem('dp_terms_lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('[data-set]').forEach(function (b) { b.addEventListener('click', function () { set(b.getAttribute('data-set')); }); });
+  var l = null; try { l = localStorage.getItem('dp_terms_lang') || localStorage.getItem('dp_lang'); } catch (e) {}
+  if (!l) l = (navigator.language || 'he').slice(0, 2) === 'he' ? 'he' : 'en';
+  set(l === 'he' || l === 'iw' ? 'he' : 'en');
+})();
+</script>
+<script type="text/dp-boot">
+(function () {
+  /* one document at a time; the address (#terms, #privacy, #cookies, #refunds, #a11y) opens it directly */
+  var DOCS = ['terms', 'privacy', 'cookies', 'refunds', 'a11y'], OLD = { 'he-priv': 'privacy', 'he-sec': 'privacy', 'he-rights': 'privacy', 'en-priv': 'privacy' };
+  function show(d, focus) {
+    var m = document.getElementById('main'); if (m) m.classList.add('docs-on');
+    if (DOCS.indexOf(d) < 0) d = OLD[d] || 'terms';
+    document.querySelectorAll('[data-docb]').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-docb') === d); });
+    document.querySelectorAll('[data-doc]').forEach(function (a) { var on = a.getAttribute('data-doc') === d; a.setAttribute('aria-selected', on); a.tabIndex = on ? 0 : -1; });
+    if (focus) { var h = document.querySelector('html[lang=' + document.documentElement.lang + '] [data-docb="' + d + '"].on .dh') || document.querySelector('[data-docb="' + d + '"].on .dh'); if (h) { h.tabIndex = -1; h.focus(); } }
+  }
+  document.addEventListener('click', function (e) { var a = e.target.closest('[data-doc]'), b = e.target.closest('a[href^="#"]'); if (a) { e.preventDefault(); show(a.getAttribute('data-doc'), true); try { history.replaceState(null, '', '#' + a.getAttribute('data-doc')); } catch (x) {} } else if (b && DOCS.indexOf(b.getAttribute('href').slice(1)) >= 0) { e.preventDefault(); show(b.getAttribute('href').slice(1), true); } });
+  addEventListener('hashchange', function () { show(location.hash.slice(1), true); });
+  show((location.hash || '#terms').slice(1), false);
+})();
+</script>
+</body>
+</html>

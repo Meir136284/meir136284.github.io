@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /beta/
+Disallow: /sites/
+Disallow: /data/
+Sitemap: https://meir136284.github.io/sitemap.xml

@@ -1,0 +1,26 @@
+{
+  "name": "Drive Play – צפייה חופשית וחוקית",
+  "short_name": "Drive Play",
+  "description": "סדרות, סרטים ודוקו מערוצים רשמיים ומארכיונים פתוחים, בחינם ובאופן חוקי.",
+  "lang": "he",
+  "dir": "rtl",
+  "id": "/",
+  "start_url": "/watch/?src=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "background_color": "#080a10",
+  "theme_color": "#080a10",
+  "categories": ["entertainment", "video"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "צפייה חופשית", "url": "/watch/", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "גילוי – כל העולם", "url": "/?disc=1", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "CineAI", "url": "/cineai/", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

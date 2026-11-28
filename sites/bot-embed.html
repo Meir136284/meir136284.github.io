@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-theme="dark" data-accent="blue">
+<head>
+<meta charset="UTF-8"><script id="dp-embed">window.DP_EMBED=1;try{var P=parent;window.DPA=P.DPA;if(!window.DP_DATA&&P.DP_DATA)window.DP_DATA=P.DP_DATA;if(P.DP_WATCH_URL)window.DP_WATCH_URL=P.DP_WATCH_URL}catch(e){}document.documentElement.classList.remove('ent-on')</script><style id="dp-embed-css">#ent,#intro,#a11yBtn,.a11y-skip,#dpCons,[data-dpa-btn]{display:none!important}</style><style id="dp-a11y-css">/* Drive Play – accessibility settings (shared) */
+:focus-visible{outline:3px solid #FFB020!important;outline-offset:2px!important}
+.a11y-skip{position:fixed;top:8px;inset-inline-start:8px;z-index:2147483646;padding:10px 16px;background:#FFB020;color:#111;font-weight:800;text-decoration:none;transform:translateY(-200%);transition:transform .15s}
+.a11y-skip:focus{transform:none}
+.a11y-btn{position:fixed;inset-inline-end:0;top:64%;z-index:2147483600;width:38px;height:42px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);border-inline-end:0;background:#1d4ed8;color:#fff;cursor:pointer;opacity:.82;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.a11y-btn:hover,.a11y-btn:focus-visible,.a11y-btn.on{opacity:1}
+.a11y-btn.on{background:#0f766e}
+@media print{.a11y-btn,.a11y-skip{display:none}}
+.a11y-p{position:fixed;inset:0;z-index:2147483647;background:rgba(2,6,12,.6);display:flex;align-items:flex-start;justify-content:center;padding:16px;overflow-y:auto;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.a11y-p[hidden]{display:none}
+.a11y-box{width:100%;max-width:400px;margin:auto;background:#101827;color:#f1f5f9;border:1px solid #334155;padding:16px;direction:rtl;text-align:right;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.a11y-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.a11y-h h2{margin:0;font-size:1.15rem}
+.a11y-x{width:36px;height:36px;border:1px solid #475569;background:transparent;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
+.a11y-g{margin:0 0 10px}
+.a11y-g>span{display:block;font-weight:700;margin-bottom:6px;font-size:.92rem}
+.a11y-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.a11y-seg button,.a11y-o,.a11y-l{min-height:40px;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font:inherit;font-size:.9rem;cursor:pointer}
+.a11y-seg button.on{background:#1d4ed8;border-color:#93c5fd;font-weight:700}
+.a11y-o{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 12px;margin:0 0 6px;text-align:right}
+.a11y-o i{width:34px;height:18px;border:1px solid #64748b;background:#0f172a;position:relative;flex:none}
+.a11y-o i::after{content:'';position:absolute;top:2px;right:2px;width:12px;height:12px;background:#94a3b8;transition:right .15s}
+.a11y-o.on{border-color:#93c5fd}
+.a11y-o.on i{background:#1d4ed8;border-color:#93c5fd}
+.a11y-o.on i::after{right:18px;background:#fff}
+.a11y-f{display:flex;gap:6px;margin-top:10px}
+.a11y-l{flex:1;padding:0 10px}
+.a11y-n{color:#94a3b8;font-size:.8rem;margin:10px 0 0;line-height:1.5}
+.a11y-st{max-width:620px}
+.a11y-stb{max-height:62vh;overflow-y:auto;line-height:1.65;font-size:.94rem;padding-inline-end:4px}
+.a11y-stb h3{font-size:1rem;margin:14px 0 4px}
+.a11y-stb ul{margin:0;padding-inline-start:20px}
+.a11y-stb li{margin:0 0 4px}
+/* the settings themselves */
+html.a11y-t1 body{zoom:1.12}
+html.a11y-t2 body{zoom:1.25}
+html.a11y-hc{filter:contrast(1.35)}
+html.a11y-mono{filter:grayscale(1)}
+html.a11y-hc.a11y-mono{filter:contrast(1.35) grayscale(1)}
+html.a11y-links a,html.a11y-links button{text-decoration:underline!important;text-underline-offset:3px}
+html.a11y-links a,html.a11y-links button,html.a11y-links [role=button]{outline:1px dashed rgba(255,214,10,.75)!important;outline-offset:1px}
+html.a11y-font body,html.a11y-font body *:not(svg):not(svg *){font-family:Arial,'Segoe UI',system-ui,sans-serif!important}
+html.a11y-sp body *{letter-spacing:.04em!important;word-spacing:.12em!important;line-height:1.75!important}
+html.a11y-still *,html.a11y-still *::before,html.a11y-still *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html.a11y-cur,html.a11y-cur *{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M4 2l28 16-12 3 7 14-6 3-7-14-10 9z' fill='%23000' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") 4 2,auto!important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* cookie and storage consent */
+.dp-cons{position:fixed;inset-inline:12px;bottom:12px;z-index:2147483640;display:flex;justify-content:center;pointer-events:none;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.dp-cons[hidden]{display:none}
+.dp-cons-in{pointer-events:auto;max-width:760px;width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;box-shadow:0 12px 40px rgba(0,0,0,.5);padding:14px 16px;text-align:right}
+.dp-cons-t{margin:0 0 10px;font-size:.88rem;line-height:1.6}
+.dp-cons-t a{color:#93c5fd}
+.dp-cons-c{display:grid;gap:6px;margin:0 0 10px;font-size:.86rem}
+.dp-cons-c label{display:flex;gap:8px;align-items:flex-start;cursor:pointer}
+.dp-cons-c input{margin-top:4px;width:18px;height:18px;flex:none}
+.dp-cons-b{display:flex;gap:8px;flex-wrap:wrap}
+.dp-cons-b button{min-height:40px;padding:0 16px;border:1px solid #475569;background:#1e293b;color:#f1f5f9;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+.dp-cons-b button.y{background:#1d4ed8;border-color:#93c5fd}
+@media (max-width:600px){.dp-cons{inset-inline:6px;bottom:6px}.dp-cons-b button{flex:1 1 auto}}
+
+/* Drive Play v5 design line: straight corners everywhere (spinners and round progress indicators keep their shape) */
+*:not([class*="spin"]):not([class*="loader"]):not(.ring):not(.ring *),*::before,*::after{border-radius:0!important}
+</style><script id="dp-a11y">/* Drive Play – accessibility (IS 5568 / WCAG 2.1 AA): settings window, skip link, keyboard focus in windows, statement.
+   Shared by every page; runs before the page itself so the settings apply from the first paint. */
+(function () {
+  'use strict';
+  if (window.__dpA11y) return; window.__dpA11y = 1;
+  var KEY = 'dp_a11y', de = document.documentElement;
+  var st = {}; try { st = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+  var OPTS = [
+    ['t', 'גודל טקסט', [['', 'רגיל'], ['1', 'גדול'], ['2', 'גדול מאוד']]],
+    ['hc', 'ניגודיות גבוהה'], ['mono', 'גווני אפור'], ['links', 'הדגשת קישורים וכפתורים'], ['font', 'גופן קריא'],
+    ['still', 'עצירת אנימציות ותנועה'], ['cur', 'סמן עכבר גדול'], ['sp', 'ריווח טקסט מוגדל']
+  ];
+  function apply() {
+    var cls = de.className.replace(/\ba11y-[a-z0-9]+\b/g, '').trim();
+    var add = [];
+    if (st.t) add.push('a11y-t' + st.t);
+    ['hc', 'mono', 'links', 'font', 'still', 'cur', 'sp'].forEach(function (k) { if (st[k]) add.push('a11y-' + k); });
+    if (st.still) add.push('still');
+    de.className = (cls + ' ' + add.join(' ')).trim();
+    var b = document.getElementById('a11yBtn'); if (b) b.classList.toggle('on', add.length > 0);
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} apply(); }
+  apply();
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+
+  /* ---------- the window ---------- */
+  function panel() {
+    var p = document.getElementById('a11yP');
+    if (!p) {
+      p = document.createElement('div'); p.id = 'a11yP'; p.className = 'a11y-p'; p.setAttribute('role', 'dialog'); p.setAttribute('aria-modal', 'true'); p.setAttribute('aria-labelledby', 'a11yT'); p.hidden = true;
+      document.body.appendChild(p);
+      p.addEventListener('click', function (e) {
+        var t = e.target;
+        if (t === p || t.closest('[data-a11y-x]')) { close(); return; }
+        var o = t.closest('[data-a11y]'); if (o) { var k = o.getAttribute('data-a11y'), v = o.getAttribute('data-v'); st[k] = v != null ? v : !st[k]; if (!st[k]) delete st[k]; save(); draw(); var f = p.querySelector('[data-a11y="' + k + '"]' + (v != null ? '[data-v="' + v + '"]' : '')); if (f) f.focus(); return; }
+        if (t.closest('[data-a11y-reset]')) { st = {}; save(); draw(); return; }
+        if (t.closest('[data-a11y-stmt]')) { statement(); return; }
+      });
+      p.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.stopPropagation(); close(); } });
+    }
+    return p;
+  }
+  function draw() {
+    var p = panel();
+    p.innerHTML = '<div class="a11y-box"><div class="a11y-h"><h2 id="a11yT">התאמות נגישות</h2><button type="button" class="a11y-x" data-a11y-x aria-label="סגירה">\u00D7</button></div>' +
+      OPTS.map(function (o) {
+        if (o[2]) return '<div class="a11y-g" role="group" aria-label="' + esc(o[1]) + '"><span>' + esc(o[1]) + '</span><div class="a11y-seg">' + o[2].map(function (x) { var on = String(st[o[0]] || '') === x[0]; return '<button type="button" data-a11y="' + o[0] + '" data-v="' + x[0] + '" aria-pressed="' + on + '"' + (on ? ' class="on"' : '') + '>' + esc(x[1]) + '</button>'; }).join('') + '</div></div>';
+        var on = !!st[o[0]];
+        return '<button type="button" class="a11y-o' + (on ? ' on' : '') + '" data-a11y="' + o[0] + '" aria-pressed="' + on + '"><span>' + esc(o[1]) + '</span><i aria-hidden="true"></i></button>';
+      }).join('') +
+      '<div class="a11y-f"><button type="button" class="a11y-l" data-a11y-reset>איפוס ההגדרות</button><button type="button" class="a11y-l" data-a11y-stmt>הצהרת נגישות</button></div>' +
+      '<p class="a11y-n">ההגדרות נשמרות בדפדפן הזה. אפשר לפתוח את החלון בכל דף עם הכפתור בצד המסך או בקיצור Alt+A.</p></div>';
+  }
+  var last = null;
+  function open() { last = document.activeElement; draw(); var p = panel(); p.hidden = false; setTimeout(function () { var f = p.querySelector('button'); f && f.focus(); }, 30); }
+  function close() { var p = panel(); p.hidden = true; try { (last || document.getElementById('a11yBtn')).focus(); } catch (e) {} }
+  window.dpA11yOpen = open;
+
+  /* ---------- accessibility statement ---------- */
+  function statement() {
+    var p = panel();
+    p.innerHTML = '<div class="a11y-box a11y-st"><div class="a11y-h"><h2 id="a11yT">הצהרת נגישות</h2><button type="button" class="a11y-x" data-a11y-x aria-label="סגירה">\u00D7</button></div>' +
+      '<div class="a11y-stb" tabindex="0">' +
+      '<p>Drive Play רואה חשיבות רבה בכך שכל אחד ואחת יוכלו לגלוש באתר, לחפש ולצפות בתוכן בנוחות, כולל אנשים עם מוגבלות. האתר הותאם לפי התקן הישראלי ת"י 5568 (המבוסס על הנחיות WCAG 2.1) ברמה AA, ככל שהדבר אפשרי.</p>' +
+      '<h3>מה הותאם</h3><ul>' +
+      '<li>ניווט מלא במקלדת: Tab ו-Shift+Tab בין רכיבים, Enter להפעלה, Esc לסגירת חלונות. המיקוד נשאר בתוך חלון פתוח וחוזר למקום הקודם בסגירה.</li>' +
+      '<li>קישור "דילוג לתוכן" בתחילת כל דף, ומסגרת מיקוד בולטת לכל רכיב.</li>' +
+      '<li>חלון התאמות נגישות: הגדלת טקסט, ניגודיות גבוהה, גווני אפור, הדגשת קישורים, גופן קריא, ריווח טקסט, עצירת אנימציות וסמן גדול.</li>' +
+      '<li>טקסט חלופי לפוסטרים ולתמונות, תוויות לכפתורים ולשדות, והודעות מערכת שמוקראות בקוראי מסך.</li>' +
+      '<li>קיצורי מקלדת בנגן (רווח, J, L, F, M ועוד) ותמיכה בכתוביות של הערוצים הרשמיים.</li>' +
+      '<li>האתר מכבד את הגדרת "הפחתת תנועה" של מערכת ההפעלה.</li></ul>' +
+      '<h3>מגבלות ידועות</h3><ul>' +
+      '<li>הסרטונים מוצגים בנגנים של YouTube ושל ארכיונים פתוחים. הנגישות שלהם, כולל כתוביות, תלויה בבעלי הזכויות.</li>' +
+      '<li>חלק מהתקצירים והשמות מגיעים ממאגרים חיצוניים ואינם נבדקים ידנית.</li></ul>' +
+      '<h3>נתקלתם בבעיה?</h3><p>אפשר לפנות אלינו דרך טופס הפנייה באתר: בהגדרות, בקטע "אודות ועזרה", או בכפתור "דיווח על תקלה" בחלון של כל כותר. ציינו באיזה דף ובאיזה רכיב נתקלתם בקושי, ואנחנו נחזור ונתקן בהקדם.</p>' +
+      '<p class="a11y-n">ההצהרה עודכנה בנובמבר 2026.</p></div>' +
+      '<div class="a11y-f"><button type="button" class="a11y-l" data-a11y-back>חזרה להתאמות</button></div></div>';
+    var b = p.querySelector('[data-a11y-back]'); b.onclick = function () { draw(); var f = p.querySelector('button'); f && f.focus(); };
+    p.hidden = false; setTimeout(function () { p.querySelector('.a11y-stb').focus(); }, 30);
+  }
+  window.dpA11yStatement = function () { last = document.activeElement; statement(); };
+  document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-a11y-open]'); if (!b) return; e.preventDefault(); if (b.getAttribute('data-a11y-open') === 'stmt') window.dpA11yStatement(); else open(); });
+
+  /* ---------- keyboard focus inside open windows ---------- */
+  var FOC = 'a[href],button:not([disabled]),input:not([disabled]):not([type=hidden]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"]),iframe';
+  function visible(el) { if (!el || el.hidden) return false; var s = getComputedStyle(el); if (s.display === 'none' || s.visibility === 'hidden' || +s.opacity === 0) return false; var r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; }
+  function topModal() { var m = [].slice.call(document.querySelectorAll('[aria-modal="true"]')).filter(visible); return m[m.length - 1] || null; }
+  document.addEventListener('keydown', function (e) {
+    if (e.altKey && (e.code === 'KeyA')) { e.preventDefault(); var p = document.getElementById('a11yP'); if (p && !p.hidden) close(); else open(); return; }
+    if (e.key !== 'Tab') return;
+    var m = topModal(); if (!m) return;
+    var f = [].slice.call(m.querySelectorAll(FOC)).filter(function (x) { return visible(x) && !x.closest('[hidden]'); });
+    if (!f.length) return;
+    var first = f[0], lastEl = f[f.length - 1], a = document.activeElement;
+    if (!m.contains(a)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && a === first) { e.preventDefault(); lastEl.focus(); }
+    else if (!e.shiftKey && a === lastEl) { e.preventDefault(); first.focus(); }
+  }, true);
+
+  /* ---------- skip link, the button, posters without text ---------- */
+  function mainTarget() { return document.querySelector('main,[role=main],#main,#rows,#app,.wrap,section') || document.body; }
+  function setup() {
+    if (!document.body || document.getElementById('a11yBtn')) return;
+    var sk = document.createElement('a'); sk.className = 'a11y-skip'; sk.href = '#'; sk.textContent = 'דילוג לתוכן';
+    sk.addEventListener('click', function (e) { e.preventDefault(); var t = mainTarget(); if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1'); t.focus(); t.scrollIntoView({ block: 'start' }); });
+    document.body.insertBefore(sk, document.body.firstChild);
+    var b = document.createElement('button'); b.id = 'a11yBtn'; b.type = 'button'; b.className = 'a11y-btn'; b.setAttribute('aria-label', 'התאמות נגישות (Alt+A)'); b.title = 'התאמות נגישות';
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M4 8.5c2.6.9 5.3 1.3 8 1.3s5.4-.4 8-1.3M12 9.8V15m0 0-3.2 6M12 15l3.2 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    b.addEventListener('click', open);
+    document.body.appendChild(b); apply();
+    fixImgs(document.body);
+    try { new MutationObserver(function (ms) { ms.forEach(function (m) { [].forEach.call(m.addedNodes, function (n) { if (n.nodeType === 1) fixImgs(n); }); }); }).observe(document.body, { childList: true, subtree: true }); } catch (e) {}
+  }
+  /* images with no alt at all get an empty one (decorative) unless a title is nearby */
+  function fixImgs(root) {
+    var imgs = root.tagName === 'IMG' ? [root] : root.querySelectorAll ? root.querySelectorAll('img:not([alt])') : [];
+    [].forEach.call(imgs, function (im) { if (im.hasAttribute('alt')) return; var c = im.closest('[data-id],[aria-label],figure'); var t = c && (c.getAttribute('aria-label') || (c.querySelector('figcaption,.tt,b,h3') || {}).textContent); im.setAttribute('alt', t ? String(t).trim().slice(0, 120) : ''); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup); else setup();
+})();
+
+/* Drive Play – cookie and storage consent (shared by every page).
+   window.dpConsent.ok('func' | 'stats' | 'media') tells the page what the visitor allowed; essential storage is always on. */
+(function () {
+  'use strict';
+  if (window.dpConsent) return;
+  var KEY = 'dp_consent', VER = 1;
+  var LEGAL = window.DP_LEGAL_URL || 'https://sites.google.com/view/drive-play-tv/%D7%AA%D7%A0%D7%90%D7%99-%D7%A9%D7%99%D7%9E%D7%95%D7%A9-%D7%95%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA-drive-play';
+  /* on Google Sites the account loader puts the profile's saved data (this choice too) into storage only after
+     this script ran, so the choice is read again whenever it is needed instead of once at the start */
+  function read() { var x = null; try { x = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {} return x && x.v === VER ? x : null; }
+  var c = read();
+  function cur() { if (!c) c = read(); return c; }
+  var subs = [];
+  function save(o) { c = { v: VER, func: !!o.func, stats: !!o.stats, media: !!o.media, t: Date.now() }; try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {} subs.forEach(function (f) { try { f(c); } catch (e) {} }); }
+  /* until the visitor chooses, the site works as before (functional storage and media on, statistics off) */
+  function ok(k) { cur(); if (!c) return k !== 'stats'; return !!c[k]; }
+  var CATS = [['func', 'תפקודי', 'רשימות, היסטוריה, "המשך צפייה" והעדפות נגן.'], ['stats', 'נתונים סטטיסטיים', 'שליחה אנונימית של חיפושים בלי תוצאות ושל תקלות, כדי לשפר את האתר.'], ['media', 'מדיה חיצונית', 'נגן YouTube במצב פרטיות מוגברת, ארכיונים פתוחים ותמונות מ-TMDB.']];
+  function bar(full) {
+    var b = document.getElementById('dpCons');
+    if (!b) { b = document.createElement('div'); b.id = 'dpCons'; b.className = 'dp-cons'; b.setAttribute('role', 'dialog'); b.setAttribute('aria-label', 'הגדרות עוגיות ואחסון'); b.setAttribute('aria-live', 'polite'); document.body.appendChild(b); }
+    var now = cur() || { func: true, stats: false, media: true };
+    b.innerHTML = '<div class="dp-cons-in" dir="rtl"><p class="dp-cons-t"><b>עוגיות ואחסון בדפדפן.</b> האתר שומר מידע בדפדפן כדי לזכור את ההעדפות וההיסטוריה שלכם, ומשתמש בנגנים ובתמונות של שירותים חיצוניים. אין עוגיות פרסום או מעקב. <a href="' + LEGAL + '#cookies" target="_blank" rel="noopener">מדיניות העוגיות</a></p>' +
+      (full ? '<div class="dp-cons-c"><label><input type="checkbox" checked disabled> <span><b>הכרחי</b> · הבחירה הזו, שפה, נגישות, פרופיל והתחברות. תמיד פעיל.</span></label>' + CATS.map(function (x) { return '<label><input type="checkbox" data-c="' + x[0] + '"' + (now[x[0]] ? ' checked' : '') + '> <span><b>' + x[1] + '</b> · ' + x[2] + '</span></label>'; }).join('') + '</div>' : '') +
+      '<div class="dp-cons-b">' + (full ? '<button type="button" class="y" data-a="save">שמירת הבחירה</button>' : '<button type="button" class="y" data-a="all">אישור הכל</button><button type="button" data-a="min">רק הכרחיים</button><button type="button" data-a="more">התאמה אישית</button>') + '</div></div>';
+    b.hidden = false;
+    b.onclick = function (e) {
+      var a = e.target.closest('[data-a]'); if (!a) return; a = a.getAttribute('data-a');
+      if (a === 'all') save({ func: 1, stats: 1, media: 1 });
+      else if (a === 'min') save({});
+      else if (a === 'more') { bar(true); var f = b.querySelector('input[data-c]'); f && f.focus(); return; }
+      else if (a === 'save') { var o = {}; [].forEach.call(b.querySelectorAll('input[data-c]'), function (i) { o[i.getAttribute('data-c')] = i.checked; }); save(o); }
+      b.hidden = true;
+    };
+  }
+  window.dpConsent = { ok: ok, allow: function (k) { cur(); var o = c ? { func: c.func, stats: c.stats, media: c.media } : { func: 1, stats: 0, media: 1 }; o[k] = 1; save(o); }, open: function () { bar(true); }, on: function (f) { subs.push(f); }, get: function () { return cur(); } };
+  document.addEventListener('click', function (e) { var t = e.target.closest && e.target.closest('[data-consent-open]'); if (t) { e.preventDefault(); bar(true); } });
+  /* shown after the loading and entrance screens, so it never hides their buttons */
+  var waited = 0;
+  /* nothing to ask when the choice cannot be kept: the account frame did not start (blocked or offline),
+     so the page runs with the defaults (no statistics) and the choice stays open in the cookie settings link */
+  function cannotKeep() { var A = window.DPA; return !!(A && A.ready && !A.on && window.top !== window); }
+  function start() {
+    if (window.DP_EMBED || cur() || /[?&]noconsent/.test(location.search)) return;   /* inside the merged page the outer page asks once */
+    var A = window.DPA, busy = document.getElementById('dpa-cover') || document.documentElement.classList.contains('ent-on') || (A && !A.ready);
+    if (busy && waited < 40000) { waited += 700; setTimeout(start, 700); return; }
+    setTimeout(function () { if (!cur() && !cannotKeep()) bar(false); }, 900);
+  }
+  /* the saved data arrives (first start, or after switching profile): hide the bar if the choice is already there */
+  window.addEventListener('dpa-ready', function () { c = read() || c; var b = document.getElementById('dpCons'); if (c && b && !b.querySelector('input[data-c]')) b.hidden = true; });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CineAI – העוזר החכם של Drive Play</title>
+<meta name="color-scheme" content="dark light">
+<base target="_blank">
+<link rel="preconnect" href="https://api.themoviedb.org" crossorigin>
+<link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap">
+<script>
+try { const s = JSON.parse(localStorage.getItem('cineai_settings') || '{}'); if (s.theme) document.documentElement.dataset.theme = s.theme; if (s.accent) document.documentElement.dataset.accent = s.accent; if (s.size) document.documentElement.dataset.size = s.size; } catch (e) {}
+</script>
+<style>
+:root{
+  --blue:#2F7BFF;--green:#22B14C;--red:#EE2B23;--gold:#F5C518;
+  --brand:linear-gradient(90deg,#1E6BFF 0%,#1E6BFF 30%,#E5231B 50%,#22B14C 70%,#22B14C 100%);
+  --bg:#060A13;--bg2:#0B1220;--surface:#101828;--surface2:#17223A;--line:rgba(148,163,184,.14);--line2:rgba(148,163,184,.24);
+  --text:#EAF0FA;--muted:#93A1BA;--shadow:0 12px 34px rgba(0,0,0,.5);
+  --acc:var(--blue);--acc-d:#1A5FE0;--acc-soft:rgba(47,123,255,.14);
+  --fs:15px;
+  font-family:'Heebo',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+html[data-theme="light"]{--bg:#F3F6FB;--bg2:#EAEFF7;--surface:#FFFFFF;--surface2:#EEF2F9;--line:rgba(15,23,42,.10);--line2:rgba(15,23,42,.18);--text:#0B1324;--muted:#56637A;--shadow:0 12px 34px rgba(15,23,42,.16);--blue:#1A5FE0;--green:#15913A;--red:#D91E17}
+html[data-accent="green"]{--acc:var(--green);--acc-d:#15913A;--acc-soft:rgba(34,177,76,.15)}
+html[data-accent="red"]{--acc:var(--red);--acc-d:#C8150F;--acc-soft:rgba(238,43,35,.14)}
+html[data-size="l"]{--fs:17px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text)}
+body{font-size:var(--fs);line-height:1.6;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:8px}
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ic.f{fill:currentColor;stroke:none}
+.noscroll{scrollbar-width:none}.noscroll::-webkit-scrollbar{display:none}
+.hidden{display:none!important}
+
+/* header */
+header{flex:none;position:relative;display:flex;align-items:center;gap:10px;padding:10px 16px;background:color-mix(in srgb,var(--bg) 90%,transparent)}
+header::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--brand);opacity:.85}
+.logo{width:46px;flex:none}
+.ttl{flex:1;min-width:0}
+.ttl h1{font-size:1.12rem;font-weight:800;line-height:1.2;display:flex;align-items:center;gap:8px}
+.ttl h1 .ai{font-size:.68rem;font-weight:800;padding:1px 7px;border-radius:999px;background:var(--acc-soft);color:var(--acc)}
+.ttl p{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}
+.dot.g{background:var(--blue)}
+html.embed header .logo{display:none}html.embed #hubX{margin-inline-start:-2px}
+.hbtn{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 13px;border-radius:12px;border:1px solid var(--line2);background:var(--surface);font-weight:700;font-size:.9rem;flex:none}
+.hbtn:hover{border-color:var(--acc)}
+.hbtn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.hbtn.main:hover{background:var(--acc-d)}
+
+/* chat */
+#chat{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:18px 16px 8px;scroll-behavior:smooth}
+.wrap{max-width:820px;margin:0 auto}
+.welcome{text-align:center;padding:26px 8px 10px}
+.welcome img{width:110px;margin:0 auto 10px}
+.welcome h2{font-size:1.45rem;font-weight:800;margin-bottom:6px}
+.welcome p{color:var(--muted);max-width:520px;margin:0 auto}
+.sugs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px auto 0;max-width:640px}
+.sug{display:flex;align-items:center;gap:10px;text-align:start;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);font-size:.9rem;font-weight:600;transition:border-color .2s,transform .15s}
+.sug:hover{border-color:var(--acc);transform:translateY(-1px)}
+.sug .si{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;color:#fff}
+.msg{display:flex;gap:10px;margin:14px 0;align-items:flex-start;animation:in .25s ease-out}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg .av{width:34px;height:34px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.msg .av img{width:30px}
+.msg.user{flex-direction:row-reverse}
+.msg.user .av{background:var(--acc);border-color:var(--acc);color:#fff}
+.bub{max-width:min(640px,86%);padding:11px 14px;border-radius:16px;background:var(--surface);border:1px solid var(--line);word-wrap:break-word;overflow-wrap:anywhere}
+.msg.bot .bub{border-start-start-radius:6px}
+.msg.user .bub{background:var(--acc);border-color:var(--acc);color:#fff;border-start-end-radius:6px}
+.bub p+p,.bub p+ul,.bub ul+p{margin-top:8px}
+.bub ul{padding-inline-start:20px}
+.bub b{font-weight:800}
+.bub .src{font-size:.74rem;color:var(--muted);margin-top:8px}
+.tools{display:flex;gap:2px;margin-top:6px}
+.tools button{font-size:.76rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px;padding:3px 7px;border-radius:8px}
+.tools button:hover{background:var(--surface2);color:var(--text)}
+.tools .ic{width:14px;height:14px}
+.typing{display:inline-flex;gap:4px;padding:4px 2px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:b 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes b{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.cards{display:grid;grid-auto-flow:column;grid-auto-columns:116px;gap:10px;overflow-x:auto;margin-top:10px;padding-bottom:4px}
+.mc{text-align:start;display:block;width:100%}
+.mc .pp{aspect-ratio:2/3;border-radius:12px;overflow:hidden;background:var(--surface2);position:relative;border:1px solid var(--line)}
+.mc .pp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mc .pp .nt{position:absolute;inset:0;display:grid;place-items:center;padding:8px;font-size:.75rem;color:var(--muted);text-align:center}
+.mc:hover .pp{border-color:var(--acc)}
+.mc .r{position:absolute;top:6px;inset-inline-end:6px;background:rgba(5,9,18,.8);color:#fff;font-size:.7rem;font-weight:700;padding:1px 6px;border-radius:7px;display:inline-flex;align-items:center;gap:3px}
+.mc .r .ic{width:11px;height:11px;color:var(--gold)}
+.mc .t{font-size:.8rem;font-weight:700;margin-top:6px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mc .y{font-size:.72rem;color:var(--muted)}
+.tcard{display:flex;gap:14px;margin-top:10px;padding:12px;border-radius:14px;background:var(--bg2);border:1px solid var(--line)}
+.tcard img{width:96px;border-radius:10px;flex:none;align-self:flex-start}
+.tcard .tt{font-weight:800;font-size:1.02rem;line-height:1.3}
+.tcard .tm{font-size:.8rem;color:var(--muted);margin-top:2px}
+.tcard .tm .st{color:var(--gold);font-weight:700}
+.gl{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.gl span{font-size:.72rem;padding:2px 8px;border-radius:999px;background:var(--surface2);border:1px solid var(--line)}
+.acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.act{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 11px;border-radius:10px;border:1px solid var(--line2);background:var(--surface);font-size:.8rem;font-weight:700;text-decoration:none}
+.act:hover{border-color:var(--acc)}
+.act.on{background:var(--green);border-color:var(--green);color:#fff}
+.act .ic{width:15px;height:15px}
+.act.green{background:#15803d;border-color:#22c55e;color:#fff}
+.mc .pp .freeb{position:absolute;inset-inline:0;bottom:0;z-index:2;background:rgba(21,128,61,.92);color:#fff;font-size:.68rem;font-weight:800;padding:3px 6px;text-align:center}
+.act.red{background:var(--red);border-color:var(--red);color:#fff}
+
+/* composer */
+.composer{flex:none;padding:10px 16px 14px;background:linear-gradient(to top,var(--bg) 70%,transparent)}
+.cbox{max-width:820px;margin:0 auto;display:flex;align-items:flex-end;gap:8px;background:var(--surface);border:1px solid var(--line2);border-radius:18px;padding:6px 6px 6px 6px;transition:border-color .2s,box-shadow .2s}
+.cbox:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
+.cbox textarea{flex:1;resize:none;border:0;background:transparent;outline:none;padding:8px 10px;max-height:140px;min-height:40px;line-height:1.5}
+.cbox textarea::placeholder{color:var(--muted)}
+.send{width:42px;height:42px;border-radius:13px;background:var(--acc);color:#fff;display:grid;place-items:center;flex:none;transition:background .2s,opacity .2s}
+.send:hover{background:var(--acc-d)}
+.send:disabled{opacity:.45;cursor:default}
+.send .ic{transform:scaleX(-1)}
+.hint{max-width:820px;margin:6px auto 0;font-size:.72rem;color:var(--muted);text-align:center}
+
+/* settings drawer */
+.scrim{position:fixed;inset:0;background:rgba(2,5,12,.6);backdrop-filter:blur(3px);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(420px,100%);z-index:50;background:var(--bg2);border-inline-start:1px solid var(--line2);box-shadow:var(--shadow);display:flex;flex-direction:column;transform:translateX(-105%);transition:transform .25s ease;visibility:hidden}
+.drawer.on{transform:none;visibility:visible}
+.dhead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);flex:none}
+.dhead h2{flex:1;font-size:1.1rem;font-weight:800;display:flex;align-items:center;gap:8px}
+.x{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;border:1px solid var(--line2);background:var(--surface)}
+.x:hover{border-color:var(--acc)}
+.dbody{flex:1;overflow-y:auto;padding:10px 12px 24px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+details[open]{border-color:var(--line2)}
+summary{list-style:none;display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;font-weight:700;user-select:none}
+summary::-webkit-details-marker{display:none}
+summary .si{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;color:#fff;flex:none}
+summary .sd{flex:1;min-width:0}
+summary .sd small{display:block;font-weight:500;font-size:.76rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+summary .chev{transition:transform .2s;color:var(--muted)}
+details[open] summary .chev{transform:rotate(180deg)}
+.dc{padding:4px 14px 14px}
+.lbl{font-size:.78rem;color:var(--muted);font-weight:700;margin:10px 0 6px}
+.seg{display:flex;background:var(--surface2);border-radius:12px;padding:3px;gap:3px}
+.seg button{flex:1;height:34px;border-radius:9px;font-weight:600;font-size:.85rem;color:var(--muted);display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.seg button.on{background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.sw{display:inline-block;width:14px;height:14px;border-radius:50%}
+.sel,.inp{width:100%;height:38px;border-radius:10px;border:1px solid var(--line2);background:var(--surface2);padding:0 10px}
+.inp{direction:ltr;text-align:left}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sbtn{height:38px;border-radius:10px;border:1px solid var(--line2);background:var(--surface2);font-weight:700;font-size:.84rem;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 10px}
+.sbtn:hover{border-color:var(--acc)}
+.sbtn.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+.sbtn.dan{color:var(--red)}
+.note{font-size:.76rem;color:var(--muted);line-height:1.55;margin-top:8px}
+.tog{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0}
+.tog input{appearance:none;width:44px;height:26px;border-radius:999px;background:var(--surface2);border:1px solid var(--line2);position:relative;cursor:pointer;transition:background .2s;flex:none}
+.tog input::after{content:"";position:absolute;top:2px;inset-inline-start:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.tog input:checked{background:var(--acc);border-color:var(--acc)}
+.tog input:checked::after{transform:translateX(-18px)}
+.clist{display:flex;flex-direction:column;gap:6px;max-height:260px;overflow-y:auto;margin-top:8px}
+.ci{display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:10px;border:1px solid transparent}
+.ci.on{background:var(--acc-soft);border-color:var(--acc)}
+.ci .cn{flex:1;min-width:0;text-align:start;font-size:.86rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:4px 2px}
+.ci .cd{font-size:.7rem;color:var(--muted);flex:none}
+.ci .mini{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:var(--muted)}
+.ci .mini:hover{background:var(--surface2);color:var(--text)}
+.ci .mini .ic{width:15px;height:15px}
+.moods{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.mood{height:38px;border-radius:10px;border:1px solid var(--line2);background:var(--surface2);font-size:.82rem;font-weight:700}
+.mood:hover{border-color:var(--acc);color:var(--acc)}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.daily{display:flex;gap:12px;align-items:center;padding:10px;border-radius:12px;background:var(--bg2);border:1px solid var(--line);margin-top:4px}
+.daily img{width:62px;border-radius:9px;flex:none}
+.daily .dt{font-weight:800;line-height:1.3}
+.daily .dm{font-size:.76rem;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:10px 4px;text-align:center}
+.stat b{display:block;font-size:1.15rem;font-weight:800;color:var(--acc)}
+.stat span{font-size:.7rem;color:var(--muted)}
+.favs{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.fav{display:flex;align-items:center;gap:10px}
+.fav img{width:36px;border-radius:6px;flex:none}
+.fav .fn{flex:1;min-width:0;text-align:start;font-size:.86rem;font-weight:600}
+.fav .fn small{display:block;color:var(--muted);font-weight:500;font-size:.72rem}
+.keyok{color:var(--green);font-weight:700}
+.keybad{color:var(--red);font-weight:700}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(16px);z-index:80;background:var(--text);color:var(--bg);padding:9px 16px;border-radius:12px;font-weight:600;font-size:.86rem;opacity:0;pointer-events:none;transition:all .22s;max-width:calc(100vw - 32px);text-align:center}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+
+/* ===== typing animations ===== */
+@property --spin{syntax:'<angle>';inherits:false;initial-value:0deg}
+.msg.bot.thinking .av,.msg.bot.typing-now .av{overflow:visible;position:relative}
+.msg.bot.thinking .av::before,.msg.bot.typing-now .av::before{content:"";position:absolute;inset:-3px;border-radius:14px;padding:2px;background:conic-gradient(from var(--spin),#1E6BFF,#E5231B,#22B14C,#1E6BFF);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spinA 1.1s linear infinite;pointer-events:none}
+@keyframes spinA{to{--spin:360deg}}
+.bub.think{display:inline-flex;align-items:center;gap:10px;padding:10px 14px}
+.typing i:nth-child(1){background:#2F7BFF}.typing i:nth-child(2){background:#EE2B23}.typing i:nth-child(3){background:#22B14C}
+.tlab{font-size:.85rem;font-weight:600;background:linear-gradient(90deg,var(--muted) 0%,var(--text) 45%,var(--muted) 90%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 1.6s linear infinite}
+.tlab.swap{animation:shim 1.6s linear infinite,tIn .3s ease}
+@keyframes shim{from{background-position:100% 0}to{background-position:-100% 0}}
+@keyframes tIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.caret{display:inline-block;width:2px;height:1.05em;vertical-align:-.16em;margin-inline-start:2px;background:var(--acc);border-radius:2px;animation:blink .85s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.tw-h{display:none!important}
+.later:not(.show){display:none!important}
+.later.show{animation:fadeUp .45s cubic-bezier(.22,1,.36,1) both}
+.cards.later.show{animation:none}
+.cards.later.show .mc{animation:cardIn .45s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(var(--i,0) * 70ms + 80ms)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes cardIn{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+.msg.user{animation:inU .32s cubic-bezier(.22,1,.36,1)}
+@keyframes inU{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+.msg.bot.typing-now .bub{cursor:pointer}
+.dot.busy{animation:dotP 1s ease-in-out infinite}
+@keyframes dotP{0%,100%{box-shadow:0 0 0 0 rgba(34,177,76,.45)}50%{box-shadow:0 0 0 5px rgba(34,177,76,0)}}
+.tdots i{font-style:normal;animation:td 1.2s infinite}
+.tdots i:nth-child(2){animation-delay:.2s}.tdots i:nth-child(3){animation-delay:.4s}
+@keyframes td{0%,60%,100%{opacity:.2}30%{opacity:1}}
+.send.fly .ic{animation:fly .5s ease}
+@keyframes fly{0%{opacity:1;translate:0 0}40%{opacity:0;translate:0 -10px}60%{opacity:0;translate:0 10px}100%{opacity:1;translate:0 0}}
+/* welcome: floating logo with rings, typed title, cards gliding in */
+.wlogo{position:relative;width:110px;margin:0 auto 12px}
+.wlogo::before{content:"";position:absolute;inset:-26px;background:radial-gradient(circle,rgba(47,123,255,.32),rgba(34,177,76,.1) 55%,transparent 72%);filter:blur(14px);animation:glowBreath 4s ease-in-out infinite;pointer-events:none}
+.welcome .wlogo img{position:relative;z-index:2;width:100%;margin:0;animation:logoFloat 3.6s ease-in-out infinite}
+.wlogo .ring{position:absolute;left:50%;top:50%;width:92%;aspect-ratio:1;border:2px solid rgba(47,123,255,.5);border-radius:50%;opacity:0;animation:ringPulse 2.8s ease-out infinite;z-index:1}
+.wlogo .ring.r2{border-color:rgba(34,177,76,.45);animation-delay:1.4s}
+@keyframes ringPulse{0%{transform:translate(-50%,-50%) scale(.8);opacity:.75}100%{transform:translate(-50%,-50%) scale(1.7);opacity:0}}
+@keyframes glowBreath{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+@keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.welcome h2{min-height:1.35em}
+.welcome p{animation:fadeUp .6s .45s both}
+.sug{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.55s + var(--d,0) * 90ms)}
+/* about links */
+.links{display:flex;flex-direction:column;gap:4px}
+.lk{display:flex;align-items:center;gap:10px;padding:8px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.88rem}
+button.lk{width:100%;background:none;border:0;color:inherit;font-family:inherit;cursor:pointer;text-align:start}
+.lk:hover{background:var(--surface2)}
+.lk .li{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
+.lk .li .ic{width:15px;height:15px}
+.lk .ext{margin-inline-start:auto;width:14px;height:14px;color:var(--muted)}
+.copy{font-size:.74rem;color:var(--muted);margin-top:10px;text-align:center}
+
+html[dir="ltr"] .drawer{transform:translateX(105%)}html[dir="ltr"] .drawer.on{transform:none}
+html[dir="ltr"] .tog input:checked::after{transform:translateX(18px)}
+html[dir="ltr"] .send .ic{transform:none}
+@media (max-width:640px){
+  header{padding:8px 12px;gap:8px}
+  .logo{width:40px}
+  .hbtn .lb{display:none}
+  .hbtn{width:40px;padding:0;justify-content:center}
+  #chat{padding:14px 12px 6px}
+  .sugs{grid-template-columns:1fr;gap:8px;margin-top:16px}
+  .welcome{padding:14px 4px 4px}.welcome img{width:84px}.wlogo{width:84px}.welcome h2{font-size:1.25rem}
+  .bub{max-width:88%}
+  .composer{padding:8px 56px 10px 10px}
+  .hint{display:none}
+  .st2{display:none}
+  .tcard img{width:76px}
+  .drawer{width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.ask-ov{position:fixed;inset:0;z-index:9500;background:rgba(2,5,12,.62);display:grid;place-items:center;padding:18px}
+.ask{width:100%;max-width:380px;background:var(--surface,#101828);border:1px solid rgba(148,163,184,.24);border-radius:16px;padding:20px;box-shadow:0 24px 60px rgba(0,0,0,.5);color:inherit}
+.ask p{margin:0 0 14px;font-weight:600;line-height:1.5}
+.ask-in{width:100%;margin:0 0 14px;padding:10px 12px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:rgba(0,0,0,.25);color:inherit;font:inherit}
+.ask-b{display:flex;gap:8px;justify-content:flex-end}
+.ask-b button{font:inherit;font-weight:700;border-radius:10px;padding:9px 16px;border:1px solid rgba(148,163,184,.3);background:transparent;color:inherit;cursor:pointer}
+.ask-b .pri{background:#2F7BFF;border-color:#2F7BFF;color:#fff}.ask-b .dng{background:#EE2B23;border-color:#EE2B23;color:#fff}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-cog" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4M12 16V8M17 16v-7"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.83-.44-1.12-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2C19.6 16.39 22 14 22 11c0-4.97-4.5-9-10-9z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-vol" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4zM15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.94 5.96 6.56.95-4.75 4.63 1.12 6.54L12 17.5l-5.87 3.08 1.12-6.54L2.5 9.41l6.56-.95z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.74V17h8v-2.26A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 12h18M3 7.5h4M3 16.5h4M17 7.5h4M17 16.5h4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol>
+</svg>
+
+<header>
+  <img class="logo" src="data:image/webp;base64,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" alt="Drive Play" width="46" height="25">
+  <div class="ttl">
+    <h1>CineAI <span class="ai">AI</span></h1>
+    <p><span class="dot" id="stDot"></span><span id="stTxt" data-t="statusLocal">העוזר החכם של Drive Play</span></p>
+  </div>
+  <button class="hbtn" id="newBtn" type="button" data-t-title="newChat" title="שיחה חדשה"><svg class="ic"><use href="#i-plus"/></svg><span class="lb" data-t="newChat">שיחה חדשה</span></button>
+  <button data-dpa-btn hidden></button>
+  <button class="hbtn main" id="setBtn" type="button" aria-controls="drawer" aria-expanded="false" data-t-title="settings" title="הגדרות"><svg class="ic"><use href="#i-cog"/></svg><span class="lb" data-t="settings">הגדרות</span></button>
+</header>
+
+<main id="chat" aria-live="polite"><div class="wrap" id="msgs"></div></main>
+
+<div class="composer">
+  <div class="cbox">
+    <label for="inp" class="hidden" data-t="placeholder">שאלו על סרט, סדרה, שחקן או מצב רוח…</label>
+    <textarea id="inp" rows="1" data-t-ph="placeholder" placeholder="שאלו על סרט, סדרה, שחקן או מצב רוח…" enterkeyhint="send"></textarea>
+    <button class="send" id="sendBtn" type="button" disabled data-t-aria="send" aria-label="שליחה"><svg class="ic"><use href="#i-send"/></svg></button>
+  </div>
+  <div class="hint" data-t="hint">Enter לשליחה · Shift+Enter לשורה חדשה · כל ההגדרות והפיצ'רים בכפתור "הגדרות"</div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="dhead">
+    <h2 id="dTitle"><svg class="ic"><use href="#i-cog"/></svg><span data-t="settingsTitle">הגדרות ופיצ'רים</span></h2>
+    <button class="x" id="dClose" type="button" data-t-aria="close" aria-label="סגירה"><svg class="ic"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="dbody">
+    <details open id="secChats">
+      <summary><span class="si" style="background:var(--blue)"><svg class="ic"><use href="#i-msg"/></svg></span><span class="sd"><span data-t="secChats">השיחות שלי</span><small id="chatsSub"></small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <button class="sbtn pri" id="dNew" type="button" style="width:100%"><svg class="ic"><use href="#i-plus"/></svg><span data-t="newChat">שיחה חדשה</span></button>
+        <div class="clist" id="chatList"></div>
+      </div>
+    </details>
+    <details id="secDisc">
+      <summary><span class="si" style="background:var(--red)"><svg class="ic"><use href="#i-compass"/></svg></span><span class="sd"><span data-t="secDisc">גילוי מהיר</span><small data-t="secDiscSub">הבחירה של היום, מצב רוח ועוד</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <div class="lbl" data-t="dailyPick">הבחירה של היום</div>
+        <div id="daily"><div class="note" data-t="loading">טוען…</div></div>
+        <div class="lbl" data-t="mood">לפי מצב רוח</div>
+        <div class="moods" id="moods"></div>
+        <div class="quick">
+          <button class="sbtn" data-q="trending" type="button"><svg class="ic"><use href="#i-flame"/></svg><span data-t="qTrending">מה חם השבוע</span></button>
+          <button class="sbtn" data-q="upcoming" type="button"><svg class="ic"><use href="#i-cal"/></svg><span data-t="qUpcoming">בקרוב בקולנוע</span></button>
+          <button class="sbtn" data-q="random" type="button"><svg class="ic"><use href="#i-dice"/></svg><span data-t="qRandom">הפתיעו אותי</span></button>
+          <button class="sbtn" data-q="fact" type="button"><svg class="ic"><use href="#i-bulb"/></svg><span data-t="qFact">עובדה מעניינת</span></button>
+        </div>
+      </div>
+    </details>
+    <details id="secFav">
+      <summary><span class="si" style="background:var(--green)"><svg class="ic"><use href="#i-heart"/></svg></span><span class="sd"><span data-t="secFav">המועדפים שלי</span><small id="favSub"></small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc"><div class="favs" id="favList"></div></div>
+    </details>
+    <details id="secStats">
+      <summary><span class="si" style="background:#0EA5E9"><svg class="ic"><use href="#i-chart"/></svg></span><span class="sd"><span data-t="secStats">סטטיסטיקה</span><small data-t="secStatsSub">השאלות, השיחות והרצף שלך</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc"><div class="stats" id="stats"></div></div>
+    </details>
+    <details id="secLook">
+      <summary><span class="si" style="background:var(--blue)"><svg class="ic"><use href="#i-palette"/></svg></span><span class="sd"><span data-t="secLook">מראה</span><small data-t="secLookSub">ערכת צבעים, צבע מוביל וגודל טקסט</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <div class="lbl" data-t="theme">ערכת צבעים</div>
+        <div class="seg" data-set="theme"><button data-v="dark" data-t="dark">כהה</button><button data-v="light" data-t="light">בהיר</button></div>
+        <div class="lbl" data-t="accent">צבע מוביל (מהלוגו)</div>
+        <div class="seg" data-set="accent"><button data-v="blue"><span class="sw" style="background:#2F7BFF"></span><span data-t="blue">כחול</span></button><button data-v="green"><span class="sw" style="background:#22B14C"></span><span data-t="green">ירוק</span></button><button data-v="red"><span class="sw" style="background:#EE2B23"></span><span data-t="red">אדום</span></button></div>
+        <div class="lbl" data-t="size">גודל טקסט</div>
+        <div class="seg" data-set="size"><button data-v="m" data-t="normal">רגיל</button><button data-v="l" data-t="large">גדול</button></div>
+        <label class="tog" style="margin-top:6px"><span data-t="typingAnim">אנימציית הקלדה בתשובות</span><input type="checkbox" data-set="typing"></label>
+        <div class="lbl" data-t="typeSpeed">מהירות ההקלדה</div>
+        <div class="seg" data-set="typeSpeed"><button data-v="slow" data-t="slow">איטית</button><button data-v="normal" data-t="normalF">רגילה</button><button data-v="fast" data-t="fast">מהירה</button></div>
+      </div>
+    </details>
+    <details id="secLang">
+      <summary><span class="si" style="background:var(--green)"><svg class="ic"><use href="#i-globe"/></svg></span><span class="sd"><span data-t="secLang">שפה וסגנון תשובה</span><small data-t="secLangSub">שפת ממשק, טון ואורך תשובות</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <div class="lbl" data-t="uiLang">שפה</div>
+        <div class="seg" data-set="uiLang"><button data-v="he">עברית</button><button data-v="en">English</button></div>
+        <div class="lbl" data-t="tone">סגנון התשובות</div>
+        <select class="sel" data-set="tone" aria-label="סגנון">
+          <option value="natural" data-t="toneNatural">חם וטבעי</option>
+          <option value="critic" data-t="toneCritic">מבקר קולנוע מקצועי</option>
+          <option value="fan" data-t="toneFan">מעריץ נלהב</option>
+        </select>
+        <div class="lbl" data-t="length">אורך התשובות</div>
+        <div class="seg" data-set="length"><button data-v="short" data-t="short">קצר</button><button data-v="normal" data-t="detailed">מפורט</button></div>
+      </div>
+    </details>
+    <details id="secVoice">
+      <summary><span class="si" style="background:var(--red)"><svg class="ic"><use href="#i-vol"/></svg></span><span class="sd"><span data-t="secVoice">הקראה קולית</span><small data-t="secVoiceSub">הקראת תשובות בקול</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <label class="tog"><span data-t="autoSpeak">הקראה אוטומטית של כל תשובה</span><input type="checkbox" data-set="autoSpeak"></label>
+        <div class="lbl" data-t="rate">מהירות הקראה</div>
+        <div class="seg" data-set="rate"><button data-v="0.85" data-t="slow">איטית</button><button data-v="1" data-t="normalF">רגילה</button><button data-v="1.2" data-t="fast">מהירה</button></div>
+        <p class="note" id="voiceNote"></p>
+      </div>
+    </details>
+    <details id="secAI">
+      <summary><span class="si" style="background:linear-gradient(135deg,#1E6BFF,#22B14C)"><svg class="ic"><use href="#i-spark"/></svg></span><span class="sd"><span data-t="secAI">בינה מלאכותית (Gemini)</span><small id="aiSub"></small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <p class="note" style="margin-top:0" data-t="aiExplain">בלי מפתח, CineAI עונה מתוך מאגר TMDB: פרטים על סרטים וסדרות, המלצות, שחקנים וטריילרים. עם מפתח Gemini אישי (חינמי ב-Google AI Studio) הוא גם מנהל שיחה חופשית.</p>
+        <div class="lbl" data-t="apiKey">מפתח Gemini API</div>
+        <input class="inp" id="keyInp" type="password" autocomplete="off" spellcheck="false" placeholder="AIza…" aria-label="Gemini API key">
+        <div class="lbl" data-t="model">מודל</div>
+        <select class="sel" data-set="model" aria-label="model">
+          <option value="gemini-flash-latest">Gemini Flash (latest)</option>
+          <option value="gemini-3.8-flash">Gemini 3.8 Flash</option>
+          <option value="gemini-flash-lite-latest">Gemini Flash-Lite (latest)</option>
+        </select>
+        <div class="row2" style="margin-top:10px">
+          <button class="sbtn pri" id="keySave" type="button"><svg class="ic"><use href="#i-key"/></svg><span data-t="saveTest">שמירה ובדיקה</span></button>
+          <button class="sbtn dan" id="keyDel" type="button"><svg class="ic"><use href="#i-trash"/></svg><span data-t="removeKey">הסרת המפתח</span></button>
+        </div>
+        <p class="note" id="keyNote"></p>
+        <p class="note" data-t="keyPrivacy">המפתח נשמר רק בדפדפן שלך ונשלח ישירות ל-Google. אל תשתמשו במפתח שמופיע בקוד של אתר.</p>
+        <a class="note" href="https://aistudio.google.com/apikey" rel="noopener" style="display:inline-flex;gap:4px;align-items:center;color:var(--acc);font-weight:700"><span data-t="getKey">להשגת מפתח</span><svg class="ic" style="width:13px;height:13px"><use href="#i-ext"/></svg></a>
+      </div>
+    </details>
+    <details id="secData">
+      <summary><span class="si" style="background:#64748B"><svg class="ic"><use href="#i-db"/></svg></span><span class="sd"><span data-t="secData">נתונים ופרטיות</span><small data-t="secDataSub">ייצוא ומחיקה</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <div class="row2">
+          <button class="sbtn" id="expBtn" type="button"><svg class="ic"><use href="#i-down"/></svg><span data-t="exportChats">ייצוא השיחות</span></button>
+          <button class="sbtn dan" id="wipeBtn" type="button"><svg class="ic"><use href="#i-trash"/></svg><span data-t="wipe">מחיקת הכל</span></button>
+        </div>
+        <p class="note" data-t="dataNote">השיחות, המועדפים וההגדרות נשמרים רק בדפדפן הזה. מידע על סרטים: TMDB. האתר משתמש ב-API של TMDB ואינו מאושר על ידה.</p>
+      </div>
+    </details>
+    <details id="secAbout">
+      <summary><span class="si" style="background:#0EA5E9"><svg class="ic"><use href="#i-info"/></svg></span><span class="sd"><span data-t="secAbout">אודות ועזרה</span><small data-t="secAboutSub">מה חדש, צור קשר, משוב ותנאי שימוש</small></span><svg class="ic chev"><use href="#i-chev"/></svg></summary>
+      <div class="dc">
+        <div class="links">
+          <a class="lk" href="https://sites.google.com/view/drive-play-tv/%D7%91%D7%99%D7%AA/%D7%9E%D7%94-%D7%94%D7%A9%D7%AA%D7%A0%D7%94-%D7%91-drive-play" rel="noopener"><span class="li" style="background:var(--blue)"><svg class="ic"><use href="#i-spark"/></svg></span><span data-t="lNew">מה חדש ב-Drive Play</span><svg class="ic ext"><use href="#i-ext"/></svg></a>
+          <a class="lk" href="https://docs.google.com/forms/d/e/1FAIpQLSdxndG4O4RBAwry1GHGZABykG_dkTco1OtVzS5cgoUeonnzIg/viewform" rel="noopener"><span class="li" style="background:var(--green)"><svg class="ic"><use href="#i-mail"/></svg></span><span data-t="lContact">צור קשר</span><svg class="ic ext"><use href="#i-ext"/></svg></a>
+          <a class="lk" href="https://docs.google.com/forms/d/e/1FAIpQLSfMRPnCCPv2gq7dZnOaKOtNZqhZBT9klOfWN0Gmuj4vSjJ6fA/viewform" rel="noopener"><span class="li" style="background:var(--red)"><svg class="ic"><use href="#i-msg"/></svg></span><span data-t="lFeedback">משוב על האתר</span><svg class="ic ext"><use href="#i-ext"/></svg></a>
+          <a class="lk" href="https://sites.google.com/view/drive-play-tv/%D7%AA%D7%A0%D7%90%D7%99-%D7%A9%D7%99%D7%9E%D7%95%D7%A9-%D7%95%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA-drive-play#terms" rel="noopener"><span class="li" style="background:#64748B"><svg class="ic"><use href="#i-doc"/></svg></span><span data-t="lTerms">תנאי שימוש</span><svg class="ic ext"><use href="#i-ext"/></svg></a>
+<a class="lk" href="https://sites.google.com/view/drive-play-tv/%D7%AA%D7%A0%D7%90%D7%99-%D7%A9%D7%99%D7%9E%D7%95%D7%A9-%D7%95%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA-drive-play#privacy" rel="noopener"><span class="li" style="background:#64748B"><svg class="ic"><use href="#i-doc"/></svg></span><span data-t="lPriv">מדיניות פרטיות</span><svg class="ic ext"><use href="#i-ext"/></svg></a>
+          <button class="lk" type="button" data-a11y-open="stmt"><span class="li" style="background:#0EA5E9"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5l-3 6M12 15l3 6"/></svg></span><span data-t="lA11y">הצהרת נגישות</span></button>
+          <button class="lk" type="button" data-consent-open><span class="li" style="background:#F59E0B"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.5A9 9 0 1 1 11.5 3a3 3 0 0 0 4 3.5 3 3 0 0 0 5.5 6z"/><path d="M8.5 9.5h.01M8 14.5h.01M12.5 16.5h.01M15 12h.01"/></svg></span><span data-t="lCook">הגדרות עוגיות</span></button>
+        </div>
+        <p class="copy" data-t="copyright">© כל הזכויות שמורות ל-Drive Play</p>
+      </div>
+    </details>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+'use strict';
+/* ===================== CineAI – העוזר החכם של Drive Play ===================== */
+const TMDB_KEY = 'abc0feab4bffa9f9b761ac72043dde0f';
+const API = 'https://api.themoviedb.org/3';
+const IMG = 'https://image.tmdb.org/t/p';
+const LOGO = document.querySelector('.logo').src;
+
+/* ---------- storage ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+};
+const DEF = { theme: 'dark', accent: 'blue', size: 'm', uiLang: 'he', tone: 'natural', length: 'normal', autoSpeak: false, rate: '1', geminiKey: '', model: 'gemini-flash-latest', typing: true, typeSpeed: 'normal' };
+const cfg = Object.assign({}, DEF, store.get('cineai_settings', {}));
+const saveCfg = () => store.set('cineai_settings', cfg);
+let db = store.get('cineai_v2', null);
+if (!db || !Array.isArray(db.chats)) db = { chats: [], active: null };
+let favs = store.get('cineai_favs', []);
+let stats = store.get('cineai_stats', { q: 0, days: [] });
+const saveDb = () => { db.chats = db.chats.slice(0, 30); db.chats.forEach(c => { c.m = c.m.slice(-80); }); store.set('cineai_v2', db); };
+
+/* ---------- i18n ---------- */
+const I18N = {
+  he: {
+    statusLocal: 'העוזר החכם של Drive Play · מחובר למאגר TMDB', statusAI: 'העוזר החכם של Drive Play · Gemini פעיל', newChat: 'שיחה חדשה', settings: 'הגדרות',
+    placeholder: 'שאלו על סרט, סדרה, שחקן או מצב רוח…', send: 'שליחה', hint: 'Enter לשליחה · Shift+Enter לשורה חדשה · כל ההגדרות והפיצ\'רים בכפתור "הגדרות"',
+    settingsTitle: 'הגדרות ופיצ\'רים', close: 'סגירה', secChats: 'השיחות שלי', secDisc: 'גילוי מהיר', secDiscSub: 'הבחירה של היום, מצב רוח ועוד', dailyPick: 'הבחירה של היום', mood: 'לפי מצב רוח',
+    qTrending: 'מה חם השבוע', qUpcoming: 'בקרוב בקולנוע', qRandom: 'הפתיעו אותי', qFact: 'עובדה מעניינת', secFav: 'המועדפים שלי', secStats: 'סטטיסטיקה', secStatsSub: 'השאלות, השיחות והרצף שלך',
+    secLook: 'מראה והקלדה', secLookSub: 'ערכת צבעים, צבע מוביל, טקסט ואנימציית הקלדה', typingAnim: 'אנימציית הקלדה בתשובות', typeSpeed: 'מהירות ההקלדה', secAbout: 'אודות ועזרה', secAboutSub: 'מה חדש, צור קשר, משוב ותנאי שימוש', lNew: 'מה חדש ב-Drive Play', lContact: 'צור קשר', lFeedback: 'משוב על האתר', lTerms: 'תנאי שימוש', lPriv: 'מדיניות פרטיות', lA11y: 'הצהרת נגישות', lCook: 'הגדרות עוגיות', copyright: '© כל הזכויות שמורות ל-Drive Play', typingNow: 'CineAI מקליד', thinkL: ['חושב…', 'מחפש במאגר TMDB…', 'בודק דירוגים וטריילרים…', 'מנסח לכם תשובה…'], thinkAI: 'שואל את Gemini…', tryPre: 'נסו: ', phList: ['סרט כמו "בין כוכבים"', 'קומדיה רומנטית משנות ה-90', 'מה חם השבוע?', 'ספר לי על "שובר שורות"', 'אנימה מומלצת למתחילים', 'סרטים של כריסטופר נולאן'], theme: 'ערכת צבעים', dark: 'כהה', light: 'בהיר', accent: 'צבע מוביל (מהלוגו)', blue: 'כחול', green: 'ירוק', red: 'אדום',
+    size: 'גודל טקסט', normal: 'רגיל', normalF: 'רגילה', large: 'גדול', secLang: 'שפה וסגנון תשובה', secLangSub: 'שפת ממשק, טון ואורך תשובות', uiLang: 'שפה', tone: 'סגנון התשובות',
+    toneNatural: 'חם וטבעי', toneCritic: 'מבקר קולנוע מקצועי', toneFan: 'מעריץ נלהב', length: 'אורך התשובות', short: 'קצר', detailed: 'מפורט',
+    secVoice: 'הקראה קולית', secVoiceSub: 'הקראת תשובות בקול', autoSpeak: 'הקראה אוטומטית של כל תשובה', rate: 'מהירות הקראה', slow: 'איטית', fast: 'מהירה',
+    secAI: 'בינה מלאכותית (Gemini)', aiExplain: 'בלי מפתח, CineAI עונה מתוך מאגר TMDB: פרטים על סרטים וסדרות, המלצות, שחקנים וטריילרים. עם מפתח Gemini אישי (חינמי ב-Google AI Studio) הוא גם מנהל שיחה חופשית.',
+    apiKey: 'מפתח Gemini API', model: 'מודל', saveTest: 'שמירה ובדיקה', removeKey: 'הסרת המפתח', keyPrivacy: 'המפתח נשמר רק בדפדפן שלך ונשלח ישירות ל-Google. אל תשתמשו במפתח שמופיע בקוד של אתר.', getKey: 'להשגת מפתח',
+    secData: 'נתונים ופרטיות', secDataSub: 'ייצוא ומחיקה', exportChats: 'ייצוא השיחות', wipe: 'מחיקת הכל', dataNote: 'השיחות, המועדפים וההגדרות נשמרים רק בדפדפן הזה. מידע על סרטים: TMDB. האתר משתמש ב-API של TMDB ואינו מאושר על ידה.',
+    loading: 'טוען…', aiOn: 'פעיל', aiOff: 'לא מחובר – עונה מ-TMDB', favEmpty: 'עוד אין מועדפים. לחצו על "שמירה" ליד כל סרט בשיחה.', chatsCount: n => `${n} שיחות`, favCount: n => `${n} כותרים`,
+    stQ: 'שאלות', stC: 'שיחות', stF: 'מועדפים', stS: 'ימי רצף', copy: 'העתקה', speak: 'הקראה', copied: 'הועתק', rename: 'שינוי שם', del: 'מחיקה',
+    renamePrompt: 'שם חדש לשיחה:', delConfirm: 'למחוק את השיחה הזו?', wipeConfirm: 'למחוק את כל השיחות, המועדפים וההגדרות?', wiped: 'כל הנתונים נמחקו',
+    welcomeT: 'שלום, אני CineAI', welcomeP: 'אני מכיר מאות אלפי סרטים וסדרות. שאלו אותי על כל כותר, בקשו המלצה לפי מצב רוח, או גלו מה כדאי לראות הערב.',
+    s1: 'ספר לי על הסרט בין כוכבים', s2: 'המלץ לי על קומדיה טובה לערב', s3: 'הסרטים הכי טובים של כריסטופר נולאן', s4: 'סדרות דומות לשובר שורות',
+    tell: 'ספר לי על', more: 'עוד דומים', trailer: 'טריילר', save: 'שמירה', saved: 'נשמר', whereWatch: 'איפה לצפות', ask: 'ספר לי עליו',
+    keySaved: 'המפתח עובד. Gemini פעיל.', keyBad: 'המפתח לא עבד: ', keyRemoved: 'המפתח הוסר. CineAI עונה מ-TMDB.', keyTesting: 'בודק את המפתח…', noVoice: 'הדפדפן הזה לא תומך בהקראה קולית.',
+    newChatTitle: 'שיחה חדשה', exported: 'קובץ השיחות ירד', moods: [['מצחיק', 'קומדיה'], ['מפחיד', 'אימה'], ['רומנטי', 'רומנטי'], ['מותח', 'מתח'], ['מדע בדיוני', 'מדע בדיוני'], ['מרגש', 'דרמה מרגשת'], ['משפחתי', 'משפחה'], ['אקשן', 'אקשן']]
+  },
+  en: {
+    statusLocal: 'Drive Play smart assistant · Connected to TMDB', statusAI: 'Drive Play smart assistant · Gemini on', newChat: 'New chat', settings: 'Settings',
+    placeholder: 'Ask about a movie, series, actor or mood…', send: 'Send', hint: 'Enter to send · Shift+Enter for a new line · All settings and features are under "Settings"',
+    settingsTitle: 'Settings & features', close: 'Close', secChats: 'My chats', secDisc: 'Quick discovery', secDiscSub: 'Pick of the day, mood and more', dailyPick: 'Pick of the day', mood: 'By mood',
+    qTrending: 'Trending this week', qUpcoming: 'Coming soon', qRandom: 'Surprise me', qFact: 'Fun fact', secFav: 'My favorites', secStats: 'Statistics', secStatsSub: 'Your questions, chats and streak',
+    secLook: 'Look & typing', secLookSub: 'Theme, accent color, text and typing animation', typingAnim: 'Typing animation in answers', typeSpeed: 'Typing speed', secAbout: 'About & help', secAboutSub: 'What\'s new, contact, feedback and terms', lNew: 'What\'s new in Drive Play', lContact: 'Contact us', lFeedback: 'Site feedback', lTerms: 'Terms of use', lPriv: 'Privacy policy', lA11y: 'Accessibility statement', lCook: 'Cookie settings', copyright: '© All rights reserved to Drive Play', typingNow: 'CineAI is typing', thinkL: ['Thinking…', 'Searching TMDB…', 'Checking ratings and trailers…', 'Writing your answer…'], thinkAI: 'Asking Gemini…', tryPre: 'Try: ', phList: ['A movie like "Interstellar"', '90s romantic comedy', 'What\'s trending this week?', 'Tell me about "Breaking Bad"', 'Anime for beginners', 'Christopher Nolan movies'], theme: 'Theme', dark: 'Dark', light: 'Light', accent: 'Accent color (from the logo)', blue: 'Blue', green: 'Green', red: 'Red',
+    size: 'Text size', normal: 'Normal', normalF: 'Normal', large: 'Large', secLang: 'Language & answer style', secLangSub: 'Interface language, tone and length', uiLang: 'Language', tone: 'Answer style',
+    toneNatural: 'Warm & natural', toneCritic: 'Professional critic', toneFan: 'Enthusiastic fan', length: 'Answer length', short: 'Short', detailed: 'Detailed',
+    secVoice: 'Read aloud', secVoiceSub: 'Speak the answers', autoSpeak: 'Read every answer automatically', rate: 'Speech rate', slow: 'Slow', fast: 'Fast',
+    secAI: 'AI (Gemini)', aiExplain: 'Without a key, CineAI answers from the TMDB database: title details, recommendations, people and trailers. With your own Gemini key (free in Google AI Studio) it can also hold a free conversation.',
+    apiKey: 'Gemini API key', model: 'Model', saveTest: 'Save & test', removeKey: 'Remove key', keyPrivacy: 'The key is stored only in your browser and sent directly to Google. Never use a key that appears in a website\'s code.', getKey: 'Get a key',
+    secData: 'Data & privacy', secDataSub: 'Export and delete', exportChats: 'Export chats', wipe: 'Delete everything', dataNote: 'Chats, favorites and settings are stored only in this browser. Movie data: TMDB. This product uses the TMDB API but is not endorsed by TMDB.',
+    loading: 'Loading…', aiOn: 'On', aiOff: 'Not connected – answering from TMDB', favEmpty: 'No favorites yet. Tap "Save" next to any title in the chat.', chatsCount: n => `${n} chats`, favCount: n => `${n} titles`,
+    stQ: 'Questions', stC: 'Chats', stF: 'Favorites', stS: 'Day streak', copy: 'Copy', speak: 'Read', copied: 'Copied', rename: 'Rename', del: 'Delete',
+    renamePrompt: 'New chat name:', delConfirm: 'Delete this chat?', wipeConfirm: 'Delete all chats, favorites and settings?', wiped: 'All data deleted',
+    welcomeT: 'Hi, I\'m CineAI', welcomeP: 'I know hundreds of thousands of movies and series. Ask me about any title, get recommendations by mood, or find something to watch tonight.',
+    s1: 'Tell me about Interstellar', s2: 'Recommend a good comedy for tonight', s3: 'Christopher Nolan\'s best movies', s4: 'Series similar to Breaking Bad',
+    tell: 'Tell me about', more: 'More like this', trailer: 'Trailer', save: 'Save', saved: 'Saved', whereWatch: 'Where to watch', ask: 'Tell me more',
+    keySaved: 'The key works. Gemini is on.', keyBad: 'The key did not work: ', keyRemoved: 'Key removed. CineAI answers from TMDB.', keyTesting: 'Testing the key…', noVoice: 'This browser does not support speech.',
+    newChatTitle: 'New chat', exported: 'Chats file downloaded', moods: [['Funny', 'comedy'], ['Scary', 'horror'], ['Romantic', 'romantic'], ['Tense', 'thriller'], ['Sci-fi', 'science fiction'], ['Moving', 'emotional drama'], ['Family', 'family'], ['Action', 'action']]
+  }
+};
+const T = k => (I18N[cfg.uiLang] || I18N.he)[k] ?? I18N.he[k] ?? k;
+/* in-page questions: the Google Sites frame blocks the browser's own confirm/prompt windows */
+function uiAsk(msg, opts = {}) {
+  return new Promise(res => {
+    const he = (cfg.uiLang || 'he') === 'he';
+    const ov = document.createElement('div'); ov.className = 'ask-ov';
+    const box = document.createElement('div'); box.className = 'ask'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true');
+    const p = document.createElement('p'); p.textContent = msg; box.appendChild(p);
+    let inp = null; if (opts.input != null) { inp = document.createElement('input'); inp.className = 'ask-in'; inp.maxLength = 60; inp.value = opts.input; box.appendChild(inp); }
+    const row = document.createElement('div'); row.className = 'ask-b';
+    const no = document.createElement('button'); no.type = 'button'; no.textContent = he ? 'ביטול' : 'Cancel';
+    const yes = document.createElement('button'); yes.type = 'button'; yes.className = opts.danger ? 'dng' : 'pri'; yes.textContent = opts.danger ? (he ? 'מחיקה' : 'Delete') : (he ? 'אישור' : 'OK');
+    row.append(no, yes); box.appendChild(row); ov.appendChild(box); document.body.appendChild(ov);
+    const done = v => { ov.remove(); document.removeEventListener('keydown', key); res(v); };
+    const key = e => { if (e.key === 'Escape') done(null); else if (e.key === 'Enter') done(inp ? inp.value : true); };
+    no.onclick = () => done(null); yes.onclick = () => done(inp ? inp.value : true);
+    ov.onclick = e => { if (e.target === ov) done(null); };
+    document.addEventListener('keydown', key);
+    setTimeout(() => (inp || yes).focus(), 30);
+  });
+}
+const HE = () => cfg.uiLang !== 'en';
+const tmdbLang = () => HE() ? 'he-IL' : 'en-US';
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const ic = (n, c = '') => `<svg class="ic ${c}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const yearOf = i => ((i.release_date || i.first_air_date || '') + '').slice(0, 4);
+const titleOf = i => i.title || i.name || '';
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const todayStr = () => new Date().toISOString().slice(0, 10);
+let toastT;
+function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2600); }
+const mem = new Map();
+/* titles with no translation come back in their original script (Korean, Japanese, Chinese, Thai): show the English name instead */
+const ODD_SCRIPT = /[\u0e00-\u0e7f\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/;
+async function tmdbNames(url, d) {
+  try {
+    const lg = (String(url).match(/[?&]language=([a-z]{2})/) || [])[1];
+    if (!d || typeof d !== 'object' || !lg || /^(en|ja|ko|zh|th)$/.test(lg) || /person/.test(String(url).split('?')[0])) return d;
+    const nm = x => (x && (x.title || x.name)) || '';
+    const bad = (Array.isArray(d.results) ? d.results : [d]).filter(x => x && typeof x === 'object' && x.media_type !== 'person' && ODD_SCRIPT.test(nm(x)));
+    if (!bad.length) return d;
+    const r = await fetch(String(url).replace(/([?&]language=)[^&]*/, '$1en-US'), { credentials: 'omit' });
+    if (!r.ok) return d;
+    const e = await r.json();
+    const map = new Map((Array.isArray(e.results) ? e.results : [e]).map(x => [(x.media_type || '') + ':' + x.id, nm(x)]));
+    bad.forEach(x => { const n = map.get((x.media_type || '') + ':' + x.id); if (n && !ODD_SCRIPT.test(n)) { if (x.title) x.title = n; else x.name = n; } });
+  } catch (e) {}
+  return d;
+}
+async function tmdb(path, params = {}) {
+  const q = new URLSearchParams({ api_key: TMDB_KEY, language: tmdbLang() });
+  for (const [k, v] of Object.entries(params)) if (v !== '' && v != null) q.set(k, v);
+  const url = `${API}${path}?${q}`;
+  if (mem.has(url)) return mem.get(url);
+  for (let a = 0; ; a++) {
+    const ctrl = new AbortController(), tm = setTimeout(() => ctrl.abort(), 12000);
+    try { const r = await fetch(url, { signal: ctrl.signal }); if (!r.ok) throw new Error('HTTP ' + r.status); const d = await r.json(); await tmdbNames(url, d); mem.set(url, d); return d; }
+    catch (e) { if (a >= 1) throw e; await sleep(800); }
+    finally { clearTimeout(tm); }
+  }
+}
+const slim = (i, t) => ({ id: i.id, media_type: i.media_type || t || 'movie', title: titleOf(i), poster_path: i.poster_path || null, vote_average: i.vote_average || 0, date: i.release_date || i.first_air_date || '', gid: i.genre_ids || (i.genres || []).map(g => g.id), ad: !!i.adult });
+
+/* ---------- CineAI v2: the live Drive Play catalog and the profile's parental controls ----------
+   "kx" (a tab of the catalog sheet) maps TMDB titles to the free catalog, so answers can say what is free to watch here.
+   The viewing age of the signed-in profile (set in the account's parental controls) filters every answer. */
+const CAT_SHEET = '1myc3Dm7YBEqPS32rV7__lInKO-hIxvJ01Yl_A25TPO4';
+const FREE_URL = () => window.DP_WATCH_URL || 'https://sites.google.com/view/drive-play-tv/%D7%A6%D7%A4%D7%99%D7%99%D7%94-%D7%97%D7%95%D7%A4%D7%A9%D7%99%D7%AA';
+let KXD = null, KXP = null;
+async function gunzipB64(b64) {
+  const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+  return new Response(new Blob([bin]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+}
+function kxLoad() {
+  if (KXD) return Promise.resolve(KXD);
+  if (KXP) return KXP;
+  KXP = (async () => {
+    try { const c = JSON.parse(localStorage.getItem('kxcache') || 'null'); if (c && Date.now() - c.t < 864e5 && c.k) { KXD = c.k; return KXD; } } catch (e) {}
+    let csv = '';
+    /* the standalone site serves the catalog files itself; on Google Sites they come from the sheet */
+    if (window.DP_DATA) { try { const r0 = await fetch(window.DP_DATA + 'kx.b64', { credentials: 'omit' }); if (r0.ok) csv = await r0.text(); } catch (e) {} }
+    if (!csv) { const r = await fetch(`https://docs.google.com/spreadsheets/d/${CAT_SHEET}/gviz/tq?tqx=out:csv&headers=0&sheet=kx&_=${Math.floor(Date.now() / 36e5)}`, { credentials: 'omit' }); csv = await r.text(); }
+    const b64 = csv.split('\n').map(l => l.trim().replace(/^"|"$/g, '').replace(/""/g, '"')).join('');
+    KXD = JSON.parse(await gunzipB64(b64)).k || {};
+    try { localStorage.setItem('kxcache', JSON.stringify({ t: Date.now(), k: KXD })); } catch (e) {}
+    return KXD;
+  })().catch(() => { KXP = null; return {}; });
+  return KXP;
+}
+const kxOf = i => KXD && i ? KXD[(i.media_type === 'tv' ? 't' : 'm') + i.id] : null;
+const watchLink = k => window.DP_WATCH_URL ? `${FREE_URL()}?id=${encodeURIComponent(k[0])}` : FREE_URL();
+function accProfile() { const D = window.DPA; return D && D.on && D.acct && D.acct.type === 'acct' ? D.prof : null; }
+function parLv() { try { if (window.DP_EMBED && parent.DPHUB) return parent.DPHUB.parLv(); } catch (e) {} const p = accProfile(); if (!p) return 18; const a = p.age; if (a !== undefined && a !== null && a !== '' && !isNaN(+a)) return +a; return p.kids ? 12 : 18; }
+const kidsProf = () => { try { if (window.DP_EMBED && parent.DPHUB) return !!parent.DPHUB.kids(); } catch (e) {} const p = accProfile(); return !!(p && p.kids); };
+function tmdbAge(i) {
+  if (i.ad) return 18;
+  const k = kxOf(i); if (k && k[1]) return k[1] === 1 ? 0 : k[1];
+  const g = i.gid || [];
+  let a = 12;
+  if (g.includes(10762) || (g.includes(16) && g.includes(10751))) a = 0; else if (g.includes(10751) || g.includes(16)) a = 7;
+  if (g.includes(27)) a = 16; else if (g.some(x => [53, 80, 10752].includes(x))) a = Math.max(a, 14);
+  return a;
+}
+function cineOK(i) {
+  if (!i) return true;
+  const lv = parLv(); if (lv >= 18) return true;
+  if (tmdbAge(i) > lv) return false;
+  if (kidsProf() && !(i.gid || []).some(x => [16, 10751, 10762].includes(x))) return false;
+  return true;
+}
+function cineSys() {
+  const lv = parLv(), he = HE(); let s = '';
+  if (lv < 18) s += he ? ` הצופה בפרופיל עם הגבלת צפייה עד גיל ${lv}${kidsProf() ? ' (פרופיל ילדים)' : ''}: אל תמליץ ואל תפרט על תוכן שלא מתאים לגיל הזה.` : ` The viewer's profile is limited to age ${lv}${kidsProf() ? ' (kids profile)' : ''}: never recommend or describe content unsuitable for that age.`;
+  s += he ? ' בנתונים מצורף free_on_drive_play: כותרים שאפשר לצפות בהם עכשיו בחינם ובאופן חוקי בדף "צפייה חופשית" של Drive Play. כשהם רלוונטיים, ציין זאת.' : ' The data may include free_on_drive_play: titles that can be watched now, free and legally, on the Drive Play "Free Watch" page. Mention it when relevant.';
+  return s;
+}
+/* "what can I watch for free now": popular titles of the asked genre that are in the free catalog */
+async function freeAnswer(intent) {
+  await kxLoad();
+  const he = HE(), types = intent.type === 'tv' ? ['tv'] : intent.type === 'movie' ? ['movie'] : ['movie', 'tv'];
+  /* the catalog map carries TMDB genres, so the search runs on the free titles themselves, most watched first */
+  const want = (intent.genres || []).map(g => [g.id, g.tv]);
+  const lv = parLv();
+  const hits = Object.entries(KXD || {}).filter(([k, v]) => types.includes(k[0] === 't' ? 'tv' : 'movie')
+      && (!want.length || want.some(([m, t]) => (v[3] || []).includes(k[0] === 't' ? t : m)))
+      && (lv >= 18 || ((v[1] === 1 ? 0 : v[1] || 12) <= lv)))
+    .sort((a, b) => a[1][2] - b[1][2]).slice(0, 400);
+  /* most watched per country, interleaved, so one huge film industry does not fill the whole answer */
+  const byG = new Map(); hits.forEach(h => { const g = h[1][4] || ''; if (!byG.has(g)) byG.set(g, []); byG.get(g).push(h); });
+  const mixed = []; for (let k = 0; mixed.length < 16 && k < 40; k++) byG.forEach(l => { if (l[k] && mixed.length < 16) mixed.push(l[k]); });
+  hits.length = 0; hits.push(...mixed);
+  const ds = await Promise.all(hits.map(([k]) => tmdb(`/${k[0] === 't' ? 'tv' : 'movie'}/${k.slice(1)}`).then(d => { d.media_type = k[0] === 't' ? 'tv' : 'movie'; return d; }).catch(() => null)));
+  const pool = ds.filter(d => d && d.poster_path);
+  const seen = new Set(), list = pool.map(r => slim(r, r.media_type)).filter(i => !seen.has(i.media_type + i.id) && seen.add(i.media_type + i.id) && cineOK(i)).slice(0, 10);
+  if (!list.length) return { html: `<p>${he ? 'לא מצאתי כרגע כותרים כאלה בקטלוג החינמי. נסו ז\'אנר אחר, או עברו לדף "צפייה חופשית".' : 'I could not find such titles in the free catalog right now. Try another genre or open the Free Watch page.'}</p>` };
+  return { html: `<p>${he ? 'אפשר לצפות בהם עכשיו בחינם ובאופן חוקי בדף "צפייה חופשית" של Drive Play:' : 'You can watch these now, free and legally, on the Drive Play Free Watch page:'}</p><p><a class="act" href="${FREE_URL()}" data-freehome="1" rel="noopener">${ic('play', 'f')}${he ? 'מעבר לצפייה חופשית' : 'Open Free Watch'}</a></p>`, cards: list, ctx: { free_on_drive_play: list.map(i => i.title) } };
+}
+
+/* ---------- knowledge ---------- */
+const GNAME = { 35: ['קומדיה', 'comedy'], 27: ['אימה', 'horror'], 53: ['מתח', 'thriller'], 10749: ['רומנטיקה', 'romance'], 878: ['מדע בדיוני', 'sci-fi'], 28: ['אקשן', 'action'], 18: ['דרמה', 'drama'], 16: ['אנימציה', 'animation'], 10751: ['משפחה', 'family'], 14: ['פנטזיה', 'fantasy'], 80: ['פשע', 'crime'], 9648: ['מסתורין', 'mystery'], 12: ['הרפתקאות', 'adventure'], 99: ['דוקומנטרי', 'documentary'], 10752: ['מלחמה', 'war'], 36: ['היסטוריה', 'history'], 10402: ['מוזיקה', 'music'], 37: ['מערבון', 'western'] };
+const GENRES = [
+  { id: 35, tv: 35, he: ['קומדי', 'מצחיק', 'צחוק', 'הומור', 'קליל', 'משעשע'], en: ['comedy', 'funny', 'laugh', 'hilarious', 'light'] },
+  { id: 27, tv: 9648, he: ['אימה', 'מפחיד', 'הפחדה', 'זוועה'], en: ['horror', 'scary', 'creepy', 'frightening'] },
+  { id: 53, tv: 80, he: ['מותח', 'מתח', 'מתוח', 'ריגול'], en: ['thriller', 'tense', 'suspense', 'spy'] },
+  { id: 10749, tv: 18, he: ['רומנטי', 'רומנטיק', 'אהבה', 'רומנטית'], en: ['romantic', 'romance', 'love'] },
+  { id: 878, tv: 10765, he: ['מדע בדיוני', 'מד"ב', 'חלל', 'עתידני', 'רובוט'], en: ['sci-fi', 'science fiction', 'scifi', 'space', 'futuristic', 'robot'] },
+  { id: 28, tv: 10759, he: ['אקשן', 'פעולה', 'פיצוצים', 'קרבות'], en: ['action', 'explosive', 'fight'] },
+  { id: 18, tv: 18, he: ['דרמה', 'מרגש', 'מרגשת', 'עצוב', 'דרמטי', 'מחשבה'], en: ['drama', 'emotional', 'moving', 'sad', 'touching'] },
+  { id: 16, tv: 16, he: ['אנימציה', 'מצויר', 'מצוירים'], en: ['animation', 'animated', 'cartoon'] },
+  { id: 10751, tv: 10751, he: ['משפחה', 'משפחתי', 'ילדים', 'לכל המשפחה'], en: ['family', 'kids', 'children'] },
+  { id: 14, tv: 10765, he: ['פנטזיה', 'קסם', 'קסמים', 'דרקון'], en: ['fantasy', 'magic', 'dragon'] },
+  { id: 80, tv: 80, he: ['פשע', 'מאפיה', 'בלש', 'שוד'], en: ['crime', 'mafia', 'heist', 'detective'] },
+  { id: 9648, tv: 9648, he: ['מסתורין', 'תעלומה', 'מסתורי'], en: ['mystery', 'mysterious', 'whodunit'] },
+  { id: 12, tv: 10759, he: ['הרפתקה', 'הרפתקאות', 'מסע'], en: ['adventure', 'quest'] },
+  { id: 99, tv: 99, he: ['דוקומנטרי', 'תיעודי', 'דוקו'], en: ['documentary', 'docu'] },
+  { id: 10752, tv: 10768, he: ['מלחמה', 'צבאי'], en: ['war', 'military'] },
+  { id: 36, tv: 18, he: ['היסטורי', 'היסטוריה', 'תקופתי'], en: ['historical', 'history', 'period'] },
+  { id: 10402, tv: 18, he: ['מוזיקה', 'מחזמר', 'מוזיקלי'], en: ['music', 'musical'] },
+  { id: 37, tv: 37, he: ['מערבון', 'קאובוי'], en: ['western', 'cowboy'] }
+];
+const FACTS = {
+  he: [
+    '"צעצוע של סיפור" (1995) היה סרט הקולנוע הראשון באורך מלא שנוצר כולו בהנפשה ממוחשבת.',
+    '"טיטאניק", "בן חור" ו"שר הטבעות: שובו של המלך" חולקים את השיא של 11 פרסי אוסקר לסרט אחד.',
+    '"פרזיטים" (2019) היה הסרט הראשון בשפה שאינה אנגלית שזכה באוסקר לסרט הטוב ביותר.',
+    'הכריש המכני של "מלתעות" כונה בצוות "ברוס" והתקלקל שוב ושוב, ולכן ספילברג הראה אותו מעט מאוד – וזה רק הגביר את המתח.',
+    'את הקול של דארת\' ויידר ב"מלחמת הכוכבים" דיבב ג\'יימס ארל ג\'ונס, ובתוך התלבושת שיחק דייוויד פראוז.',
+    'את החור השחור ב"בין כוכבים" עיצבו יחד עם הפיזיקאי קיפ ת\'ורן, והעבודה על ההדמיה הובילה גם לפרסומים מדעיים.',
+    'הית\' לדג\'ר זכה באוסקר על תפקיד הג\'וקר ב"האביר האפל" – לאחר מותו.',
+    'בתפקיד מרטי מקפליי ב"בחזרה לעתיד" צולם תחילה אריק סטולץ, ורק אחרי כמה שבועות של צילומים הוחלף במייקל ג\'יי פוקס.',
+    'ב"הקוסם מארץ עוץ" הנעליים של דורותי היו כסופות בספר, והפכו לאדומות בסרט כדי להבליט את צבעי הטכניקולור.',
+    'אפקט "בולט טיים" המפורסם ב"מטריקס" צולם בעזרת שורה ארוכה של מצלמות סטילס שהוצבו סביב השחקן.',
+    'לפני הצילומים של "טיטאניק" צלל ג\'יימס קמרון בעצמו אל שרידי הספינה בקרקעית האוקיינוס.',
+    'החתול שמרלון ברנדו מלטף בסצנת הפתיחה של "הסנדק" היה חתול משוטט שנמצא באולפן.',
+    'המשפט "Play it again, Sam" לא נאמר אף פעם ב"קזבלנקה" – זה ציטוט שגוי שהתקבע בתרבות.',
+    '"שלגיה ושבעת הגמדים" (1937) היה סרט האנימציה המצויר הראשון באורך מלא של דיסני.'
+  ],
+  en: [
+    'Toy Story (1995) was the first feature film made entirely with computer animation.',
+    'Titanic, Ben-Hur and The Return of the King share the record of 11 Academy Awards.',
+    'Parasite (2019) was the first non-English-language film to win Best Picture.',
+    'The mechanical shark in Jaws, nicknamed "Bruce", kept breaking down, so Spielberg showed it far less – which made the film scarier.',
+    'Darth Vader was voiced by James Earl Jones, while David Prowse wore the suit.',
+    'Interstellar\'s black hole was designed with physicist Kip Thorne, and the visualization work led to scientific papers.',
+    'Heath Ledger won a posthumous Oscar for playing the Joker in The Dark Knight.',
+    'Eric Stoltz was originally cast as Marty McFly in Back to the Future before being replaced by Michael J. Fox.',
+    'Dorothy\'s slippers were silver in the book; the film made them ruby red to show off Technicolor.',
+    'The Matrix\'s "bullet time" effect was shot with a long row of still cameras around the actor.',
+    'James Cameron dove to the real Titanic wreck himself before filming.',
+    'The cat Marlon Brando strokes in The Godfather\'s opening scene was a stray found on the lot.',
+    '"Play it again, Sam" is never actually said in Casablanca.',
+    'Snow White and the Seven Dwarfs (1937) was Disney\'s first full-length animated feature.'
+  ]
+};
+
+/* ---------- intent parsing ---------- */
+const norm = s => s.toLowerCase().replace(/[!?.,;:"'׳״()[\]{}…]/g, ' ').replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, ' ').replace(/\s+/g, ' ').trim();
+const has = (t, words) => words.some(w => t.includes(w));
+function detectGenres(t) { return GENRES.filter(g => has(t, g.he) || has(t, g.en)); }
+function detectType(t) {
+  if (has(t, ['אנימה', 'anime'])) return 'anime';
+  if (has(t, ['סדרה', 'סדרות', 'סדרת', 'series', 'show', 'tv'])) return 'tv';
+  return 'movie';
+}
+const ORIGINS = [[['קוריאני', 'קוריאנית', 'korean', 'k-drama'], 'ko'], [['יפני', 'יפנית', 'japanese'], 'ja'], [['צרפתי', 'צרפתית', 'french'], 'fr'], [['ספרדי', 'ספרדית', 'spanish'], 'es'], [['הודי', 'הודית', 'בוליווד', 'indian', 'bollywood'], 'hi'], [['טורקי', 'טורקית', 'turkish'], 'tr'], [['ישראלי', 'ישראלית', 'בעברית', 'israeli'], 'he'], [['איטלקי', 'איטלקית', 'italian'], 'it'], [['גרמני', 'גרמנית', 'german'], 'de'], [['סיני', 'סינית', 'chinese'], 'zh']];
+function detectOrigin(t) { const o = ORIGINS.find(([w]) => has(t, w)); return o ? o[1] : null; }
+function detectEra(t) {
+  let m = t.match(/שנות ה\s*-?\s*(\d{4}|\d0)|\b(19\d0|20\d0)s\b|\b(\d0)['’]?s\b/);
+  if (m) {
+    const v = m[1] || m[2] || m[3];
+    const dec = v.length === 4 ? +v : (+v >= 30 ? 1900 + +v : 2000 + +v);
+    return { gte: `${dec}-01-01`, lte: `${dec + 9}-12-31` };
+  }
+  m = t.match(/\b(19[3-9]\d|20[0-3]\d)\b/);
+  if (m) return { gte: `${m[1]}-01-01`, lte: `${m[1]}-12-31` };
+  if (has(t, ['חדש', 'חדשים', 'new', 'recent', 'latest'])) { const yy = new Date().getFullYear(); return { gte: `${yy - 2}-01-01` }; }
+  if (has(t, ['קלאסי', 'ישן', 'classic', 'old'])) return { lte: '1999-12-31' };
+  return null;
+}
+const STRIP_TITLE = /^(?:תספר לי|ספר לי|ספרי לי|מה אתה יודע|מה את יודעת|תן לי פרטים|פרטים|מידע|מה זה|מה זאת|מי זה|מי זאת|tell me about|what is|what's|who is|info on|details on|about)\s*(?:על|on|about)?\s*/;
+const STRIP_KIND = /^(?:ה?סרט|ה?סדרה|ה?סדרת|ה?אנימה|the movie|the film|the series|the show|movie|film|series|show)\s+/;
+function cleanTitle(s) { return s.replace(STRIP_TITLE, '').replace(STRIP_KIND, '').replace(/\s*\((.*?)\)\s*/g, ' $1 ').trim(); }
+
+async function understand(raw) {
+  const t = norm(raw);
+  if (!t) return { kind: 'help' };
+  if (/^\/?(help|עזרה)$/.test(t) || has(t, ['מה אתה יודע לעשות', 'מה אתה יכול', 'what can you do'])) return { kind: 'help' };
+  if (/^(שלום|היי|הי|אהלן|בוקר טוב|ערב טוב|hello|hi|hey)(\s|$)/.test(t) && t.split(' ').length <= 3) return { kind: 'hello' };
+  if (has(t, ['תודה', 'thanks', 'thank you'])) return { kind: 'thanks' };
+  let m;
+  if ((m = raw.match(/(?:דומ(?:ה|ים|ות) ל|כמו |בסגנון של |בסגנון |similar to |like )(.+)$/i))) return { kind: 'similar', q: cleanTitle(norm(m[1])), type: detectType(t) };
+  if (has(t, ['עובדה', 'מאחורי הקלעים', 'טריוויה', 'fact', 'trivia', 'behind the scenes'])) return { kind: 'fact' };
+  if (has(t, ['הפתע', 'הפתיע', 'אקראי', 'תגריל', 'surprise', 'random'])) return { kind: 'random', type: detectType(t) };
+  if (has(t, ['בחינם', 'חינמי', 'לצפות עכשיו', 'צפייה חופשית', 'for free', 'watch free', 'free to watch', 'free movie', 'free show'])) return { kind: 'free', genres: detectGenres(t), type: detectType(t) };
+  if (has(t, ['בקרוב', 'יוצא בקרוב', 'עתיד לצאת', 'upcoming', 'coming soon'])) return { kind: 'upcoming' };
+  if (has(t, ['בקולנוע עכשיו', 'מה מוקרן', 'now playing', 'in theaters'])) return { kind: 'now' };
+  if (has(t, ['טרנד', 'מה חם', 'הכי פופולרי', 'מה רואים', 'פופולרי', 'trending', 'popular', 'whats hot', 'what\'s hot'])) return { kind: 'trending', type: has(t, ['סדר', 'series', 'show']) ? 'tv' : (has(t, ['סרט', 'movie', 'film']) ? 'movie' : 'all') };
+  if ((m = raw.match(/(?:סרטים|סדרות|הסרטים|הסדרות|movies|films|shows)(?:\s+(?:הכי\s+)?(?:טובים|מומלצים|best|top))?\s*(?:של|עם|by|with|starring|from)\s+(.+?)[?!.]*$/i)) || (m = raw.match(/(?:מי (?:זה|זאת|היה|הייתה)|who is|who was)\s+(.+?)[?!.]*$/i)))
+    if (!detectGenres(norm(m[1])).length) return { kind: 'person', q: m[1].trim(), wantTV: /סדרות|shows/.test(raw), bio: /מי |who /i.test(raw) };
+  if (STRIP_TITLE.test(t) && !/^(?:מה זה|מה זאת|what is|what's)\s+(?:סרט|סדרה|a movie|a show)/.test(t)) { const q = cleanTitle(t); if (q.length > 1) return { kind: 'title', q }; }
+  const genres = detectGenres(t);
+  if (has(t, ['אנימה', 'anime']) && t.split(' ').length <= 4 && !genres.length && !STRIP_TITLE.test(t)) return { kind: 'recommend', genres: [], type: 'anime', era: detectEra(t), best: has(t, ['הכי טוב', 'best', 'top']) };
+  const rec = has(t, ['המלץ', 'תמליץ', 'המלצה', 'ממליץ', 'מומלצ', 'מומלץ', 'recommended', 'בא לי', 'מה לראות', 'מה כדאי', 'תן לי', 'תני לי', 'אני רוצה', 'מחפש', 'recommend', 'suggest', 'something', 'i want', 'looking for', 'what to watch', 'הכי טובים', 'best', 'top']);
+  if (genres.length || (rec && !STRIP_TITLE.test(t))) {
+    if (!genres.length && !has(t, ['סרט', 'סדר', 'אנימה', 'movie', 'film', 'series', 'show', 'anime', 'הכי טובים', 'best', 'top', 'מה לראות', 'what to watch'])) { /* falls through to title search */ }
+    else return { kind: 'recommend', genres, type: detectType(t), era: detectEra(t), lang: detectOrigin(t), best: has(t, ['הכי טוב', 'מדורג', 'קלאסיק', 'best', 'top rated', 'greatest', 'masterpiece', 'מופת']), short: has(t, ['קצר', 'short']) };
+  }
+  return { kind: 'title', q: cleanTitle(t) || t };
+}
+
+/* ---------- answer builders ---------- */
+const TONE = {
+  he: { natural: { rec: ['הנה כמה כותרים שאני חושב שתאהבו:', 'בחרתי בשבילכם כמה אפשרויות טובות:', 'מה דעתכם על אלה?'], open: '' },
+        critic: { rec: ['בחרתי בקפידה כותרים שמחזיקים מעמד גם מול ביקורת:', 'אלה הבחירות שעומדות בסטנדרט גבוה:'], open: '' },
+        fan: { rec: ['יאללה! הנה כמה פנינים שאתם חייבים לראות:', 'וואו, יש לי בדיוק את מה שאתם צריכים:'], open: '' } },
+  en: { natural: { rec: ['Here are a few titles I think you\'ll enjoy:', 'I picked some good options for you:', 'How about these?'] },
+        critic: { rec: ['A carefully chosen selection that holds up to scrutiny:', 'These picks meet a high bar:'] },
+        fan: { rec: ['Oh, you\'re going to love these:', 'I have exactly what you need:'] } }
+};
+const tone = () => (TONE[HE() ? 'he' : 'en'][cfg.tone] || TONE.he.natural);
+const fmtRun = m => !m ? '' : (HE() ? (Math.floor(m / 60) ? `${Math.floor(m / 60)} שע' ${m % 60 ? m % 60 + ' דק\'' : ''}` : `${m} דק'`) : `${Math.floor(m / 60)}h ${m % 60}m`).trim();
+
+async function searchTitle(q, type) {
+  const tries = [q];
+  if (/[א-ת]/.test(q) && q.split(' ').length > 1) tries.push(q.split(' ').slice(0, 3).join(' '));
+  for (const qq of tries) {
+    const path = type && type !== 'anime' && type !== 'all' ? `/search/${type}` : '/search/multi';
+    const d = await tmdb(path, { query: qq, include_adult: 'false' });
+    let res = (d.results || []).map(r => ({ ...r, media_type: r.media_type || (type === 'tv' || type === 'anime' ? 'tv' : 'movie') }));
+    if (res.length) {
+      res.sort((a, b) => ((b.popularity || 0) * (b.media_type === 'person' ? .6 : 1) * (titleOf(b).toLowerCase() === qq ? 3 : 1)) - ((a.popularity || 0) * (a.media_type === 'person' ? .6 : 1) * (titleOf(a).toLowerCase() === qq ? 3 : 1)));
+      const exact = res.find(r => norm(titleOf(r)) === norm(qq) || norm(r.original_title || r.original_name || '') === norm(qq));
+      return exact || res[0];
+    }
+  }
+  return null;
+}
+async function titleAnswer(id, type) {
+  const d = await tmdb(`/${type}/${id}`, { append_to_response: 'credits,videos,watch/providers', include_video_language: `${tmdbLang().slice(0, 2)},en,null` });
+  d.media_type = type;
+  const he = HE(), isTV = type === 'tv';
+  const y = yearOf(d), genres = (d.genres || []).map(g => g.name);
+  const dir = isTV ? (d.created_by || []).map(c => c.name).slice(0, 2) : (d.credits && d.credits.crew || []).filter(c => c.job === 'Director').map(c => c.name).slice(0, 2);
+  const cast = (d.credits && d.credits.cast || []).slice(0, 4).map(c => c.name);
+  const vid = ((d.videos && d.videos.results) || []).filter(v => v.site === 'YouTube').sort((a, b) => (a.type === 'Trailer' ? 0 : 1) - (b.type === 'Trailer' ? 0 : 1) + (b.iso_639_1 === 'he' ? 1 : 0) - (a.iso_639_1 === 'he' ? 1 : 0))[0];
+  const wp = d['watch/providers'] && d['watch/providers'].results && d['watch/providers'].results.IL;
+  const provs = wp ? [...new Set([...(wp.flatrate || []), ...(wp.free || []), ...(wp.ads || []), ...(wp.rent || []), ...(wp.buy || [])].map(p => p.provider_name))].slice(0, 5) : [];
+  const ot = d.original_title || d.original_name;
+  const name = titleOf(d) + (ot && ot !== titleOf(d) ? ` (${ot})` : '');
+  let p1;
+  if (he) {
+    const joinHe = a => a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + (/^[א-ת]/.test(a[a.length - 1]) ? ' ו' : ' ו-') + a[a.length - 1];
+    p1 = `<b>${esc(name)}</b> – ${isTV ? 'סדרה' : 'סרט'}${genres.length ? ' ' + esc(genres.slice(0, 3).join(', ')) : ''}${y ? ` מ-${y}` : ''}${dir.length ? `, ${isTV ? 'מאת' : 'בבימוי'} ${esc(joinHe(dir))}` : ''}.`;
+    const facts = [];
+    if (d.vote_average) facts.push(`דירוג ${d.vote_average.toFixed(1)}/10${d.vote_count ? ` (${d.vote_count.toLocaleString('he-IL')} מדרגים)` : ''}`);
+    if (d.runtime) facts.push(`אורך ${fmtRun(d.runtime)}`);
+    if (isTV && d.number_of_seasons) facts.push(`${d.number_of_seasons === 1 ? 'עונה אחת' : d.number_of_seasons + ' עונות'}, ${d.number_of_episodes} פרקים`);
+    if (facts.length) p1 += ' ' + facts.join(' · ') + '.';
+    if (cast.length) p1 += ` משחקים: ${esc(cast.join(', '))}.`;
+  } else {
+    p1 = `<b>${esc(name)}</b> is a ${y ? y + ' ' : ''}${esc(genres.slice(0, 3).join('/').toLowerCase())} ${isTV ? 'series' : 'film'}${dir.length ? ` ${isTV ? 'created' : 'directed'} by ${esc(dir.join(' and '))}` : ''}.`;
+    const facts = [];
+    if (d.vote_average) facts.push(`Rated ${d.vote_average.toFixed(1)}/10${d.vote_count ? ` (${d.vote_count.toLocaleString('en-US')} votes)` : ''}`);
+    if (d.runtime) facts.push(`runtime ${fmtRun(d.runtime)}`);
+    if (isTV && d.number_of_seasons) facts.push(`${d.number_of_seasons} seasons, ${d.number_of_episodes} episodes`);
+    if (facts.length) p1 += ' ' + facts.join(' · ') + '.';
+    if (cast.length) p1 += ` Starring ${esc(cast.join(', '))}.`;
+  }
+  let text = `<p>${p1}</p>`;
+  if (d.overview && cfg.length !== 'short') text += `<p>${esc(d.overview)}</p>`;
+  else if (d.overview) text += `<p>${esc(d.overview.split(/(?<=[.!?])\s/)[0])}</p>`;
+  if (provs.length) text += `<p>${he ? 'לצפייה רשמית בישראל: ' : 'Officially available in Israel on: '}${esc(provs.join(', '))}.</p>`;
+  const tcard = { id: d.id, media_type: type, title: titleOf(d), poster_path: d.poster_path, vote_average: d.vote_average, date: d.release_date || d.first_air_date || '', genres: genres.slice(0, 4), gid: (d.genres || []).map(g => g.id), ad: !!d.adult, yt: vid ? vid.key : null, watch: wp && wp.link ? wp.link : null };
+  return { html: text, tcard, ctx: { title: name, year: y, type, genres, director: dir, cast, rating: d.vote_average, overview: d.overview, providersIL: provs } };
+}
+async function recommend(intent) {
+  const tv = intent.type === 'tv' || intent.type === 'anime';
+  const p = { sort_by: intent.best ? 'vote_average.desc' : 'popularity.desc', 'vote_count.gte': intent.best ? 1500 : 250, 'vote_average.gte': 6.5, page: 1 + Math.floor(Math.random() * (intent.best ? 2 : 3)) };
+  const ids = [...new Set(intent.genres.map(g => tv ? g.tv : g.id))];
+  if (intent.type === 'anime') { ids.push(16); p.with_original_language = 'ja'; p['vote_count.gte'] = 100; }
+  if (ids.length) p.with_genres = ids.slice(0, 2).join(',');
+  if (intent.era) { if (intent.era.gte) p[tv ? 'first_air_date.gte' : 'primary_release_date.gte'] = intent.era.gte; if (intent.era.lte) p[tv ? 'first_air_date.lte' : 'primary_release_date.lte'] = intent.era.lte; }
+  if (intent.short && !tv) p['with_runtime.lte'] = 100;
+  if (intent.lang) { p.with_original_language = intent.lang; p['vote_count.gte'] = Math.min(p['vote_count.gte'], 80); }
+  if (intent.genres.some(g => g.id === 10751 || g.id === 16) && !tv) p.certification_country = 'US', p['certification.lte'] = 'PG';
+  let d = await tmdb(`/discover/${tv ? 'tv' : 'movie'}`, p);
+  if (!(d.results || []).length && ids.length > 1) { p.with_genres = ids.join('|'); p.page = 1; d = await tmdb(`/discover/${tv ? 'tv' : 'movie'}`, p); }
+  if (!(d.results || []).length) { p.page = 1; delete p['vote_count.gte']; d = await tmdb(`/discover/${tv ? 'tv' : 'movie'}`, p); }
+  const list = shuffle((d.results || []).filter(r => r.poster_path)).slice(0, cfg.length === 'short' ? 5 : 8).map(r => slim(r, tv ? 'tv' : 'movie'));
+  const he = HE();
+  const gname = intent.genres.map(g => GNAME[g.id][he ? 0 : 1]).join(he ? ', ' : ' & ');
+  let text = `<p>${esc(pick(tone().rec))}</p>`;
+  if (list.length) {
+    const top = list.slice(0, 3);
+    text += `<ul>${top.map(i => `<li><b>${esc(i.title)}</b>${i.date ? ` (${i.date.slice(0, 4)})` : ''} – ${he ? 'דירוג' : 'rated'} ${i.vote_average.toFixed(1)}</li>`).join('')}</ul>`;
+    text += `<p class="src">${he ? `${tv ? 'סדרות' : 'סרטים'}${gname ? ' בז\'אנר ' + esc(gname) : ''} · לחצו על כרטיס לפרטים` : `${tv ? 'Series' : 'Movies'}${gname ? ' · ' + esc(gname) : ''} · tap a card for details`}</p>`;
+  } else text = `<p>${he ? 'לא מצאתי כותרים שמתאימים בדיוק. נסו לנסח קצת אחרת.' : 'I couldn\'t find an exact match. Try rephrasing.'}</p>`;
+  return { html: text, cards: list, ctx: { request: intent, results: list.map(i => `${i.title} (${i.date.slice(0, 4)}) ${i.vote_average.toFixed(1)}`) } };
+}
+async function similar(intent) {
+  const base = await searchTitle(intent.q, intent.type === 'movie' ? null : intent.type);
+  if (!base || base.media_type === 'person') return { html: `<p>${HE() ? `לא מצאתי את "${esc(intent.q)}". נסו לכתוב את השם המדויק (גם באנגלית).` : `I couldn't find "${esc(intent.q)}". Try the exact title.`}</p>` };
+  const type = base.media_type;
+  let d = await tmdb(`/${type}/${base.id}/recommendations`);
+  let list = (d.results || []).filter(r => r.poster_path);
+  if (list.length < 4) { d = await tmdb(`/${type}/${base.id}/similar`); list = list.concat((d.results || []).filter(r => r.poster_path)); }
+  list = list.slice(0, cfg.length === 'short' ? 6 : 10).map(r => slim(r, type));
+  const he = HE();
+  return { html: `<p>${he ? `אם אהבתם את <b>${esc(titleOf(base))}</b>, הנה ${type === 'tv' ? 'סדרות' : 'סרטים'} שכדאי לנסות:` : `If you liked <b>${esc(titleOf(base))}</b>, try these:`}</p>${list.length ? '' : `<p>${he ? 'לא מצאתי המלצות.' : 'No recommendations found.'}</p>`}`, cards: list, ctx: { likes: titleOf(base), results: list.map(i => i.title) } };
+}
+async function personAnswer(intent) {
+  const d = await tmdb('/search/person', { query: intent.q });
+  const p = (d.results || [])[0];
+  if (!p) return { html: `<p>${HE() ? `לא מצאתי את "${esc(intent.q)}".` : `I couldn't find "${esc(intent.q)}".`}</p>` };
+  const full = await tmdb(`/person/${p.id}`, { append_to_response: 'combined_credits' });
+  const isDir = full.known_for_department === 'Directing';
+  const src = isDir ? (full.combined_credits.crew || []).filter(c => c.job === 'Director') : (full.combined_credits.cast || []);
+  const seen = new Set();
+  let list = src.filter(c => c.poster_path && c.vote_count > (isDir ? 300 : 500) && !seen.has(c.id) && seen.add(c.id) && (!intent.wantTV || c.media_type === 'tv'));
+  list.sort((a, b) => (b.vote_average || 0) - (a.vote_average || 0));
+  list = list.slice(0, 10).map(c => slim(c, c.media_type));
+  const he = HE();
+  let bio = full.biography;
+  if (!bio && he) { try { bio = (await tmdb(`/person/${p.id}`, { language: 'en-US' })).biography; } catch (e) {} }
+  const fem = full.gender === 1, male = full.gender === 2;
+  const role = isDir ? (he ? (fem ? 'במאית' : male ? 'במאי' : 'במאי/ת') : 'director') : (he ? (fem ? 'שחקנית' : male ? 'שחקן' : 'שחקן/ית') : 'actor');
+  const born = he ? (fem ? 'נולדה' : male ? 'נולד' : 'נולד/ה') : 'born';
+  let html = `<p><b>${esc(full.name)}</b> – ${role}${full.birthday ? `, ${born} ${he ? 'ב-' : 'in '}${full.birthday.slice(0, 4)}` : ''}${full.place_of_birth ? ` (${esc(full.place_of_birth)})` : ''}.</p>`;
+  if (bio && (intent.bio || cfg.length !== 'short')) html += `<p dir="auto">${esc(bio.length > 420 ? bio.slice(0, 420).replace(/\s\S*$/, '') + '…' : bio)}</p>`;
+  if (list.length) html += `<p>${he ? `העבודות הכי מוערכות ${isDir ? (fem ? 'שביימה' : male ? 'שביים' : 'שביים/ה') : (fem ? 'בהשתתפותה' : male ? 'בהשתתפותו' : 'בהשתתפותו/ה')}:` : `Most acclaimed work:`}</p><ul>${list.slice(0, 4).map(i => `<li><b>${esc(i.title)}</b>${i.date ? ` (${i.date.slice(0, 4)})` : ''} – ${i.vote_average.toFixed(1)}</li>`).join('')}</ul>`;
+  return { html, cards: list, ctx: { person: full.name, dept: full.known_for_department, top: list.map(i => i.title) } };
+}
+async function listAnswer(kind, type) {
+  const he = HE();
+  let d, title, t2 = 'movie';
+  if (kind === 'trending') { d = await tmdb(`/trending/${type || 'all'}/week`); title = he ? 'הכי חמים השבוע:' : 'Trending this week:'; t2 = type === 'tv' ? 'tv' : 'movie'; }
+  if (kind === 'upcoming') { d = await tmdb('/discover/movie', { 'primary_release_date.gte': todayStr(), sort_by: 'popularity.desc' }); title = he ? 'סרטים שיוצאים בקרוב:' : 'Coming soon:'; }
+  if (kind === 'now') { d = await tmdb('/movie/now_playing', { region: 'IL' }); title = he ? 'מוקרנים עכשיו בבתי הקולנוע:' : 'Now in theaters:'; }
+  const list = (d.results || []).filter(r => r.poster_path && r.media_type !== 'person' && !(r.genre_ids || []).some(g => [10767, 10763, 10764].includes(g))).slice(0, 10).map(r => slim(r, r.media_type || t2));
+  return { html: `<p>${title}</p><ul>${list.slice(0, 3).map(i => `<li><b>${esc(i.title)}</b>${i.date ? ` (${kind === 'upcoming' ? new Date(i.date).toLocaleDateString(he ? 'he-IL' : 'en-US', { day: 'numeric', month: 'long' }) : i.date.slice(0, 4)})` : ''}</li>`).join('')}</ul>`, cards: list, ctx: { list: list.map(i => i.title) } };
+}
+async function randomAnswer(intent) {
+  const tv = intent.type === 'tv';
+  const d = await tmdb(`/discover/${tv ? 'tv' : 'movie'}`, { sort_by: 'vote_average.desc', 'vote_count.gte': 2000, page: 1 + Math.floor(Math.random() * 8) });
+  const it = pick((d.results || []).filter(r => r.poster_path));
+  const r = await titleAnswer(it.id, tv ? 'tv' : 'movie');
+  r.html = `<p>${HE() ? 'הגרלתי בשבילכם כותר מעולה:' : 'Here\'s a great random pick:'}</p>` + r.html;
+  return r;
+}
+function helpAnswer() {
+  const he = HE();
+  return { html: he ? `<p>אני יכול לעזור לכם ב:</p><ul><li><b>פרטים על כותר</b> – "ספר לי על פרזיטים"</li><li><b>המלצות</b> – "סרט אימה משנות ה-80", "קומדיה קצרה"</li><li><b>דומים</b> – "סדרות כמו חברים"</li><li><b>אנשים</b> – "סרטים של טרנטינו", "מי זאת זנדאיה"</li><li><b>מה חדש</b> – "מה חם השבוע", "מה יוצא בקרוב"</li><li><b>הפתעות ועובדות</b> – "הפתע אותי", "עובדה מעניינת"</li></ul><p>כל ההגדרות והפיצ'רים הנוספים נמצאים בכפתור <b>הגדרות</b> למעלה.</p>`
+    : `<p>I can help with:</p><ul><li><b>Title details</b> – "tell me about Parasite"</li><li><b>Recommendations</b> – "80s horror movie", "short comedy"</li><li><b>Similar titles</b> – "shows like Friends"</li><li><b>People</b> – "Tarantino movies", "who is Zendaya"</li><li><b>What's new</b> – "trending this week", "coming soon"</li><li><b>Surprises & facts</b> – "surprise me", "fun fact"</li></ul><p>All settings and extra features are under <b>Settings</b>.</p>` };
+}
+
+/* ---------- Gemini (optional, user's own key) ---------- */
+async function gemini(userText, history, context) {
+  const sys = (HE()
+    ? `אתה CineAI, עוזר הקולנוע של האתר Drive Play. ענה בעברית טבעית וזורמת. ${cfg.tone === 'critic' ? 'סגנון: מבקר קולנוע מקצועי, מדויק ומנומק.' : cfg.tone === 'fan' ? 'סגנון: מעריץ נלהב ואנרגטי.' : 'סגנון: חם, אנושי וידידותי.'} ${cfg.length === 'short' ? 'ענה בקצרה – עד 3 משפטים.' : 'ענה בפירוט סביר, עד 2-3 פסקאות קצרות.'} אם מצורפים נתוני TMDB – הסתמך עליהם ואל תמציא עובדות. אל תפנה לאתרי צפייה פיראטיים; אם שואלים איפה לצפות, הזכר רק שירותים רשמיים. השתמש ב-**הדגשה** ובתבליטים כשזה עוזר. אל תשתמש באימוג'י.`
+    : `You are CineAI, the movie assistant of the Drive Play website. ${cfg.tone === 'critic' ? 'Style: professional, precise film critic.' : cfg.tone === 'fan' ? 'Style: enthusiastic fan.' : 'Style: warm and friendly.'} ${cfg.length === 'short' ? 'Keep it to 3 sentences.' : 'Be reasonably detailed, 2-3 short paragraphs max.'} If TMDB data is attached, rely on it and do not invent facts. Never point to pirate streaming sites; only mention official services. Use **bold** and bullets when helpful. No emoji.`);
+  const contents = history.slice(-10).map(m => ({ role: m.r === 'u' ? 'user' : 'model', parts: [{ text: m.plain || m.t.replace(/<[^>]+>/g, ' ') }] }));
+  contents.push({ role: 'user', parts: [{ text: context ? `${userText}\n\n[TMDB data for grounding: ${JSON.stringify(context).slice(0, 3500)}]` : userText }] });
+  const models = [cfg.model, 'gemini-flash-latest', 'gemini-3.8-flash'].filter((v, i, a) => v && a.indexOf(v) === i);
+  let lastErr;
+  for (const model of models) {
+    const ctrl = new AbortController(), tm = setTimeout(() => ctrl.abort(), 30000);
+    try {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
+        method: 'POST', signal: ctrl.signal, headers: { 'Content-Type': 'application/json', 'x-goog-api-key': cfg.geminiKey },
+        body: JSON.stringify({ systemInstruction: { parts: [{ text: sys + cineSys() }] }, contents, generationConfig: { temperature: 0.7, maxOutputTokens: cfg.length === 'short' ? 400 : 1200 } })
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) { lastErr = (j.error && j.error.message) || ('HTTP ' + r.status); if (r.status === 404) continue; throw new Error(lastErr); }
+      const txt = (((j.candidates || [])[0] || {}).content || {}).parts?.map(p => p.text || '').join('') || '';
+      if (!txt) throw new Error('empty');
+      return txt;
+    } catch (e) { lastErr = e.message || String(e); if (!/404|not found/i.test(lastErr)) break; }
+    finally { clearTimeout(tm); }
+  }
+  throw new Error(lastErr || 'error');
+}
+function mdToHtml(s) {
+  const lines = esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(^|\s)\*(\S[^*]*?)\*(?=\s|$)/g, '$1$2').split(/\n/);
+  let out = '', inList = false;
+  for (let l of lines) {
+    l = l.replace(/^#{1,6}\s*/, '');
+    if (/^\s*([-*•]|\d+[.)])\s+/.test(l)) { if (!inList) { out += '<ul>'; inList = true; } out += `<li>${l.replace(/^\s*([-*•]|\d+[.)])\s+/, '')}</li>`; continue; }
+    if (inList) { out += '</ul>'; inList = false; }
+    if (l.trim()) out += `<p>${l}</p>`;
+  }
+  if (inList) out += '</ul>';
+  return out;
+}
+
+/* ---------- chat model ---------- */
+function activeChat() {
+  let c = db.chats.find(x => x.id === db.active);
+  if (!c) { c = { id: Date.now(), title: T('newChatTitle'), at: Date.now(), m: [] }; db.chats.unshift(c); db.active = c.id; saveDb(); }
+  return c;
+}
+function newChat() {
+  const cur = db.chats.find(x => x.id === db.active);
+  if (cur && !cur.m.length) { render(); closeDrawer(); $('#inp').focus(); return; }
+  const c = { id: Date.now(), title: T('newChatTitle'), at: Date.now(), m: [] };
+  db.chats.unshift(c); db.active = c.id; saveDb(); render(); renderChats(); closeDrawer(); $('#inp').focus();
+}
+function bumpStats() {
+  stats.q++;
+  const d = todayStr();
+  if (!stats.days.includes(d)) stats.days.push(d);
+  stats.days = stats.days.slice(-400);
+  store.set('cineai_stats', stats);
+}
+function streak() {
+  const set = new Set(stats.days); let n = 0; const d = new Date();
+  if (!set.has(todayStr())) d.setDate(d.getDate() - 1);
+  while (set.has(d.toISOString().slice(0, 10))) { n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+
+/* ---------- rendering ---------- */
+function cardsHTML(list) {
+  if (!list || !list.length) return '';
+  return `<div class="cards noscroll">${list.map((i, k) => `<button class="mc" style="--i:${k}" type="button" data-ask="${i.media_type}:${i.id}" data-title="${esc(i.title)}"><div class="pp"><span class="nt">${esc(i.title)}</span>${kxOf(i) ? `<span class="freeb">${HE() ? 'חינם ב-Drive Play' : 'Free on Drive Play'}</span>` : ''}${i.poster_path ? `<img src="${IMG}/w185${i.poster_path}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ''}${i.vote_average ? `<span class="r">${ic('star', 'f')}${(+i.vote_average).toFixed(1)}</span>` : ''}</div><div class="t">${esc(i.title)}</div><div class="y">${(i.date || '').slice(0, 4)}</div></button>`).join('')}</div>`;
+}
+function tcardHTML(c) {
+  if (!c) return '';
+  const isFav = favs.some(f => f.id === c.id && f.media_type === c.media_type);
+  return `<div class="tcard">${c.poster_path ? `<img src="${IMG}/w185${c.poster_path}" alt="${esc(c.title)}" loading="lazy">` : ''}<div style="min-width:0;flex:1"><div class="tt">${esc(c.title)}</div><div class="tm">${c.vote_average ? `<span class="st">★ ${(+c.vote_average).toFixed(1)}</span> · ` : ''}${(c.date || '').slice(0, 4)} · ${c.media_type === 'tv' ? (HE() ? 'סדרה' : 'Series') : (HE() ? 'סרט' : 'Movie')}</div>${c.genres && c.genres.length ? `<div class="gl">${c.genres.map(g => `<span>${esc(g)}</span>`).join('')}</div>` : ''}
+<div class="acts">${kxOf(c) ? `<a class="act green" href="${watchLink(kxOf(c))}" data-free="${esc(kxOf(c)[0])}" rel="noopener">${ic('play', 'f')}${HE() ? 'צפייה בחינם ב-Drive Play' : 'Watch free on Drive Play'}</a>` : ''}${c.yt ? `<a class="act red" href="https://www.youtube.com/watch?v=${esc(c.yt)}" rel="noopener">${ic('play', 'f')}${T('trailer')}</a>` : ''}<button class="act${isFav ? ' on' : ''}" type="button" data-fav="${c.media_type}:${c.id}">${ic(isFav ? 'check' : 'heart')}<span>${isFav ? T('saved') : T('save')}</span></button>${EMBED ? `<button class="act" type="button" data-hubinfo="${c.media_type}:${c.id}">${ic('info')}מידע מלא</button>` : ''}<button class="act" type="button" data-more="${esc(c.title)}" data-mt="${c.media_type}">${ic('grid')}${T('more')}</button>${c.watch ? `<a class="act" href="${esc(c.watch)}" rel="noopener">${ic('ext')}${T('whereWatch')}</a>` : ''}</div></div></div>`;
+}
+function msgHTML(m, idx) {
+  if (m.r === 'u') return `<div class="msg user"><div class="av">${ic('user')}</div><div class="bub">${esc(m.t)}</div></div>`;
+  return `<div class="msg bot" data-i="${idx}"><div class="av"><img src="${LOGO}" alt=""></div><div class="bub">${m.t}${m.tc ? tcardHTML(m.tc) : ''}${cardsHTML(m.c)}${m.ai ? `<div class="src">${HE() ? 'תשובה מ-Gemini · נתונים מ-TMDB' : 'Answer by Gemini · data from TMDB'}</div>` : ''}${m.err ? `<div class="src">${esc(m.err)}</div>` : ''}<div class="tools"><button type="button" data-copy="${idx}">${ic('copy')}${T('copy')}</button><button type="button" data-speak="${idx}">${ic('vol')}${T('speak')}</button></div></div></div>`;
+}
+function welcomeHTML() {
+  const sug = [['s1', 'film', 'var(--blue)'], ['s2', 'spark', 'var(--green)'], ['s3', 'user', 'var(--red)'], ['s4', 'grid', '#0EA5E9']];
+  return `<div class="welcome"><div class="wlogo"><i class="ring"></i><i class="ring r2"></i><img src="${LOGO}" alt="" width="110"></div><h2>${T('welcomeT')}</h2><p>${T('welcomeP')}</p><div class="sugs">${sug.map(([k, i, c], d) => `<button class="sug" style="--d:${d}" type="button" data-say="${esc(T(k))}"><span class="si" style="background:${c}">${ic(i)}</span>${esc(T(k))}</button>`).join('')}</div></div>`;
+}
+function render() {
+  if (typer) typer.cancel();
+  const c = activeChat(), box = $('#msgs');
+  box.innerHTML = c.m.length ? c.m.map((m, i) => msgHTML(m, i)).join('') : welcomeHTML();
+  if (!c.m.length) animateWelcome();
+  scrollDown(false);
+}
+
+/* ---------- typing animations ---------- */
+const CPS = { slow: 38, normal: 75, fast: 150 };
+let typer = null, thinkT = null, phT = null;
+function canAnimate() { return cfg.typing !== false && !matchMedia('(prefers-reduced-motion: reduce)').matches; }
+function setBusy(on) {
+  $('#stDot').classList.toggle('busy', on);
+  if (on) $('#stTxt').innerHTML = `<span class="tdots">${esc(T('typingNow'))}<i>.</i><i>.</i><i>.</i></span>`;
+  else updateStatus();
+}
+function showThinking() {
+  const labels = T('thinkL').slice();
+  if (cfg.geminiKey) labels.splice(2, 0, T('thinkAI'));
+  $('#msgs').insertAdjacentHTML('beforeend', `<div class="msg bot thinking" id="typing"><div class="av"><img src="${LOGO}" alt=""></div><div class="bub think"><span class="typing"><i></i><i></i><i></i></span><span class="tlab" id="tlab">${esc(labels[0])}</span></div></div>`);
+  let k = 0; clearInterval(thinkT);
+  thinkT = setInterval(() => {
+    const el = $('#tlab'); if (!el) { clearInterval(thinkT); return; }
+    k = Math.min(k + 1, labels.length - 1);
+    el.classList.remove('swap'); void el.offsetWidth; el.textContent = labels[k]; el.classList.add('swap');
+  }, 1250);
+  setBusy(true);
+}
+function hideThinking() { clearInterval(thinkT); const ty = $('#typing'); if (ty) ty.remove(); }
+function nearBottom() { const ch = $('#chat'); return ch.scrollHeight - ch.scrollTop - ch.clientHeight < 160; }
+/* reveals a bot answer word by word with a blinking caret; cards, buttons and sources glide in afterwards */
+function typeMessage(msgEl, onDone) {
+  const bub = msgEl.querySelector('.bub');
+  const extras = Array.from(bub.children).filter(c => c.matches('.tcard,.cards,.src,.tools'));
+  extras.forEach(x => x.classList.add('later'));
+  const showExtras = () => extras.forEach((x, k) => { x.style.animationDelay = (k * 90) + 'ms'; x.classList.add('show'); });
+  const end = () => { showExtras(); setBusy(false); if (onDone) onDone(); };
+  if (!canAnimate()) { end(); return; }
+  const walker = document.createTreeWalker(bub, NodeFilter.SHOW_TEXT, { acceptNode: n => (!n.data.length || extras.some(x => x.contains(n))) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+  const nodes = []; let n;
+  while ((n = walker.nextNode())) nodes.push({ n, full: n.data, shown: -1, rev: false });
+  const full = nodes.map(x => x.full).join(''), total = full.length;
+  if (!total) { end(); return; }
+  const offs = []; let acc = 0; nodes.forEach(x => { offs.push(acc); acc += x.full.length; });
+  nodes.forEach(x => { x.n.data = ''; let p = x.n.parentElement; while (p && p !== bub) { p.classList.add('tw-h'); p = p.parentElement; } });
+  const caret = document.createElement('span'); caret.className = 'caret';
+  const ch = $('#chat'); ch.style.scrollBehavior = 'auto';
+  const dur = Math.min(Math.max(total / (CPS[cfg.typeSpeed] || 75), .35), 4.5) * 1000;   // long answers never take more than ~4.5 seconds
+  msgEl.classList.add('typing-now');
+  let ni = 0, raf = 0, t0 = 0, done = false;
+  const setNode = (i, len) => {
+    const x = nodes[i]; if (x.shown === len) return;
+    x.shown = len; x.n.data = x.full.slice(0, len);
+    if (len > 0 && !x.rev) { x.rev = true; let p = x.n.parentElement; while (p && p !== bub) { p.classList.remove('tw-h'); p = p.parentElement; } }
+  };
+  const show = target => {
+    while (ni < nodes.length && offs[ni] + nodes[ni].full.length <= target) { setNode(ni, nodes[ni].full.length); ni++; }
+    if (ni < nodes.length) { setNode(ni, target - offs[ni]); nodes[ni].n.after(caret); }
+  };
+  const stop = () => { done = true; cancelAnimationFrame(raf); caret.remove(); msgEl.classList.remove('typing-now'); ch.style.scrollBehavior = ''; typer = null; };
+  const finish = () => { if (done) return; show(total); stop(); bub.querySelectorAll('.tw-h').forEach(e => e.classList.remove('tw-h')); end(); scrollDown(); };
+  const frame = ts => {
+    if (done) return;
+    if (!t0) t0 = ts;
+    const k = Math.min(1, (ts - t0) / dur);
+    let target = Math.floor(total * k);
+    if (target < total) { const sp = full.indexOf(' ', target); target = sp === -1 ? total : sp; }
+    const follow = nearBottom();
+    show(target);
+    if (follow) ch.scrollTop = ch.scrollHeight;
+    if (target >= total) { finish(); return; }
+    raf = requestAnimationFrame(frame);
+  };
+  bub.addEventListener('click', finish, { once: true });
+  typer = { finish, cancel: () => { if (!done) { stop(); setBusy(false); } } };
+  raf = requestAnimationFrame(frame);
+}
+function animateWelcome() {
+  const h = $('.welcome h2');
+  if (!h || !canAnimate()) return;
+  const full = h.textContent, tx = document.createTextNode(''), c = document.createElement('span');
+  c.className = 'caret'; h.textContent = ''; h.append(tx, c);
+  let i = 0;
+  const tick = () => { if (!h.isConnected) return; tx.data = full.slice(0, ++i); if (i < full.length) setTimeout(tick, 36); else setTimeout(() => c.remove(), 1200); };
+  setTimeout(tick, 300);
+}
+/* the composer hint types example questions while it is empty */
+function startPh() {
+  clearTimeout(phT);
+  const inp = $('#inp');
+  inp.placeholder = T('placeholder');
+  if (!canAnimate()) return;
+  const list = T('phList'), pre = T('tryPre');
+  let k = 0, i = 0, del = false;
+  const tick = () => {
+    if (inp.value) { phT = setTimeout(tick, 900); return; }
+    const w = list[k];
+    if (!del) { i++; inp.placeholder = pre + w.slice(0, i) + '…'; if (i >= w.length) { del = true; phT = setTimeout(tick, 1800); return; } phT = setTimeout(tick, 55); }
+    else { i--; inp.placeholder = i > 0 ? pre + w.slice(0, i) + '…' : T('placeholder'); if (i <= 0) { del = false; k = (k + 1) % list.length; phT = setTimeout(tick, 1400); return; } phT = setTimeout(tick, 24); }
+  };
+  phT = setTimeout(tick, 2200);
+}
+function scrollDown(smooth = true) { const ch = $('#chat'); requestAnimationFrame(() => ch.scrollTo({ top: ch.scrollHeight, behavior: smooth ? 'smooth' : 'auto' })); }
+function applyI18n() {
+  const en = cfg.uiLang === 'en';
+  document.documentElement.lang = en ? 'en' : 'he';
+  document.documentElement.dir = en ? 'ltr' : 'rtl';
+  $$('[data-t]').forEach(el => { const v = T(el.dataset.t); if (typeof v === 'string') el.textContent = v; });
+  $$('[data-t-ph]').forEach(el => el.placeholder = T(el.dataset.tPh));
+  $$('[data-t-title]').forEach(el => el.title = T(el.dataset.tTitle));
+  $$('[data-t-aria]').forEach(el => el.setAttribute('aria-label', T(el.dataset.tAria)));
+  updateStatus();
+}
+function updateStatus() {
+  const ai = !!cfg.geminiKey;
+  const st = (ai ? T('statusAI') : T('statusLocal')).split(' · ');
+  $('#stTxt').innerHTML = `${esc(st[0])}<span class="st2"> · ${esc(st[1] || '')}</span>`;
+  $('#stDot').classList.toggle('g', ai);
+  $('#aiSub').textContent = ai ? `${T('aiOn')} · ${cfg.model}` : T('aiOff');
+}
+
+/* ---------- send ---------- */
+let busy = false;
+async function send(text, opts = {}) {
+  text = (text || '').trim();
+  if (!text || busy) return;
+  if (typer) typer.finish();
+  busy = true; $('#sendBtn').disabled = true;
+  const sbn = $('#sendBtn'); sbn.classList.remove('fly'); void sbn.offsetWidth; sbn.classList.add('fly');
+  const chat = activeChat();
+  if (!chat.m.length) { chat.title = text.length > 40 ? text.slice(0, 40) + '…' : text; }
+  chat.m.push({ r: 'u', t: text, at: Date.now() }); chat.at = Date.now();
+  if (!chat.m.slice(0, -1).length) $('#msgs').innerHTML = '';
+  $('#msgs').insertAdjacentHTML('beforeend', msgHTML(chat.m[chat.m.length - 1]));
+  showThinking();
+  const thinkStart = Date.now();
+  scrollDown();
+  bumpStats(); saveDb(); renderChats();
+  let res = null, err = '';
+  try {
+    if (opts.direct) res = await titleAnswer(opts.direct.id, opts.direct.type);
+    else {
+      const it = await understand(text);
+      switch (it.kind) {
+        case 'help': res = helpAnswer(); break;
+        case 'hello': res = { html: `<p>${HE() ? 'שלום! על מה בא לכם לדבר – סרט מסוים, המלצה לערב או שחקן אהוב?' : 'Hi! What would you like – a specific title, a recommendation, or a favorite actor?'}</p>` }; break;
+        case 'thanks': res = { html: `<p>${HE() ? 'בכיף! אם תרצו עוד המלצות, אני כאן.' : 'Anytime! I\'m here if you want more picks.'}</p>` }; break;
+        case 'fact': { const f = FACTS[HE() ? 'he' : 'en']; res = { html: `<p><b>${HE() ? 'הידעתם?' : 'Did you know?'}</b> ${esc(pick(f))}</p>` }; break; }
+        case 'random': res = await randomAnswer(it); break;
+        case 'upcoming': case 'now': res = await listAnswer(it.kind); break;
+        case 'trending': res = await listAnswer('trending', it.type); break;
+        case 'similar': res = await similar(it); break;
+        case 'person': res = await personAnswer(it); break;
+        case 'recommend': res = await recommend(it); break;
+        case 'free': res = await freeAnswer(it); break;
+        default: {
+          const hit = await searchTitle(it.q);
+          if (hit && hit.media_type === 'person') res = await personAnswer({ q: hit.name, bio: true });
+          else if (hit) res = await titleAnswer(hit.id, hit.media_type);
+          else if (!cfg.geminiKey) res = { html: `<p>${HE() ? `לא מצאתי משהו שמתאים ל"${esc(text)}". אפשר לנסות שם של סרט או סדרה (גם באנגלית), שחקן, או בקשה כמו "קומדיה רומנטית משנות ה-90".` : `I couldn't find anything for "${esc(text)}". Try a title, an actor, or something like "90s romantic comedy".`}</p>` };
+        }
+      }
+    }
+  } catch (e) { err = String(e.message || e); }
+  try { await Promise.race([kxLoad(), sleep(2500)]); } catch (e) {}
+  if (res && res.cards && res.cards.length) {
+    const n0 = res.cards.length; res.cards = res.cards.filter(cineOK);
+    /* the answer text named titles that the profile may not see: say it plainly instead */
+    if (res.cards.length < n0) res.html = res.cards.length ? `<p>${HE() ? 'בחרתי אפשרויות שמתאימות לסיווג הצפייה של הפרופיל:' : 'Here are picks that fit this profile\'s viewing age:'}</p>` : `<p>${HE() ? 'לא מצאתי המלצות שמתאימות לסיווג הצפייה שנקבע לפרופיל בבקרת ההורים. נסו ז\'אנר אחר, למשל אנימציה או משפחה.' : 'I found no picks that fit the viewing age set for this profile. Try another genre, such as animation or family.'}</p>`;
+  }
+  if (res && res.tcard && !cineOK(res.tcard)) res = { html: `<p>${HE() ? 'הכותר הזה לא מתאים לסיווג הצפייה שנקבע לפרופיל בבקרת ההורים.' : 'This title does not fit the viewing age set for this profile in parental controls.'}</p>` };
+  if (res) { const fr = [].concat(res.tcard ? [res.tcard] : [], res.cards || []).filter(kxOf).map(i => i.title); if (fr.length) res.ctx = Object.assign({}, res.ctx || {}, { free_on_drive_play: fr }); }
+  let aiUsed = false;
+  if (cfg.geminiKey) {
+    try {
+      const out = await gemini(text, chat.m.slice(0, -1), res && res.ctx ? res.ctx : null);
+      res = Object.assign(res || {}, { html: mdToHtml(out), plain: out });
+      aiUsed = true;
+    } catch (e) { if (!res) err = e.message; else res.err = (HE() ? 'Gemini לא זמין כרגע: ' : 'Gemini unavailable: ') + e.message; }
+  }
+  if (!res) res = { html: `<p>${HE() ? 'משהו השתבש בחיבור. בדקו את האינטרנט ונסו שוב.' : 'Something went wrong with the connection. Please try again.'}</p>`, err };
+  const bm = { r: 'b', t: res.html, at: Date.now() };
+  if (res.cards && res.cards.length) bm.c = res.cards;
+  if (res.tcard) bm.tc = res.tcard;
+  if (aiUsed) { bm.ai = 1; bm.plain = res.plain; }
+  if (res.err) bm.err = res.err;
+  chat.m.push(bm); saveDb();
+  const waited = Date.now() - thinkStart;
+  if (canAnimate() && waited < 750) await new Promise(r => setTimeout(r, 750 - waited));   // let the "thinking" animation be seen even when the answer is instant
+  hideThinking();
+  $('#msgs').insertAdjacentHTML('beforeend', msgHTML(bm, chat.m.length - 1));
+  scrollDown();
+  busy = false; $('#sendBtn').disabled = !$('#inp').value.trim();
+  typeMessage($('#msgs').lastElementChild);
+  if (cfg.autoSpeak) speak(bm);
+  renderStats();
+}
+
+/* ---------- speech ---------- */
+function plainOf(m) { const d = document.createElement('div'); d.innerHTML = m.t; return (d.innerText || d.textContent || '').trim(); }
+function speak(m) {
+  if (!('speechSynthesis' in window)) return toast(T('noVoice'));
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(plainOf(m));
+  u.lang = HE() ? 'he-IL' : 'en-US'; u.rate = +cfg.rate || 1;
+  const v = speechSynthesis.getVoices().find(v => v.lang && v.lang.toLowerCase().startsWith(HE() ? 'he' : 'en'));
+  if (v) u.voice = v;
+  speechSynthesis.speak(u);
+}
+
+/* ---------- drawer ---------- */
+function openDrawer() { renderChats(); renderFavs(); renderStats(); loadDaily(); $('#drawer').classList.add('on'); $('#scrim').classList.add('on'); $('#setBtn').setAttribute('aria-expanded', 'true'); setTimeout(() => $('#dClose').focus(), 60); }
+function closeDrawer() { $('#drawer').classList.remove('on'); $('#scrim').classList.remove('on'); $('#setBtn').setAttribute('aria-expanded', 'false'); }
+function renderChats() {
+  const list = db.chats.filter(c => c.m.length || c.id === db.active);
+  $('#chatsSub').textContent = T('chatsCount')(db.chats.filter(c => c.m.length).length);
+  $('#chatList').innerHTML = list.map(c => `<div class="ci${c.id === db.active ? ' on' : ''}"><button class="cn" type="button" data-chat="${c.id}">${esc(c.title)}</button><span class="cd">${new Date(c.at).toLocaleDateString(HE() ? 'he-IL' : 'en-US', { day: 'numeric', month: 'numeric' })}</span><button class="mini" type="button" data-ren="${c.id}" aria-label="${T('rename')}" title="${T('rename')}">${ic('edit')}</button><button class="mini" type="button" data-del="${c.id}" aria-label="${T('del')}" title="${T('del')}">${ic('trash')}</button></div>`).join('');
+}
+function renderFavs() {
+  $('#favSub').textContent = T('favCount')(favs.length);
+  $('#favList').innerHTML = favs.length ? favs.map(f => `<div class="fav">${f.poster_path ? `<img src="${IMG}/w92${f.poster_path}" alt="">` : ''}<button class="fn" type="button" data-ask="${f.media_type}:${f.id}" data-title="${esc(f.title)}">${esc(f.title)}<small>${(f.date || '').slice(0, 4)} · ${f.media_type === 'tv' ? (HE() ? 'סדרה' : 'Series') : (HE() ? 'סרט' : 'Movie')}</small></button><button class="x" style="width:30px;height:30px" type="button" data-unfav="${f.media_type}:${f.id}" aria-label="${T('del')}">${ic('x')}</button></div>`).join('') : `<p class="note">${T('favEmpty')}</p>`;
+}
+function renderStats() {
+  const s = [[stats.q, T('stQ')], [db.chats.filter(c => c.m.length).length, T('stC')], [favs.length, T('stF')], [streak(), T('stS')]];
+  $('#stats').innerHTML = s.map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+}
+let dailyKey = '';
+async function loadDaily() {
+  const key = todayStr() + cfg.uiLang;
+  if (dailyKey === key) return;
+  const box = $('#daily');
+  try {
+    const day = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5);
+    const d = await tmdb('/movie/top_rated', { page: 1 + (day % 15) });
+    const list = (d.results || []).filter(r => r.poster_path && r.overview);
+    const it = list[day % list.length];
+    box.innerHTML = `<div class="daily"><img src="${IMG}/w154${it.poster_path}" alt=""><div style="flex:1;min-width:0"><div class="dt">${esc(it.title)}</div><div class="dm">★ ${it.vote_average.toFixed(1)} · ${(it.release_date || '').slice(0, 4)}</div><button class="act" type="button" style="margin-top:6px" data-ask="movie:${it.id}" data-title="${esc(it.title)}">${ic('film')}${T('ask')}</button></div></div>`;
+    dailyKey = key;
+  } catch (e) { box.innerHTML = `<p class="note">—</p>`; }
+}
+function syncControls() {
+  $$('[data-set]').forEach(el => {
+    const k = el.dataset.set;
+    if (el.classList.contains('seg')) $$('button', el).forEach(b => b.classList.toggle('on', String(cfg[k]) === b.dataset.v));
+    else if (el.type === 'checkbox') el.checked = !!cfg[k];
+    else el.value = cfg[k];
+  });
+  $('#keyInp').value = cfg.geminiKey ? '••••••••' + cfg.geminiKey.slice(-4) : '';
+  $('#voiceNote').textContent = 'speechSynthesis' in window ? '' : T('noVoice');
+}
+function applyLook() {
+  const h = document.documentElement;
+  h.dataset.theme = cfg.theme; h.dataset.accent = cfg.accent; h.dataset.size = cfg.size;
+}
+function setOpt(k, v) {
+  cfg[k] = v; saveCfg(); syncControls();
+  if (['theme', 'accent', 'size'].includes(k)) applyLook();
+  if (k === 'uiLang') { mem.clear(); dailyKey = ''; applyI18n(); render(); renderChats(); renderFavs(); renderStats(); loadDaily(); buildMoods(); }
+  if (k === 'model') updateStatus();
+  if (k === 'typing' || k === 'uiLang') startPh();
+}
+function buildMoods() { $('#moods').innerHTML = T('moods').map(([l, q]) => `<button class="mood" type="button" data-mood="${esc(q)}">${esc(l)}</button>`).join(''); }
+function toggleFav(type, id, btn) {
+  const k = favs.findIndex(f => f.id === id && f.media_type === type);
+  if (k > -1) favs.splice(k, 1);
+  else {
+    const m = activeChat().m.find(x => x.tc && x.tc.id === id) || null;
+    const src = (m && m.tc) || activeChat().m.flatMap(x => x.c || []).find(c => c.id === id) || { id, media_type: type, title: btn && btn.closest('.tcard') ? btn.closest('.tcard').querySelector('.tt').textContent : '' };
+    favs.unshift({ id, media_type: type, title: src.title, poster_path: src.poster_path || null, date: src.date || '' });
+  }
+  store.set('cineai_favs', favs);
+  const on = k === -1;
+  $$(`[data-fav="${type}:${id}"]`).forEach(b => { b.classList.toggle('on', on); b.innerHTML = `${ic(on ? 'check' : 'heart')}<span>${on ? T('saved') : T('save')}</span>`; });
+  renderFavs(); renderStats();
+  toast(on ? (HE() ? 'נשמר במועדפים' : 'Saved to favorites') : (HE() ? 'הוסר מהמועדפים' : 'Removed from favorites'));
+}
+async function testKey(key) {
+  const note = $('#keyNote'); note.className = 'note'; note.textContent = T('keyTesting');
+  const old = cfg.geminiKey; cfg.geminiKey = key;
+  try { await gemini(HE() ? 'ענה במילה אחת: מוכן?' : 'Reply with one word: ready?', [], null); saveCfg(); note.className = 'note keyok'; note.textContent = T('keySaved'); }
+  catch (e) { cfg.geminiKey = old; note.className = 'note keybad'; note.textContent = T('keyBad') + e.message; }
+  syncControls(); updateStatus();
+}
+
+/* ---------- events ---------- */
+function bind() {
+  const inp = $('#inp'), sb = $('#sendBtn');
+  const grow = () => { inp.style.height = 'auto'; inp.style.height = Math.min(inp.scrollHeight, 140) + 'px'; sb.disabled = busy || !inp.value.trim(); };
+  inp.addEventListener('input', grow);
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); const v = inp.value; inp.value = ''; grow(); send(v); } });
+  sb.addEventListener('click', () => { const v = inp.value; inp.value = ''; grow(); send(v); inp.focus(); });
+  $('#newBtn').addEventListener('click', newChat);
+  $('#dNew').addEventListener('click', newChat);
+  $('#setBtn').addEventListener('click', openDrawer);
+  $('#dClose').addEventListener('click', closeDrawer);
+  $('#scrim').addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#drawer').classList.contains('on')) closeDrawer(); });
+  $('#keySave').addEventListener('click', () => { const v = $('#keyInp').value.trim(); if (!v || v.startsWith('••')) { $('#keyNote').textContent = cfg.geminiKey ? T('keySaved') : ''; return; } testKey(v); });
+  $('#keyInp').addEventListener('focus', e => { if (e.target.value.startsWith('••')) e.target.value = ''; });
+  $('#keyDel').addEventListener('click', () => { cfg.geminiKey = ''; saveCfg(); syncControls(); updateStatus(); $('#keyNote').className = 'note'; $('#keyNote').textContent = T('keyRemoved'); });
+  $('#expBtn').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify({ app: 'CineAI', exportedAt: new Date().toISOString(), chats: db.chats.map(c => ({ title: c.title, at: c.at, messages: c.m.map(m => ({ role: m.r === 'u' ? 'user' : 'assistant', text: m.r === 'u' ? m.t : plainOf(m) })) })), favorites: favs }, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `cineai_chats_${todayStr()}.json`; a.target = '_self'; document.body.appendChild(a); a.click(); a.remove(); toast(T('exported'));
+  });
+  $('#wipeBtn').addEventListener('click', async () => {
+    if (!(await uiAsk(T('wipeConfirm'), { danger: true }))) return;
+    ['cineai_v2', 'cineai_favs', 'cineai_stats', 'cineai_settings'].forEach(store.del);
+    db = { chats: [], active: null }; favs = []; stats = { q: 0, days: [] }; Object.assign(cfg, DEF);
+    applyLook(); applyI18n(); syncControls(); render(); renderChats(); renderFavs(); renderStats(); toast(T('wiped'));
+  });
+  document.addEventListener('click', async e => {
+    const t = e.target; let el;
+    if ((el = t.closest('[data-say]'))) { send(el.dataset.say); return; }
+    if ((el = t.closest('[data-ask]'))) { const [type, id] = el.dataset.ask.split(':'); closeDrawer(); send(`${T('tell')} ${el.dataset.title}`, { direct: { type, id: +id } }); return; }
+    if ((el = t.closest('[data-more]'))) { send(HE() ? `${el.dataset.mt === 'tv' ? 'סדרות' : 'סרטים'} דומים ל${el.dataset.more}` : `${el.dataset.mt === 'tv' ? 'Shows' : 'Movies'} similar to ${el.dataset.more}`); return; }
+    if ((el = t.closest('[data-fav]'))) { const [type, id] = el.dataset.fav.split(':'); toggleFav(type, +id, el); return; }
+    if ((el = t.closest('[data-unfav]'))) { const [type, id] = el.dataset.unfav.split(':'); toggleFav(type, +id); return; }
+    if ((el = t.closest('[data-copy]'))) { const m = activeChat().m[+el.dataset.copy]; const txt = m.plain || plainOf(m); const ok = () => toast(T('copied')); if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, () => { fallbackCopy(txt); ok(); }); else { fallbackCopy(txt); ok(); } return; }
+    if ((el = t.closest('[data-speak]'))) { speak(activeChat().m[+el.dataset.speak]); return; }
+    if ((el = t.closest('[data-chat]'))) { db.active = +el.dataset.chat; saveDb(); render(); renderChats(); closeDrawer(); return; }
+    if ((el = t.closest('[data-ren]'))) { const c = db.chats.find(x => x.id === +el.dataset.ren); const n = await uiAsk(T('renamePrompt'), { input: c.title }); if (n && n.trim()) { c.title = n.trim().slice(0, 60); saveDb(); renderChats(); } return; }
+    if ((el = t.closest('[data-del]'))) { const id = +el.dataset.del; if (!(await uiAsk(T('delConfirm'), { danger: true }))) return; db.chats = db.chats.filter(x => x.id !== id); if (db.active === id) db.active = (db.chats[0] || {}).id || null; saveDb(); render(); renderChats(); renderStats(); return; }
+    if ((el = t.closest('[data-mood]'))) { closeDrawer(); send(HE() ? `תמליץ לי על סרט ${el.dataset.mood}` : `Recommend a ${el.dataset.mood} movie`); return; }
+    if ((el = t.closest('[data-q]'))) { closeDrawer(); const q = el.dataset.q; const he = HE(); send({ trending: he ? 'מה חם השבוע?' : 'What\'s trending this week?', upcoming: he ? 'מה יוצא בקרוב לקולנוע?' : 'What\'s coming soon?', random: he ? 'הפתע אותי בסרט טוב' : 'Surprise me with a good movie', fact: he ? 'תן לי עובדה מעניינת מעולם הקולנוע' : 'Tell me a fun movie fact' }[q]); return; }
+    if ((el = t.closest('.seg[data-set] button'))) { const k = el.parentElement.dataset.set; setOpt(k, el.dataset.v); return; }
+  });
+  document.addEventListener('change', e => { const el = e.target.closest('[data-set]'); if (!el || el.classList.contains('seg')) return; setOpt(el.dataset.set, el.type === 'checkbox' ? el.checked : el.value); });
+  if ('speechSynthesis' in window) speechSynthesis.onvoiceschanged = () => {};
+}
+function fallbackCopy(txt) { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove(); }
+
+/* ---------- start ---------- */
+/* ---------- 5.1: CineAI inside the merged free-watch page ----------
+   Runs as a same-origin frame (window.DP_EMBED): free-watch links open the title right there,
+   "מידע מלא" opens the full details window, and a close button folds the side panel. */
+const EMBED = !!window.DP_EMBED;
+function hub() { try { return parent !== window && parent.DPHUB ? parent.DPHUB : null; } catch (e) { return null; } }
+if (EMBED) {
+  document.documentElement.classList.add('embed');
+  document.addEventListener('click', e => {
+    const H = hub(); if (!H) return;
+    const f = e.target.closest('[data-free]'), fh = e.target.closest('[data-freehome]'), inf = e.target.closest('[data-hubinfo]');
+    if (f) { e.preventDefault(); e.stopPropagation(); H.openFree(f.dataset.free); }
+    else if (fh) { e.preventDefault(); e.stopPropagation(); H.closeBot(); }
+    else if (inf) { e.preventDefault(); e.stopPropagation(); const [t, id] = inf.dataset.hubinfo.split(':'); H.openInfo(t, +id); }
+  }, true);
+  const hd = document.querySelector('header');
+  if (hd) hd.insertAdjacentHTML('beforeend', `<button class="hbtn" id="hubX" type="button" title="סגירה" aria-label="סגירת CineAI">${ic('x')}</button>`);
+  document.addEventListener('click', e => { if (e.target.closest('#hubX')) { const H = hub(); if (H) H.closeBot(); } });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('#drawer.on')) { const H = hub(); if (H) H.closeBot(); } });
+}
+(function init() {
+  applyLook(); buildMoods(); applyI18n(); syncControls(); bind();
+  db.chats = db.chats.filter(c => c.m && (c.m.length || c.id === db.active));
+  render(); renderChats(); startPh();
+  if (!EMBED && !matchMedia('(max-width: 640px)').matches) $('#inp').focus({ preventScroll: true });
+  if (EMBED) {
+    window.DPEMB = { send: (t, o) => send(t, o || {}), focus: () => $('#inp').focus({ preventScroll: true }), newChat: () => { const b = $('#newBtn'); if (b) b.click(); } };
+    kxLoad();
+    const H = hub(); if (H) H.ready('bot');
+  }
+})();
+
+</script>
+</body>
+</html>
